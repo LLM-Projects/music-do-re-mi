@@ -12,21 +12,24 @@ export const homeData = {
     {
       icon: "Music",
       title: "Expert Instruction",
-      description: "Learn from our team of professional musicians and certified educators.",
+      description:
+        "Learn from our team of professional musicians and certified educators.",
       link: "/programs",
       linkText: "View Programs",
     },
     {
       icon: "Users",
       title: "All Ages Welcome",
-      description: "Programs for children, teens, adults, and seniors at all skill levels.",
+      description:
+        "Programs for children, teens, adults, and seniors at all skill levels.",
       link: "/about",
       linkText: "Learn More",
     },
     {
       icon: "BookOpen",
       title: "Diverse Curriculum",
-      description: "From classical to contemporary, explore various musical styles and techniques.",
+      description:
+        "From classical to contemporary, explore various musical styles and techniques.",
       link: "/programs",
       linkText: "Explore Courses",
     },
@@ -41,21 +44,25 @@ export const homeData = {
   },
   programs: {
     title: "Our Music Programs",
-    description: "Discover the perfect program to match your musical interests and goals.",
+    description:
+      "Discover the perfect program to match your musical interests and goals.",
     items: [
       {
         title: "Piano Lessons",
-        description: "Master the keyboard with our comprehensive piano curriculum.",
+        description:
+          "Master the keyboard with our comprehensive piano curriculum.",
         image: "/placeholder.svg?height=200&width=300",
       },
       {
         title: "Guitar & Strings",
-        description: "From classical to rock, learn to play string instruments with confidence.",
+        description:
+          "From classical to rock, learn to play string instruments with confidence.",
         image: "/placeholder.svg?height=200&width=300",
       },
       {
         title: "Voice Training",
-        description: "Develop your vocal technique and performance skills with expert coaches.",
+        description:
+          "Develop your vocal technique and performance skills with expert coaches.",
         image: "/placeholder.svg?height=200&width=300",
       },
     ],
@@ -86,7 +93,8 @@ export const homeData = {
   },
   cta: {
     title: "Ready to Begin Your Musical Journey?",
-    description: "Contact us today to schedule a tour, learn about our programs, or sign up for lessons.",
+    description:
+      "Contact us today to schedule a tour, learn about our programs, or sign up for lessons.",
     buttons: [
       { label: "Contact Us", href: "/contact", variant: "default" },
       { label: "Instrument Rentals", href: "/rentals", variant: "outline" },
@@ -94,4 +102,4 @@ export const homeData = {
     image: "/placeholder.svg?height=250&width=400",
     imageAlt: "Music instruments",
   },
-} 
+};

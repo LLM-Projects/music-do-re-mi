@@ -1,18 +1,26 @@
-import Image from "next/image"
-import { Music, Award, Clock, Calendar, Users } from "lucide-react"
+import { Metadata } from "next";
+import Image from "next/image";
+import { Music, Award, Clock, Calendar, Users } from "lucide-react";
+import { aboutData } from "@/data/about";
+
+
 
 export default function AboutPage() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="relative">
         <div className="absolute inset-0 bg-gradient-to-r from-rose-100 to-rose-50 opacity-70 dark:from-rose-950 dark:to-slate-900 dark:opacity-90" />
-        <div className="container relative py-16 md:py-24">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">About Music Do Re Mi</h1>
-            <p className="mt-4 text-lg text-muted-foreground">
-              Discover our story, mission, and the passionate team behind our music school.
-            </p>
+        <div className="container relative py-12 md:py-24 lg:py-32">
+          <div className="flex flex-col items-center space-y-4 text-center">
+            <div className="space-y-2">
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+                {aboutData.hero.title}
+              </h1>
+              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+                {aboutData.hero.description}
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -21,22 +29,19 @@ export default function AboutPage() {
       <section className="container py-12 md:py-16">
         <div className="grid gap-8 md:grid-cols-2 items-center">
           <div className="space-y-4">
-            <h2 className="text-3xl font-bold tracking-tighter">Our Story</h2>
-            <p className="text-muted-foreground">
-              Founded in 2005 by renowned pianist Maria Rodriguez and conductor David Chen, Music Do Re Mi began as a
-              small studio offering piano and violin lessons to a handful of students.
-            </p>
-            <p className="text-muted-foreground">
-              Over the years, we've grown into a comprehensive music school with multiple teaching studios, performance
-              spaces, and a diverse faculty of professional musicians and educators. Today, we serve hundreds of
-              students of all ages and abilities, while maintaining our commitment to personalized instruction and
-              musical excellence.
-            </p>
+            <h2 className="text-3xl font-bold tracking-tighter">
+              {aboutData.story.title}
+            </h2>
+            {aboutData.story.content.map((paragraph, index) => (
+              <p key={index} className="text-muted-foreground">
+                {paragraph}
+              </p>
+            ))}
           </div>
           <div className="relative h-[300px] rounded-lg overflow-hidden">
             <Image
-              src="/placeholder.svg?height=300&width=500"
-              alt="Music Do Re Mi founders"
+              src={aboutData.story.image}
+              alt={aboutData.story.imageAlt}
               fill
               className="object-cover"
             />
@@ -49,97 +54,67 @@ export default function AboutPage() {
         <div className="container">
           <div className="max-w-3xl mx-auto text-center space-y-4">
             <Music className="h-12 w-12 text-rose-500 mx-auto" />
-            <h2 className="text-3xl font-bold tracking-tighter">Our Mission</h2>
-            <p className="text-lg text-muted-foreground">
-              At Music Do Re Mi, we believe that music education is a vital component of a well-rounded life. Our
-              mission is to nurture musical talent, foster creativity, and build community through exceptional music
-              education that is accessible, engaging, and inspiring.
-            </p>
-            <p className="text-lg text-muted-foreground">
-              We strive to create an inclusive environment where students can discover their unique musical voice,
-              develop technical proficiency, and experience the joy of making music together.
-            </p>
+            <h2 className="text-3xl font-bold tracking-tighter">
+              {aboutData.mission.title}
+            </h2>
+            {aboutData.mission.content.map((paragraph, index) => (
+              <p key={index} className="text-lg text-muted-foreground">
+                {paragraph}
+              </p>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Our Values */}
       <section className="container py-12 md:py-16">
-        <h2 className="text-3xl font-bold tracking-tighter text-center mb-8">Our Values</h2>
+        <h2 className="text-3xl font-bold tracking-tighter text-center mb-8">
+          {aboutData.values.title}
+        </h2>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {[
-            {
-              icon: <Music className="h-8 w-8 text-rose-500" />,
-              title: "Musical Excellence",
-              description: "We uphold the highest standards of musical instruction and performance.",
-            },
-            {
-              icon: <Users className="h-8 w-8 text-rose-500" />,
-              title: "Inclusive Community",
-              description: "We welcome students of all backgrounds, ages, and ability levels.",
-            },
-            {
-              icon: <Award className="h-8 w-8 text-rose-500" />,
-              title: "Creative Growth",
-              description: "We encourage creative expression and personal development through music.",
-            },
-            {
-              icon: <Clock className="h-8 w-8 text-rose-500" />,
-              title: "Lifelong Learning",
-              description: "We inspire a lifelong appreciation and pursuit of musical knowledge.",
-            },
-          ].map((value, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg border">
-              <div className="mb-4">{value.icon}</div>
-              <h3 className="text-xl font-semibold mb-2">{value.title}</h3>
-              <p className="text-muted-foreground">{value.description}</p>
-            </div>
-          ))}
+          {aboutData.values.items.map((value, index) => {
+            // Map icon names to components
+            const IconComponent = 
+              value.icon === "Music" ? Music :
+              value.icon === "Users" ? Users :
+              value.icon === "Award" ? Award :
+              value.icon === "Clock" ? Clock : Music;
+            
+            return (
+              <div key={index} className="bg-white p-6 rounded-lg border">
+                <div className="mb-4">
+                  <IconComponent className="h-8 w-8 text-rose-500" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">{value.title}</h3>
+                <p className="text-muted-foreground">{value.description}</p>
+              </div>
+            );
+          })}
         </div>
       </section>
 
       {/* Our Facilities */}
       <section className="bg-rose-50 py-12 md:py-16">
         <div className="container">
-          <h2 className="text-3xl font-bold tracking-tighter text-center mb-8">Our Facilities</h2>
+          <h2 className="text-3xl font-bold tracking-tighter text-center mb-8">
+            {aboutData.facilities.title}
+          </h2>
           <div className="grid gap-8 md:grid-cols-2">
             <div className="relative h-[400px] rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=400&width=600"
-                alt="Music Do Re Mi facilities"
+                src={aboutData.facilities.image}
+                alt={aboutData.facilities.imageAlt}
                 fill
                 className="object-cover"
               />
             </div>
             <div className="space-y-6">
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Teaching Studios</h3>
-                <p className="text-muted-foreground">
-                  Our school features 12 soundproofed teaching studios, each equipped with professional instruments,
-                  including Yamaha grand pianos, and audio equipment for recording and playback.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Performance Hall</h3>
-                <p className="text-muted-foreground">
-                  Our 150-seat recital hall provides an intimate setting for student performances, master classes, and
-                  guest artist concerts.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Ensemble Rooms</h3>
-                <p className="text-muted-foreground">
-                  Dedicated spaces for group lessons, chamber music, and ensemble rehearsals allow students to
-                  experience the joy of making music together.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Music Library</h3>
-                <p className="text-muted-foreground">
-                  Our extensive collection of sheet music, books, and digital resources supports students and teachers
-                  in their musical studies.
-                </p>
-              </div>
+              {aboutData.facilities.items.map((facility, index) => (
+                <div key={index}>
+                  <h3 className="text-xl font-semibold mb-2">{facility.title}</h3>
+                  <p className="text-muted-foreground">{facility.description}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -147,53 +122,32 @@ export default function AboutPage() {
 
       {/* Timeline */}
       <section className="container py-12 md:py-16">
-        <h2 className="text-3xl font-bold tracking-tighter text-center mb-8">Our Journey</h2>
+        <h2 className="text-3xl font-bold tracking-tighter text-center mb-8">
+          {aboutData.timeline.title}
+        </h2>
         <div className="space-y-8">
-          {[
-            {
-              year: "2005",
-              title: "Founding",
-              description: "Music Do Re Mi opens its doors with 2 teachers and 15 students.",
-            },
-            {
-              year: "2008",
-              title: "First Expansion",
-              description: "Added 4 new teaching studios and expanded faculty to 8 instructors.",
-            },
-            {
-              year: "2012",
-              title: "Community Programs",
-              description: "Launched outreach programs in local schools and community centers.",
-            },
-            {
-              year: "2015",
-              title: "New Facility",
-              description: "Moved to our current location with expanded facilities including a recital hall.",
-            },
-            {
-              year: "2020",
-              title: "Online Learning",
-              description: "Developed comprehensive virtual learning programs to reach students worldwide.",
-            },
-            {
-              year: "Today",
-              title: "Continuing Growth",
-              description: "Serving over 500 students with a faculty of 25 professional musicians and educators.",
-            },
-          ].map((milestone, index) => (
+          {aboutData.timeline.items.map((milestone, index) => (
             <div key={index} className="relative pl-10 md:pl-0">
               <div className="grid md:grid-cols-[200px_1fr] gap-4 items-start">
                 <div className="hidden md:flex items-center gap-4">
-                  <div className="text-2xl font-bold text-rose-500">{milestone.year}</div>
+                  <div className="text-2xl font-bold text-rose-500">
+                    {milestone.year}
+                  </div>
                   <div className="h-[2px] flex-1 bg-rose-200" />
                 </div>
                 <div className="absolute left-0 top-1 md:hidden">
                   <Calendar className="h-6 w-6 text-rose-500" />
                 </div>
-                <div className="md:hidden text-lg font-bold text-rose-500 mb-1">{milestone.year}</div>
+                <div className="md:hidden text-lg font-bold text-rose-500 mb-1">
+                  {milestone.year}
+                </div>
                 <div className="bg-white p-4 rounded-lg border">
-                  <h3 className="text-xl font-semibold mb-2">{milestone.title}</h3>
-                  <p className="text-muted-foreground">{milestone.description}</p>
+                  <h3 className="text-xl font-semibold mb-2">
+                    {milestone.title}
+                  </h3>
+                  <p className="text-muted-foreground">
+                    {milestone.description}
+                  </p>
                 </div>
               </div>
             </div>
@@ -201,5 +155,5 @@ export default function AboutPage() {
         </div>
       </section>
     </div>
-  )
+  );
 }
