@@ -1,10 +1,16 @@
-import Link from "next/link"
-import Image from "next/image"
-import { Music, Users, BookOpen, Award, ArrowRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import SpecialOfferPopup from "@/components/special-offer-popup"
-import { homeData } from "@/data"
+import Link from "next/link";
+import Image from "next/image";
+import { Music, Users, BookOpen, Award, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import SpecialOfferPopup from "@/components/special-offer-popup";
+import { homeData } from "@/data";
 
 export default function Home() {
   return (
@@ -36,8 +42,11 @@ export default function Home() {
 
         <div className="container relative flex flex-col items-center justify-center space-y-8 py-24 text-center md:py-32">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl animate-fade-in text-foreground">
-            {homeData.hero.title.split(" ").map((word, i) => (
-              <span key={i} className={i === 4 ? "text-rose-500 animate-pulse" : ""}>
+            {homeData.hero.title.split(" ").map((word: any, i: any) => (
+              <span
+                key={i}
+                className={i === 4 ? "text-rose-500 animate-pulse" : ""}
+              >
                 {word}{" "}
               </span>
             ))}
@@ -46,8 +55,13 @@ export default function Home() {
             {homeData.hero.description}
           </p>
           <div className="flex flex-col gap-4 sm:flex-row animate-bounce-in">
-            {homeData.hero.cta.map((button, index) => (
-              <Button key={index} asChild size="lg" variant={button.variant as any}>
+            {homeData.hero.cta.map((button: any, index: any) => (
+              <Button
+                key={index}
+                asChild
+                size="lg"
+                variant={button.variant as any}
+              >
                 <Link href={button.href}>{button.label}</Link>
               </Button>
             ))}
@@ -76,7 +90,7 @@ export default function Home() {
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 relative z-10">
-          {homeData.features.map((feature, index) => (
+          {homeData.features.map((feature: any, index: any) => (
             <Card
               key={index}
               className="group transition-all duration-300 hover:shadow-lg bg-background border-border"
@@ -88,11 +102,17 @@ export default function Home() {
                   <div className="animate-wave text-rose-500">
                     {feature.icon === "Music" && <Music className="h-6 w-6" />}
                     {feature.icon === "Users" && <Users className="h-6 w-6" />}
-                    {feature.icon === "BookOpen" && <BookOpen className="h-6 w-6" />}
+                    {feature.icon === "BookOpen" && (
+                      <BookOpen className="h-6 w-6" />
+                    )}
                   </div>
                 </div>
-                <CardTitle className="text-xl text-foreground">{feature.title}</CardTitle>
-                <CardDescription className="text-muted-foreground">{feature.description}</CardDescription>
+                <CardTitle className="text-xl text-foreground">
+                  {feature.title}
+                </CardTitle>
+                <CardDescription className="text-muted-foreground">
+                  {feature.description}
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <Link
@@ -112,7 +132,11 @@ export default function Home() {
       <section className="bg-slate-50 dark:bg-slate-900 py-16 md:py-24 relative overflow-hidden">
         {/* Wave animation */}
         <div className="absolute inset-x-0 bottom-0 h-20 pointer-events-none">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="absolute w-full h-full">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+            className="absolute w-full h-full"
+          >
             <path
               fill="currentColor"
               fillOpacity="0.1"
@@ -138,12 +162,19 @@ export default function Home() {
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-foreground">
                 {homeData.about.title}
               </h2>
-              <p className="text-muted-foreground">{homeData.about.description}</p>
+              <p className="text-muted-foreground">
+                {homeData.about.description}
+              </p>
               <Button asChild variant="outline">
-                <Link href={homeData.about.cta.href}>{homeData.about.cta.label}</Link>
+                <Link href={homeData.about.cta.href}>
+                  {homeData.about.cta.label}
+                </Link>
               </Button>
             </div>
-            <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden" data-aos="fade-left">
+            <div
+              className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden"
+              data-aos="fade-left"
+            >
               <Image
                 src={homeData.about.image || "/placeholder.svg"}
                 alt={homeData.about.imageAlt}
@@ -172,11 +203,15 @@ export default function Home() {
         </div>
 
         <div className="text-center mb-12 relative z-10" data-aos="fade-up">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-foreground">{homeData.programs.title}</h2>
-          <p className="mt-4 text-muted-foreground max-w-[700px] mx-auto">{homeData.programs.description}</p>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-foreground">
+            {homeData.programs.title}
+          </h2>
+          <p className="mt-4 text-muted-foreground max-w-[700px] mx-auto">
+            {homeData.programs.description}
+          </p>
         </div>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 relative z-10">
-          {homeData.programs.items.map((program, index) => (
+          {homeData.programs.items.map((program: any, index: any) => (
             <div
               key={index}
               className="group relative overflow-hidden rounded-lg transform transition-transform hover:scale-[1.02]"
@@ -194,14 +229,18 @@ export default function Home() {
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
                 <h3 className="text-xl font-semibold">{program.title}</h3>
-                <p className="mt-1 text-sm text-white/90">{program.description}</p>
+                <p className="mt-1 text-sm text-white/90">
+                  {program.description}
+                </p>
               </div>
             </div>
           ))}
         </div>
         <div className="mt-10 text-center relative z-10" data-aos="fade-up">
           <Button asChild>
-            <Link href={homeData.programs.cta.href}>{homeData.programs.cta.label}</Link>
+            <Link href={homeData.programs.cta.href}>
+              {homeData.programs.cta.label}
+            </Link>
           </Button>
         </div>
       </section>
@@ -221,7 +260,11 @@ export default function Home() {
                 transform: `rotate(${Math.random() * 360}deg)`,
               }}
             >
-              {["♪", "♫", "♩", "♬", "♭", "♮", "♯"][Math.floor(Math.random() * 7)]}
+              {
+                ["♪", "♫", "♩", "♬", "♭", "♮", "♯"][
+                  Math.floor(Math.random() * 7)
+                ]
+              }
             </div>
           ))}
         </div>
@@ -233,16 +276,27 @@ export default function Home() {
             </h2>
           </div>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {homeData.testimonials.items.map((testimonial, index) => (
-              <Card key={index} className="bg-background border-border" data-aos="fade-up" data-aos-delay={index * 100}>
+            {homeData.testimonials.items.map((testimonial: any, index: any) => (
+              <Card
+                key={index}
+                className="bg-background border-border"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+              >
                 <CardContent className="pt-6">
                   <div className="mb-4">
                     <Award className="h-8 w-8 text-rose-400" />
                   </div>
-                  <blockquote className="text-muted-foreground italic mb-4">"{testimonial.quote}"</blockquote>
+                  <blockquote className="text-muted-foreground italic mb-4">
+                    "{testimonial.quote}"
+                  </blockquote>
                   <div>
-                    <p className="font-semibold text-foreground">{testimonial.author}</p>
-                    <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                    <p className="font-semibold text-foreground">
+                      {testimonial.author}
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      {testimonial.role}
+                    </p>
                   </div>
                 </CardContent>
               </Card>
@@ -256,7 +310,11 @@ export default function Home() {
         <div className="rounded-lg bg-slate-50 dark:bg-slate-900 p-8 md:p-12 relative overflow-hidden">
           {/* Animated wave background */}
           <div className="absolute inset-0 opacity-10 pointer-events-none">
-            <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" className="absolute w-full h-full">
+            <svg
+              viewBox="0 0 1000 1000"
+              xmlns="http://www.w3.org/2000/svg"
+              className="absolute w-full h-full"
+            >
               <path
                 d="M0,500 C150,400 350,300 500,500 C650,700 850,600 1000,500 L1000,1000 L0,1000 Z"
                 className="fill-rose-400 dark:fill-rose-800"
@@ -276,17 +334,24 @@ export default function Home() {
 
           <div className="grid gap-6 md:grid-cols-2 items-center relative z-10">
             <div className="space-y-4" data-aos="fade-right">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-foreground">{homeData.cta.title}</h2>
-              <p className="text-muted-foreground">{homeData.cta.description}</p>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-foreground">
+                {homeData.cta.title}
+              </h2>
+              <p className="text-muted-foreground">
+                {homeData.cta.description}
+              </p>
               <div className="flex flex-col sm:flex-row gap-3">
-                {homeData.cta.buttons.map((button, index) => (
+                {homeData.cta.buttons.map((button: any, index: any) => (
                   <Button key={index} asChild variant={button.variant as any}>
                     <Link href={button.href}>{button.label}</Link>
                   </Button>
                 ))}
               </div>
             </div>
-            <div className="relative h-[250px] rounded-lg overflow-hidden" data-aos="fade-left">
+            <div
+              className="relative h-[250px] rounded-lg overflow-hidden"
+              data-aos="fade-left"
+            >
               <Image
                 src={homeData.cta.image || "/placeholder.svg"}
                 alt={homeData.cta.imageAlt}
@@ -298,5 +363,5 @@ export default function Home() {
         </div>
       </section>
     </div>
-  )
+  );
 }
