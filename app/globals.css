@@ -76,6 +76,21 @@
   }
 }
 
+@keyframes float-slow {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateY(-40vh) scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-80vh) scale(1);
+    opacity: 0;
+  }
+}
+
 @keyframes wave {
   0%,
   100% {
@@ -139,6 +154,10 @@
   animation: float linear infinite;
 }
 
+.animate-float-slow {
+  animation: float-slow 20s ease-in-out infinite;
+}
+
 .animate-wave {
   animation: wave 2s ease-in-out infinite;
 }
@@ -198,6 +217,38 @@
 .piano-key-pressed {
   transform: translateY(4px);
   background-color: var(--key-pressed-color);
+}
+
+/* AOS animation library styles */
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-duration: 0.8s;
+}
+
+[data-aos="fade-up"] {
+  transform: translateY(30px);
+}
+
+[data-aos="fade-down"] {
+  transform: translateY(-30px);
+}
+
+[data-aos="fade-left"] {
+  transform: translateX(30px);
+}
+
+[data-aos="fade-right"] {
+  transform: translateX(-30px);
+}
+
+[data-aos="zoom-in"] {
+  transform: scale(0.9);
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: translateY(0) translateX(0) scale(1);
 }
 
 @media (max-width: 768px) {

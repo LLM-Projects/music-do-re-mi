@@ -1,43 +1,39 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { Music, Menu, Sun, Moon } from "lucide-react"
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { useTheme } from "@/components/theme-provider"
-
-const routes = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/programs", label: "Programs" },
-  { href: "/virtual-keyboard", label: "Virtual Piano" },
-  { href: "/contact", label: "Contact" },
-  { href: "/rentals", label: "Instrument Rentals" },
-]
+import { useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Music, Menu, Sun, Moon } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { useTheme } from "@/components/theme-provider";
+import { navigationLinks } from "@/data";
 
 export default function Navbar() {
-  const pathname = usePathname()
-  const [isOpen, setIsOpen] = useState(false)
-  const { theme, setTheme } = useTheme()
+  const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <Music className="h-6 w-6 text-rose-500" />
-          <span className="text-xl font-bold">Music Do Re Mi</span>
+          <span className="text-xl font-bold text-foreground">
+            Music Do Re Mi
+          </span>
         </Link>
         <nav className="hidden md:flex gap-6">
-          {routes.map((route) => (
+          {navigationLinks.map((route) => (
             <Link
               key={route.href}
               href={route.href}
               className={cn(
                 "text-sm font-medium transition-colors hover:text-primary",
-                pathname === route.href ? "text-primary" : "text-muted-foreground",
+                pathname === route.href
+                  ? "text-primary"
+                  : "text-muted-foreground"
               )}
             >
               {route.label}
@@ -65,13 +61,15 @@ export default function Navbar() {
             </SheetTrigger>
             <SheetContent side="right">
               <div className="flex flex-col gap-4 mt-8">
-                {routes.map((route) => (
+                {navigationLinks.map((route: any) => (
                   <Link
                     key={route.href}
                     href={route.href}
                     className={cn(
                       "text-base font-medium transition-colors hover:text-primary",
-                      pathname === route.href ? "text-primary" : "text-muted-foreground",
+                      pathname === route.href
+                        ? "text-primary"
+                        : "text-muted-foreground"
                     )}
                     onClick={() => setIsOpen(false)}
                   >
@@ -84,5 +82,5 @@ export default function Navbar() {
         </div>
       </div>
     </header>
-  )
+  );
 }

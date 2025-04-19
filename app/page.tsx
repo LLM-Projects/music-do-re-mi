@@ -4,24 +4,27 @@ import { Music, Users, BookOpen, Award, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import SpecialOfferPopup from "@/components/special-offer-popup"
+import { homeData } from "@/data"
 
 export default function Home() {
   return (
     <div className="flex flex-col">
       <SpecialOfferPopup />
+
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-rose-100 to-rose-50 opacity-70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-rose-100 to-rose-50 opacity-70 dark:from-rose-950 dark:to-slate-900 dark:opacity-90" />
 
-        {/* Add animated music notes */}
+        {/* Animated music notes */}
         <div className="absolute inset-0 overflow-hidden">
-          {[...Array(10)].map((_, i) => (
+          {[...Array(15)].map((_, i) => (
             <div
               key={i}
-              className="absolute animate-float text-rose-300 opacity-30"
+              className="absolute animate-float text-rose-300 dark:text-rose-600 opacity-30"
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
+                fontSize: `${Math.random() * 20 + 14}px`,
                 animationDelay: `${Math.random() * 10}s`,
                 animationDuration: `${15 + Math.random() * 15}s`,
               }}
@@ -32,57 +35,64 @@ export default function Home() {
         </div>
 
         <div className="container relative flex flex-col items-center justify-center space-y-8 py-24 text-center md:py-32">
-          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl animate-fade-in">
-            Discover the Joy of <span className="text-rose-500 animate-pulse">Music</span>
+          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl animate-fade-in text-foreground">
+            {homeData.hero.title.split(" ").map((word, i) => (
+              <span key={i} className={i === 4 ? "text-rose-500 animate-pulse" : ""}>
+                {word}{" "}
+              </span>
+            ))}
           </h1>
           <p className="max-w-[700px] text-lg text-muted-foreground md:text-xl animate-slide-up">
-            At Music Do Re Mi, we nurture musical talent through expert instruction, inspiring facilities, and a
-            supportive community.
+            {homeData.hero.description}
           </p>
           <div className="flex flex-col gap-4 sm:flex-row animate-bounce-in">
-            <Button asChild size="lg">
-              <Link href="/programs">Explore Programs</Link>
-            </Button>
-            <Button asChild variant="outline" size="lg">
-              <Link href="/contact">Contact Us</Link>
-            </Button>
+            {homeData.hero.cta.map((button, index) => (
+              <Button key={index} asChild size="lg" variant={button.variant as any}>
+                <Link href={button.href}>{button.label}</Link>
+              </Button>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Features Section */}
-      <section className="container py-16 md:py-24">
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {[
-            {
-              icon: <Music className="h-6 w-6 text-rose-500" />,
-              title: "Expert Instruction",
-              description: "Learn from our team of professional musicians and certified educators.",
-              link: "/programs",
-              linkText: "View Programs",
-            },
-            {
-              icon: <Users className="h-6 w-6 text-rose-500" />,
-              title: "All Ages Welcome",
-              description: "Programs for children, teens, adults, and seniors at all skill levels.",
-              link: "/about",
-              linkText: "Learn More",
-            },
-            {
-              icon: <BookOpen className="h-6 w-6 text-rose-500" />,
-              title: "Diverse Curriculum",
-              description: "From classical to contemporary, explore various musical styles and techniques.",
-              link: "/programs",
-              linkText: "Explore Courses",
-            },
-          ].map((feature, index) => (
-            <Card key={index} className="group transition-all duration-300 hover:shadow-lg">
+      <section className="container py-16 md:py-24 relative overflow-hidden">
+        {/* Animated bubbles */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          {[...Array(8)].map((_, i) => (
+            <div
+              key={i}
+              className="absolute rounded-full bg-rose-100 dark:bg-rose-900/30 animate-float-slow opacity-30"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                width: `${Math.random() * 60 + 20}px`,
+                height: `${Math.random() * 60 + 20}px`,
+                animationDelay: `${Math.random() * 5}s`,
+                animationDuration: `${20 + Math.random() * 20}s`,
+              }}
+            />
+          ))}
+        </div>
+
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 relative z-10">
+          {homeData.features.map((feature, index) => (
+            <Card
+              key={index}
+              className="group transition-all duration-300 hover:shadow-lg bg-background border-border"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
               <CardHeader className="space-y-1">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-rose-100 group-hover:bg-rose-200 transition-colors">
-                  <div className="animate-wave">{feature.icon}</div>
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-rose-100 dark:bg-rose-900/50 group-hover:bg-rose-200 dark:group-hover:bg-rose-800/50 transition-colors">
+                  <div className="animate-wave text-rose-500">
+                    {feature.icon === "Music" && <Music className="h-6 w-6" />}
+                    {feature.icon === "Users" && <Users className="h-6 w-6" />}
+                    {feature.icon === "BookOpen" && <BookOpen className="h-6 w-6" />}
+                  </div>
                 </div>
-                <CardTitle className="text-xl">{feature.title}</CardTitle>
-                <CardDescription>{feature.description}</CardDescription>
+                <CardTitle className="text-xl text-foreground">{feature.title}</CardTitle>
+                <CardDescription className="text-muted-foreground">{feature.description}</CardDescription>
               </CardHeader>
               <CardContent>
                 <Link
@@ -99,26 +109,44 @@ export default function Home() {
       </section>
 
       {/* About Preview Section */}
-      <section className="bg-slate-50 py-16 md:py-24">
-        <div className="container">
+      <section className="bg-slate-50 dark:bg-slate-900 py-16 md:py-24 relative overflow-hidden">
+        {/* Wave animation */}
+        <div className="absolute inset-x-0 bottom-0 h-20 pointer-events-none">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="absolute w-full h-full">
+            <path
+              fill="currentColor"
+              fillOpacity="0.1"
+              className="text-rose-200 dark:text-rose-800"
+              d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,261.3C960,256,1056,224,1152,197.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+            >
+              <animate
+                attributeName="d"
+                dur="10s"
+                repeatCount="indefinite"
+                values="
+                  M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,261.3C960,256,1056,224,1152,197.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+                  M0,256L48,240C96,224,192,192,288,181.3C384,171,480,181,576,197.3C672,213,768,235,864,229.3C960,224,1056,192,1152,176C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+                  M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,261.3C960,256,1056,224,1152,197.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+              />
+            </path>
+          </svg>
+        </div>
+
+        <div className="container relative z-10">
           <div className="grid gap-8 md:grid-cols-2 items-center">
-            <div className="space-y-4">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Our Passion for Music Education
+            <div className="space-y-4" data-aos="fade-right">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-foreground">
+                {homeData.about.title}
               </h2>
-              <p className="text-muted-foreground">
-                For over 15 years, Music Do Re Mi has been a cornerstone of musical education in our community. Our
-                school combines traditional teaching methods with innovative approaches to inspire students of all ages
-                and abilities.
-              </p>
+              <p className="text-muted-foreground">{homeData.about.description}</p>
               <Button asChild variant="outline">
-                <Link href="/about">About Us</Link>
+                <Link href={homeData.about.cta.href}>{homeData.about.cta.label}</Link>
               </Button>
             </div>
-            <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
+            <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden" data-aos="fade-left">
               <Image
-                src="/placeholder.svg?height=400&width=600"
-                alt="Music students in a class"
+                src={homeData.about.image || "/placeholder.svg"}
+                alt={homeData.about.imageAlt}
                 fill
                 className="object-cover"
               />
@@ -128,32 +156,33 @@ export default function Home() {
       </section>
 
       {/* Programs Preview */}
-      <section className="container py-16 md:py-24">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Music Programs</h2>
-          <p className="mt-4 text-muted-foreground max-w-[700px] mx-auto">
-            Discover the perfect program to match your musical interests and goals.
-          </p>
+      <section className="container py-16 md:py-24 relative overflow-hidden">
+        {/* Animated staff lines */}
+        <div className="absolute inset-0 pointer-events-none">
+          {[...Array(5)].map((_, i) => (
+            <div
+              key={i}
+              className="absolute w-full h-[1px] bg-rose-100 dark:bg-rose-900/30"
+              style={{
+                top: `${20 + i * 15}%`,
+                transform: `rotate(${Math.random() * 2 - 1}deg)`,
+              }}
+            />
+          ))}
         </div>
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {[
-            {
-              title: "Piano Lessons",
-              description: "Master the keyboard with our comprehensive piano curriculum.",
-              image: "/placeholder.svg?height=200&width=300",
-            },
-            {
-              title: "Guitar & Strings",
-              description: "From classical to rock, learn to play string instruments with confidence.",
-              image: "/placeholder.svg?height=200&width=300",
-            },
-            {
-              title: "Voice Training",
-              description: "Develop your vocal technique and performance skills with expert coaches.",
-              image: "/placeholder.svg?height=200&width=300",
-            },
-          ].map((program, index) => (
-            <div key={index} className="group relative overflow-hidden rounded-lg">
+
+        <div className="text-center mb-12 relative z-10" data-aos="fade-up">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-foreground">{homeData.programs.title}</h2>
+          <p className="mt-4 text-muted-foreground max-w-[700px] mx-auto">{homeData.programs.description}</p>
+        </div>
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 relative z-10">
+          {homeData.programs.items.map((program, index) => (
+            <div
+              key={index}
+              className="group relative overflow-hidden rounded-lg transform transition-transform hover:scale-[1.02]"
+              data-aos="zoom-in"
+              data-aos-delay={index * 100}
+            >
               <div className="relative h-[200px]">
                 <Image
                   src={program.image || "/placeholder.svg"}
@@ -170,48 +199,49 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <div className="mt-10 text-center">
+        <div className="mt-10 text-center relative z-10" data-aos="fade-up">
           <Button asChild>
-            <Link href="/programs">View All Programs</Link>
+            <Link href={homeData.programs.cta.href}>{homeData.programs.cta.label}</Link>
           </Button>
         </div>
       </section>
 
       {/* Testimonials */}
-      <section className="bg-rose-50 py-16 md:py-24">
-        <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">What Our Students Say</h2>
+      <section className="bg-rose-50 dark:bg-rose-950/20 py-16 md:py-24 relative overflow-hidden">
+        {/* Animated musical symbols */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          {[...Array(10)].map((_, i) => (
+            <div
+              key={i}
+              className="absolute text-rose-200 dark:text-rose-800/30 opacity-30"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                fontSize: `${Math.random() * 30 + 20}px`,
+                transform: `rotate(${Math.random() * 360}deg)`,
+              }}
+            >
+              {["♪", "♫", "♩", "♬", "♭", "♮", "♯"][Math.floor(Math.random() * 7)]}
+            </div>
+          ))}
+        </div>
+
+        <div className="container relative z-10">
+          <div className="text-center mb-12" data-aos="fade-up">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-foreground">
+              {homeData.testimonials.title}
+            </h2>
           </div>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {[
-              {
-                quote:
-                  "My daughter has flourished under the guidance of Music Do Re Mi's instructors. Their patience and expertise have made all the difference.",
-                author: "Sarah Johnson",
-                role: "Parent",
-              },
-              {
-                quote:
-                  "As an adult beginner, I was nervous about taking up an instrument, but the supportive environment here made it a joy to learn.",
-                author: "Michael Chen",
-                role: "Adult Student",
-              },
-              {
-                quote:
-                  "The recital opportunities and ensemble programs have helped me grow not just as a musician, but as a performer.",
-                author: "Emma Rodriguez",
-                role: "Teen Student",
-              },
-            ].map((testimonial, index) => (
-              <Card key={index} className="bg-white">
+            {homeData.testimonials.items.map((testimonial, index) => (
+              <Card key={index} className="bg-background border-border" data-aos="fade-up" data-aos-delay={index * 100}>
                 <CardContent className="pt-6">
                   <div className="mb-4">
                     <Award className="h-8 w-8 text-rose-400" />
                   </div>
                   <blockquote className="text-muted-foreground italic mb-4">"{testimonial.quote}"</blockquote>
                   <div>
-                    <p className="font-semibold">{testimonial.author}</p>
+                    <p className="font-semibold text-foreground">{testimonial.author}</p>
                     <p className="text-sm text-muted-foreground">{testimonial.role}</p>
                   </div>
                 </CardContent>
@@ -223,26 +253,43 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="container py-16 md:py-24">
-        <div className="rounded-lg bg-slate-50 p-8 md:p-12">
-          <div className="grid gap-6 md:grid-cols-2 items-center">
-            <div className="space-y-4">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Ready to Begin Your Musical Journey?</h2>
-              <p className="text-muted-foreground">
-                Contact us today to schedule a tour, learn about our programs, or sign up for lessons.
-              </p>
+        <div className="rounded-lg bg-slate-50 dark:bg-slate-900 p-8 md:p-12 relative overflow-hidden">
+          {/* Animated wave background */}
+          <div className="absolute inset-0 opacity-10 pointer-events-none">
+            <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" className="absolute w-full h-full">
+              <path
+                d="M0,500 C150,400 350,300 500,500 C650,700 850,600 1000,500 L1000,1000 L0,1000 Z"
+                className="fill-rose-400 dark:fill-rose-800"
+              >
+                <animate
+                  attributeName="d"
+                  dur="20s"
+                  repeatCount="indefinite"
+                  values="
+                    M0,500 C150,400 350,300 500,500 C650,700 850,600 1000,500 L1000,1000 L0,1000 Z;
+                    M0,500 C150,600 350,700 500,500 C650,300 850,400 1000,500 L1000,1000 L0,1000 Z;
+                    M0,500 C150,400 350,300 500,500 C650,700 850,600 1000,500 L1000,1000 L0,1000 Z"
+                />
+              </path>
+            </svg>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 items-center relative z-10">
+            <div className="space-y-4" data-aos="fade-right">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-foreground">{homeData.cta.title}</h2>
+              <p className="text-muted-foreground">{homeData.cta.description}</p>
               <div className="flex flex-col sm:flex-row gap-3">
-                <Button asChild>
-                  <Link href="/contact">Contact Us</Link>
-                </Button>
-                <Button asChild variant="outline">
-                  <Link href="/rentals">Instrument Rentals</Link>
-                </Button>
+                {homeData.cta.buttons.map((button, index) => (
+                  <Button key={index} asChild variant={button.variant as any}>
+                    <Link href={button.href}>{button.label}</Link>
+                  </Button>
+                ))}
               </div>
             </div>
-            <div className="relative h-[250px] rounded-lg overflow-hidden">
+            <div className="relative h-[250px] rounded-lg overflow-hidden" data-aos="fade-left">
               <Image
-                src="/placeholder.svg?height=250&width=400"
-                alt="Music instruments"
+                src={homeData.cta.image || "/placeholder.svg"}
+                alt={homeData.cta.imageAlt}
                 fill
                 className="object-cover"
               />

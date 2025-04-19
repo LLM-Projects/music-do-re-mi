@@ -11,7 +11,7 @@ export default function RentalsPage() {
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-rose-100 to-rose-50 opacity-70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-rose-100 to-rose-50 opacity-70 dark:from-rose-950 dark:to-slate-900 dark:opacity-90" />
         <div className="container relative py-16 md:py-24">
           <div className="max-w-3xl">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">Instrument Rentals</h1>

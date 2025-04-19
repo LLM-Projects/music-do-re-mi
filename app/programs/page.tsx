@@ -1,20 +1,30 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function ProgramsPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-rose-100 to-rose-50 opacity-70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-rose-100 to-rose-50 opacity-70 dark:from-rose-950 dark:to-slate-900 dark:opacity-90" />
         <div className="container relative py-16 md:py-24">
           <div className="max-w-3xl">
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">Programs & Faculty</h1>
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">
+              Programs & Faculty
+            </h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              Explore our diverse music programs and meet our expert instructors.
+              Explore our diverse music programs and meet our expert
+              instructors.
             </p>
           </div>
         </div>
@@ -38,42 +48,48 @@ export default function ProgramsPage() {
               {[
                 {
                   title: "Piano Lessons",
-                  description: "Master the keyboard with our comprehensive piano curriculum for all ages and levels.",
+                  description:
+                    "Master the keyboard with our comprehensive piano curriculum for all ages and levels.",
                   image: "/placeholder.svg?height=200&width=300",
                   levels: "Beginner to Advanced",
                   ages: "5+ years",
                 },
                 {
                   title: "Guitar & Strings",
-                  description: "From classical to rock, learn to play string instruments with confidence and style.",
+                  description:
+                    "From classical to rock, learn to play string instruments with confidence and style.",
                   image: "/placeholder.svg?height=200&width=300",
                   levels: "Beginner to Advanced",
                   ages: "7+ years",
                 },
                 {
                   title: "Voice Training",
-                  description: "Develop your vocal technique and performance skills with expert coaches.",
+                  description:
+                    "Develop your vocal technique and performance skills with expert coaches.",
                   image: "/placeholder.svg?height=200&width=300",
                   levels: "Beginner to Advanced",
                   ages: "8+ years",
                 },
                 {
                   title: "Woodwinds & Brass",
-                  description: "Explore the rich sounds of wind instruments with specialized instruction.",
+                  description:
+                    "Explore the rich sounds of wind instruments with specialized instruction.",
                   image: "/placeholder.svg?height=200&width=300",
                   levels: "Beginner to Advanced",
                   ages: "9+ years",
                 },
                 {
                   title: "Music Theory",
-                  description: "Build a strong foundation in music theory to enhance your musical understanding.",
+                  description:
+                    "Build a strong foundation in music theory to enhance your musical understanding.",
                   image: "/placeholder.svg?height=200&width=300",
                   levels: "All Levels",
                   ages: "8+ years",
                 },
                 {
                   title: "Percussion",
-                  description: "From drums to marimba, discover the exciting world of percussion instruments.",
+                  description:
+                    "From drums to marimba, discover the exciting world of percussion instruments.",
                   image: "/placeholder.svg?height=200&width=300",
                   levels: "Beginner to Advanced",
                   ages: "6+ years",
@@ -95,10 +111,12 @@ export default function ProgramsPage() {
                   <CardContent>
                     <div className="grid grid-cols-2 gap-2 text-sm">
                       <div>
-                        <span className="font-semibold">Ages:</span> {program.ages}
+                        <span className="font-semibold">Ages:</span>{" "}
+                        {program.ages}
                       </div>
                       <div>
-                        <span className="font-semibold">Levels:</span> {program.levels}
+                        <span className="font-semibold">Levels:</span>{" "}
+                        {program.levels}
                       </div>
                     </div>
                   </CardContent>
@@ -117,19 +135,22 @@ export default function ProgramsPage() {
               {[
                 {
                   title: "Early Childhood Music",
-                  description: "Interactive music classes for young children to develop rhythm, singing, and movement.",
+                  description:
+                    "Interactive music classes for young children to develop rhythm, singing, and movement.",
                   image: "/placeholder.svg?height=200&width=300",
                   ages: "3-6 years",
                 },
                 {
                   title: "Piano for Kids",
-                  description: "Child-friendly piano lessons using games and activities to build foundational skills.",
+                  description:
+                    "Child-friendly piano lessons using games and activities to build foundational skills.",
                   image: "/placeholder.svg?height=200&width=300",
                   ages: "5-12 years",
                 },
                 {
                   title: "Strings for Young Players",
-                  description: "Introduction to violin, viola, and cello with age-appropriate methods.",
+                  description:
+                    "Introduction to violin, viola, and cello with age-appropriate methods.",
                   image: "/placeholder.svg?height=200&width=300",
                   ages: "7-12 years",
                 },
@@ -149,7 +170,8 @@ export default function ProgramsPage() {
                   </CardHeader>
                   <CardContent>
                     <div className="text-sm">
-                      <span className="font-semibold">Ages:</span> {program.ages}
+                      <span className="font-semibold">Ages:</span>{" "}
+                      {program.ages}
                     </div>
                   </CardContent>
                   <CardFooter>
@@ -167,13 +189,15 @@ export default function ProgramsPage() {
               {[
                 {
                   title: "Teen Rock Band",
-                  description: "Form bands, write songs, and perform rock and pop music with other teen musicians.",
+                  description:
+                    "Form bands, write songs, and perform rock and pop music with other teen musicians.",
                   image: "/placeholder.svg?height=200&width=300",
                   ages: "13-18 years",
                 },
                 {
                   title: "Advanced Instrumental Studies",
-                  description: "Intensive training for dedicated teen musicians preparing for college auditions.",
+                  description:
+                    "Intensive training for dedicated teen musicians preparing for college auditions.",
                   image: "/placeholder.svg?height=200&width=300",
                   ages: "13-18 years",
                 },
@@ -200,7 +224,8 @@ export default function ProgramsPage() {
                   </CardHeader>
                   <CardContent>
                     <div className="text-sm">
-                      <span className="font-semibold">Ages:</span> {program.ages}
+                      <span className="font-semibold">Ages:</span>{" "}
+                      {program.ages}
                     </div>
                   </CardContent>
                   <CardFooter>
@@ -218,19 +243,22 @@ export default function ProgramsPage() {
               {[
                 {
                   title: "Adult Beginners",
-                  description: "It's never too late to start! Specially designed lessons for adult beginners.",
+                  description:
+                    "It's never too late to start! Specially designed lessons for adult beginners.",
                   image: "/placeholder.svg?height=200&width=300",
                   ages: "18+ years",
                 },
                 {
                   title: "Adult Choir",
-                  description: "Join our community choir and experience the joy of singing in harmony.",
+                  description:
+                    "Join our community choir and experience the joy of singing in harmony.",
                   image: "/placeholder.svg?height=200&width=300",
                   ages: "18+ years",
                 },
                 {
                   title: "Returning Musicians",
-                  description: "Refresh your skills and rediscover your passion for music after a break.",
+                  description:
+                    "Refresh your skills and rediscover your passion for music after a break.",
                   image: "/placeholder.svg?height=200&width=300",
                   ages: "18+ years",
                 },
@@ -250,7 +278,8 @@ export default function ProgramsPage() {
                   </CardHeader>
                   <CardContent>
                     <div className="text-sm">
-                      <span className="font-semibold">Ages:</span> {program.ages}
+                      <span className="font-semibold">Ages:</span>{" "}
+                      {program.ages}
                     </div>
                   </CardContent>
                   <CardFooter>
@@ -268,19 +297,22 @@ export default function ProgramsPage() {
               {[
                 {
                   title: "Chamber Music",
-                  description: "Small ensemble playing for strings, winds, and piano in various combinations.",
+                  description:
+                    "Small ensemble playing for strings, winds, and piano in various combinations.",
                   image: "/placeholder.svg?height=200&width=300",
                   ages: "All ages",
                 },
                 {
                   title: "Youth Orchestra",
-                  description: "Full orchestra experience for young musicians to develop ensemble skills.",
+                  description:
+                    "Full orchestra experience for young musicians to develop ensemble skills.",
                   image: "/placeholder.svg?height=200&width=300",
                   ages: "10-18 years",
                 },
                 {
                   title: "Jazz Ensemble",
-                  description: "Learn improvisation and jazz styles in a collaborative ensemble setting.",
+                  description:
+                    "Learn improvisation and jazz styles in a collaborative ensemble setting.",
                   image: "/placeholder.svg?height=200&width=300",
                   ages: "All ages",
                 },
@@ -300,7 +332,8 @@ export default function ProgramsPage() {
                   </CardHeader>
                   <CardContent>
                     <div className="text-sm">
-                      <span className="font-semibold">Ages:</span> {program.ages}
+                      <span className="font-semibold">Ages:</span>{" "}
+                      {program.ages}
                     </div>
                   </CardContent>
                   <CardFooter>
@@ -318,7 +351,9 @@ export default function ProgramsPage() {
       {/* Faculty Section */}
       <section className="bg-slate-50 py-12 md:py-16">
         <div className="container">
-          <h2 className="text-3xl font-bold tracking-tighter text-center mb-8">Meet Our Faculty</h2>
+          <h2 className="text-3xl font-bold tracking-tighter text-center mb-8 text-foreground">
+            Meet Our Faculty
+          </h2>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {[
               {
@@ -370,9 +405,17 @@ export default function ProgramsPage() {
                 image: "/placeholder.svg?height=300&width=300",
               },
             ].map((faculty, index) => (
-              <div key={index} className="bg-white rounded-lg overflow-hidden border">
+              <div
+                key={index}
+                className="bg-white rounded-lg overflow-hidden border"
+              >
                 <div className="relative h-[250px]">
-                  <Image src={faculty.image || "/placeholder.svg"} alt={faculty.name} fill className="object-cover" />
+                  <Image
+                    src={faculty.image || "/placeholder.svg"}
+                    alt={faculty.name}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div className="p-4">
                   <h3 className="text-lg font-semibold">{faculty.name}</h3>
@@ -388,9 +431,12 @@ export default function ProgramsPage() {
       {/* CTA Section */}
       <section className="container py-12 md:py-16">
         <div className="bg-rose-50 rounded-lg p-8 text-center">
-          <h2 className="text-2xl font-bold mb-4">Ready to Start Your Musical Journey?</h2>
+          <h2 className="text-2xl font-bold mb-4">
+            Ready to Start Your Musical Journey?
+          </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
-            Contact us today to schedule a free consultation and learn more about our programs.
+            Contact us today to schedule a free consultation and learn more
+            about our programs.
           </p>
           <Button asChild size="lg">
             <Link href="/contact">Contact Us</Link>
@@ -398,5 +444,5 @@ export default function ProgramsPage() {
         </div>
       </section>
     </div>
-  )
+  );
 }
