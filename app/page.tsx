@@ -21,21 +21,22 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-rose-100 to-rose-50 opacity-70 dark:from-rose-950 dark:to-slate-900 dark:opacity-90" />
 
-        {/* Animated music notes */}
+        {/* Enhanced animated music notes */}
         <div className="absolute inset-0 overflow-hidden">
-          {[...Array(15)].map((_, i) => (
+          {[...Array(25)].map((_, i) => (
             <div
               key={i}
-              className="absolute animate-float text-rose-300 dark:text-rose-600 opacity-30"
+              className="absolute animate-float text-rose-300 dark:text-rose-600 opacity-40"
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
-                fontSize: `${Math.random() * 20 + 14}px`,
+                fontSize: `${Math.random() * 30 + 20}px`,
                 animationDelay: `${Math.random() * 10}s`,
-                animationDuration: `${15 + Math.random() * 15}s`,
+                animationDuration: `${10 + Math.random() * 10}s`,
+                transform: `rotate(${Math.random() * 360}deg)`,
               }}
             >
-              {["♪", "♫", "♩", "♬", "🎵", "🎶"][Math.floor(Math.random() * 6)]}
+              {["♪", "♫", "♩", "♬", "🎵", "🎶", "♭", "♮", "♯"][Math.floor(Math.random() * 9)]}
             </div>
           ))}
         </div>
@@ -61,6 +62,7 @@ export default function Home() {
                 asChild
                 size="lg"
                 variant={button.variant as any}
+                className="transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
               >
                 <Link href={button.href}>{button.label}</Link>
               </Button>
@@ -71,19 +73,20 @@ export default function Home() {
 
       {/* Features Section */}
       <section className="container py-16 md:py-24 relative overflow-hidden">
-        {/* Animated bubbles */}
+        {/* Enhanced animated bubbles */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          {[...Array(8)].map((_, i) => (
+          {[...Array(12)].map((_, i) => (
             <div
               key={i}
-              className="absolute rounded-full bg-rose-100 dark:bg-rose-900/30 animate-float-slow opacity-30"
+              className="absolute rounded-full bg-rose-100 dark:bg-rose-900/30 animate-float-slow opacity-40"
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
-                width: `${Math.random() * 60 + 20}px`,
-                height: `${Math.random() * 60 + 20}px`,
+                width: `${Math.random() * 80 + 20}px`,
+                height: `${Math.random() * 80 + 20}px`,
                 animationDelay: `${Math.random() * 5}s`,
-                animationDuration: `${20 + Math.random() * 20}s`,
+                animationDuration: `${15 + Math.random() * 15}s`,
+                transform: `rotate(${Math.random() * 360}deg)`,
               }}
             />
           ))}
@@ -93,7 +96,7 @@ export default function Home() {
           {homeData.features.map((feature: any, index: any) => (
             <Card
               key={index}
-              className="group transition-all duration-300 hover:shadow-lg bg-background border-border"
+              className="group transition-all duration-300 hover:shadow-lg hover:scale-105 bg-background border-border"
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
@@ -130,7 +133,7 @@ export default function Home() {
 
       {/* About Preview Section */}
       <section className="bg-slate-50 dark:bg-slate-900 py-16 md:py-24 relative overflow-hidden">
-        {/* Wave animation */}
+        {/* Enhanced wave animation */}
         <div className="absolute inset-x-0 bottom-0 h-20 pointer-events-none">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -139,13 +142,13 @@ export default function Home() {
           >
             <path
               fill="currentColor"
-              fillOpacity="0.1"
+              fillOpacity="0.2"
               className="text-rose-200 dark:text-rose-800"
               d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,261.3C960,256,1056,224,1152,197.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
             >
               <animate
                 attributeName="d"
-                dur="10s"
+                dur="8s"
                 repeatCount="indefinite"
                 values="
                   M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,261.3C960,256,1056,224,1152,197.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
@@ -154,6 +157,21 @@ export default function Home() {
               />
             </path>
           </svg>
+        </div>
+
+        {/* Added music staff lines animation */}
+        <div className="absolute inset-0 pointer-events-none opacity-20">
+          {[...Array(5)].map((_, i) => (
+            <div
+              key={i}
+              className="absolute w-full h-[2px] bg-rose-200 dark:bg-rose-800"
+              style={{
+                top: `${20 + i * 15}%`,
+                transform: `rotate(${Math.random() * 2 - 1}deg)`,
+                animation: `staffLine 3s ease-in-out ${i * 0.2}s infinite alternate`,
+              }}
+            />
+          ))}
         </div>
 
         <div className="container relative z-10">
@@ -165,22 +183,27 @@ export default function Home() {
               <p className="text-muted-foreground">
                 {homeData.about.description}
               </p>
-              <Button asChild variant="outline">
+              <Button 
+                asChild 
+                variant="outline"
+                className="transform transition-all duration-300 hover:scale-105 hover:shadow-md"
+              >
                 <Link href={homeData.about.cta.href}>
                   {homeData.about.cta.label}
                 </Link>
               </Button>
             </div>
             <div
-              className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden"
+              className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden group"
               data-aos="fade-left"
             >
               <Image
                 src={homeData.about.image || "/placeholder.svg"}
                 alt={homeData.about.imageAlt}
                 fill
-                className="object-cover"
+                className="object-cover transition-transform duration-700 group-hover:scale-110"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
           </div>
         </div>
@@ -188,17 +211,37 @@ export default function Home() {
 
       {/* Programs Preview */}
       <section className="container py-16 md:py-24 relative overflow-hidden">
-        {/* Animated staff lines */}
+        {/* Enhanced animated staff lines */}
         <div className="absolute inset-0 pointer-events-none">
-          {[...Array(5)].map((_, i) => (
+          {[...Array(8)].map((_, i) => (
             <div
               key={i}
-              className="absolute w-full h-[1px] bg-rose-100 dark:bg-rose-900/30"
+              className="absolute w-full h-[2px] bg-rose-100 dark:bg-rose-900/30"
               style={{
-                top: `${20 + i * 15}%`,
+                top: `${15 + i * 10}%`,
                 transform: `rotate(${Math.random() * 2 - 1}deg)`,
+                animation: `staffLine 4s ease-in-out ${i * 0.3}s infinite alternate`,
               }}
             />
+          ))}
+        </div>
+
+        {/* Floating music notes */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          {[...Array(10)].map((_, i) => (
+            <div
+              key={i}
+              className="absolute animate-float text-rose-200 dark:text-rose-800/30 opacity-30"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                fontSize: `${Math.random() * 20 + 10}px`,
+                animationDelay: `${Math.random() * 5}s`,
+                animationDuration: `${10 + Math.random() * 10}s`,
+              }}
+            >
+              {["♪", "♫", "♩", "♬"][Math.floor(Math.random() * 4)]}
+            </div>
           ))}
         </div>
 
@@ -214,7 +257,7 @@ export default function Home() {
           {homeData.programs.items.map((program: any, index: any) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-lg transform transition-transform hover:scale-[1.02]"
+              className="group relative overflow-hidden rounded-lg transform transition-all duration-500 hover:scale-[1.03] hover:shadow-xl"
               data-aos="zoom-in"
               data-aos-delay={index * 100}
             >
@@ -223,11 +266,11 @@ export default function Home() {
                   src={program.image || "/placeholder.svg"}
                   alt={program.title}
                   fill
-                  className="object-cover transition-transform group-hover:scale-105"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors" />
+                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors duration-300" />
               </div>
-              <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+              <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform transition-transform duration-300 group-hover:translate-y-[-5px]">
                 <h3 className="text-xl font-semibold">{program.title}</h3>
                 <p className="mt-1 text-sm text-white/90">
                   {program.description}
@@ -237,7 +280,10 @@ export default function Home() {
           ))}
         </div>
         <div className="mt-10 text-center relative z-10" data-aos="fade-up">
-          <Button asChild>
+          <Button 
+            asChild
+            className="transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
+          >
             <Link href={homeData.programs.cta.href}>
               {homeData.programs.cta.label}
             </Link>
@@ -247,17 +293,19 @@ export default function Home() {
 
       {/* Testimonials */}
       <section className="bg-rose-50 dark:bg-rose-950/20 py-16 md:py-24 relative overflow-hidden">
-        {/* Animated musical symbols */}
+        {/* Enhanced animated musical symbols */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          {[...Array(10)].map((_, i) => (
+          {[...Array(15)].map((_, i) => (
             <div
               key={i}
-              className="absolute text-rose-200 dark:text-rose-800/30 opacity-30"
+              className="absolute text-rose-200 dark:text-rose-800/30 opacity-40"
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
                 fontSize: `${Math.random() * 30 + 20}px`,
                 transform: `rotate(${Math.random() * 360}deg)`,
+                animation: `floatSymbol ${15 + Math.random() * 15}s linear infinite`,
+                animationDelay: `${Math.random() * 10}s`,
               }}
             >
               {
@@ -279,12 +327,12 @@ export default function Home() {
             {homeData.testimonials.items.map((testimonial: any, index: any) => (
               <Card
                 key={index}
-                className="bg-background border-border"
+                className="bg-background border-border transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
               >
                 <CardContent className="pt-6">
-                  <div className="mb-4">
+                  <div className="mb-4 animate-pulse">
                     <Award className="h-8 w-8 text-rose-400" />
                   </div>
                   <blockquote className="text-muted-foreground italic mb-4">
@@ -308,8 +356,8 @@ export default function Home() {
       {/* CTA Section */}
       <section className="container py-16 md:py-24">
         <div className="rounded-lg bg-slate-50 dark:bg-slate-900 p-8 md:p-12 relative overflow-hidden">
-          {/* Animated wave background */}
-          <div className="absolute inset-0 opacity-10 pointer-events-none">
+          {/* Enhanced animated wave background */}
+          <div className="absolute inset-0 opacity-20 pointer-events-none">
             <svg
               viewBox="0 0 1000 1000"
               xmlns="http://www.w3.org/2000/svg"
@@ -321,7 +369,7 @@ export default function Home() {
               >
                 <animate
                   attributeName="d"
-                  dur="20s"
+                  dur="15s"
                   repeatCount="indefinite"
                   values="
                     M0,500 C150,400 350,300 500,500 C650,700 850,600 1000,500 L1000,1000 L0,1000 Z;
@@ -330,6 +378,25 @@ export default function Home() {
                 />
               </path>
             </svg>
+          </div>
+
+          {/* Added floating music notes */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            {[...Array(8)].map((_, i) => (
+              <div
+                key={i}
+                className="absolute animate-float text-rose-300 dark:text-rose-700/30 opacity-30"
+                style={{
+                  left: `${Math.random() * 100}%`,
+                  top: `${Math.random() * 100}%`,
+                  fontSize: `${Math.random() * 20 + 10}px`,
+                  animationDelay: `${Math.random() * 5}s`,
+                  animationDuration: `${10 + Math.random() * 10}s`,
+                }}
+              >
+                {["♪", "♫", "♩", "♬"][Math.floor(Math.random() * 4)]}
+              </div>
+            ))}
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 items-center relative z-10">
@@ -342,22 +409,28 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 {homeData.cta.buttons.map((button: any, index: any) => (
-                  <Button key={index} asChild variant={button.variant as any}>
+                  <Button 
+                    key={index} 
+                    asChild 
+                    variant={button.variant as any}
+                    className="transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                  >
                     <Link href={button.href}>{button.label}</Link>
                   </Button>
                 ))}
               </div>
             </div>
             <div
-              className="relative h-[250px] rounded-lg overflow-hidden"
+              className="relative h-[250px] rounded-lg overflow-hidden group"
               data-aos="fade-left"
             >
               <Image
                 src={homeData.cta.image || "/placeholder.svg"}
                 alt={homeData.cta.imageAlt}
                 fill
-                className="object-cover"
+                className="object-cover transition-transform duration-700 group-hover:scale-110"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
           </div>
         </div>
