@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -10,7 +12,9 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { MapPin, CalendarDays, Clock } from "lucide-react";
 import { programsData } from "@/data/programs";
+import { useState } from "react";
 
 export default function ProgramsPage() {
   return (
@@ -30,12 +34,15 @@ export default function ProgramsPage() {
         </div>
       </section>
 
-      {/* Programs Tabs */}
+      {/* Faculty Section */}
       <section className="container py-12 md:py-16">
-        <Tabs defaultValue="all" className="w-full">
+        <h2 className="text-3xl font-bold tracking-tighter text-center mb-8 text-foreground">
+          {programsData.faculty.title}
+        </h2>
+        <Tabs defaultValue="piano" className="w-full">
           <div className="flex justify-center mb-8">
             <TabsList>
-              {programsData.programs.categories.map((category) => (
+              {programsData.faculty.categories.map((category) => (
                 <TabsTrigger key={category.name} value={category.name}>
                   {category.label}
                 </TabsTrigger>
@@ -43,73 +50,91 @@ export default function ProgramsPage() {
             </TabsList>
           </div>
 
-          {programsData.programs.categories.map((category) => (
-            <TabsContent key={category.name} value={category.name} className="space-y-8">
+          {programsData.faculty.categories.map((category) => (
+            <TabsContent
+              key={category.name}
+              value={category.name}
+              className="space-y-8"
+            >
               <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                {category.items.map((program, index) => (
-                  <Card key={index} className="overflow-hidden">
-                    <div className="relative h-[200px]">
-                      <Image
-                        src={program.image || "/placeholder.svg"}
-                        alt={program.title}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                    <CardHeader>
-                      <CardTitle>{program.title}</CardTitle>
-                      <CardDescription>{program.description}</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="text-sm">
-                        <span className="font-semibold">Ages:</span>{" "}
-                        {program.ages}
-                        {'levels' in program && program.levels && (
-                          <>
-                            <br />
-                            <span className="font-semibold">Levels:</span>{" "}
-                            {program.levels}
-                          </>
-                        )}
+                {category.items.map((person, index) => {
+                  const [isExpanded, setIsExpanded] = useState(false);
+                  const content = person.content;
+                  const truncatedContent =
+                    content.length > 150
+                      ? content.substring(0, 150) + "..."
+                      : content;
+
+                  return (
+                    <Card key={index} className="overflow-hidden">
+                      <div className="relative h-[200px]">
+                        <Image
+                          src={person.image || "/placeholder.svg"}
+                          alt={person.title}
+                          fill
+                          className="object-cover"
+                        />
                       </div>
-                    </CardContent>
-                    <CardFooter>
-                      <Button variant="outline" className="w-full">
-                        Learn More
-                      </Button>
-                    </CardFooter>
-                  </Card>
-                ))}
+                      <CardHeader>
+                        <CardTitle>{person.title}</CardTitle>
+                        <CardDescription></CardDescription>
+                      </CardHeader>
+                      <CardContent>
+                        <p>{isExpanded ? content : truncatedContent}</p>
+                        {content.length > 150 && (
+                          <Button
+                            variant="link"
+                            className="p-0 h-auto font-normal"
+                            onClick={() => setIsExpanded(!isExpanded)}
+                          >
+                            {isExpanded ? "Read less" : "Read more"}
+                          </Button>
+                        )}
+                      </CardContent>
+                    </Card>
+                  );
+                })}
               </div>
             </TabsContent>
           ))}
         </Tabs>
       </section>
 
-      {/* Faculty Section */}
-      <section className="bg-slate-50 py-12 md:py-16">
+      {/* Events Section */}
+      <section className="bg-slate-50 dark:bg-slate-900 py-12 md:py-16">
+        <h2 className="text-3xl font-bold tracking-tighter text-center mb-8 text-foreground">
+          {programsData.events.title}
+        </h2>
         <div className="container">
-          <h2 className="text-3xl font-bold tracking-tighter text-center mb-8 text-foreground">
-            {programsData.faculty.title}
-          </h2>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {programsData.faculty.items.map((faculty, index) => (
+          <div className="grid gap-8 sm:grid-cols-2">
+            {programsData.events.items.map((event, index) => (
               <div
                 key={index}
-                className="bg-white rounded-lg overflow-hidden border"
+                className="bg-white dark:bg-slate-800 rounded-lg overflow-hidden border dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow"
               >
-                <div className="relative h-[250px]">
+                <div className="relative h-[300px]">
                   <Image
-                    src={faculty.image || "/placeholder.svg"}
-                    alt={faculty.name}
+                    src={event.image || "/placeholder.svg"}
+                    alt={event.name}
                     fill
                     className="object-cover"
                   />
                 </div>
-                <div className="p-4">
-                  <h3 className="text-lg font-semibold">{faculty.name}</h3>
-                  <p className="text-rose-500 text-sm mb-2">{faculty.title}</p>
-                  <p className="text-sm text-muted-foreground">{faculty.bio}</p>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold">{event.name}</h3>
+                  <div className="flex items-center gap-2 mb-2">
+                    <MapPin className="h-4 w-4 text-rose-500" />
+                    <p className="text-base text-rose-500 dark:text-rose-400">{event.location}</p>
+                  </div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <CalendarDays className="h-4 w-4 text-rose-500" />
+                    <p className="text-base text-muted-foreground">{event.date}</p>
+                  </div>
+                  <div className="flex items-center gap-2 mb-4">
+                    <Clock className="h-4 w-4 text-rose-500" />
+                    <p className="text-base text-muted-foreground">{event.time}</p>
+                  </div>
+                  <p className="text-base text-muted-foreground">{event.bio}</p>
                 </div>
               </div>
             ))}
@@ -119,10 +144,8 @@ export default function ProgramsPage() {
 
       {/* CTA Section */}
       <section className="container py-12 md:py-16">
-        <div className="bg-rose-50 rounded-lg p-8 text-center">
-          <h2 className="text-2xl font-bold mb-4">
-            {programsData.cta.title}
-          </h2>
+        <div className="bg-rose-50 dark:bg-rose-950/20 rounded-lg p-8 text-center">
+          <h2 className="text-2xl font-bold mb-4">{programsData.cta.title}</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
             {programsData.cta.description}
           </p>

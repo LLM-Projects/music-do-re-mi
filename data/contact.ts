@@ -9,33 +9,32 @@ export const contactData = {
         icon: "MapPin",
         title: "Visit Us",
         content: [
-          "123 Music Avenue",
-          "Harmony City, HC 12345",
+          "10475 Medlock Bridge Road,",
+          "Street 101 Duluth,",
+          "GA 30097",
         ],
       },
       {
         icon: "Phone",
         title: "Call Us",
         content: [
-          "(555) 123-4567",
-          "Toll-free: (800) 765-4321",
+          "347-399-1924",
         ],
       },
       {
         icon: "Mail",
         title: "Email Us",
         content: [
-          "info@musicdoremi.com",
-          "admissions@musicdoremi.com",
+          "musicdoremi@myyahoo.com"
         ],
       },
       {
         icon: "Clock",
         title: "Hours",
         content: [
-          "Monday - Friday: 9am - 8pm",
-          "Saturday: 9am - 5pm",
-          "Sunday: Closed",
+          "Weekdays: 2PM - 7PM",
+          "Saturday: 9AM - 5PM",
+          "Sunday: 9AM - 12PM",
         ],
       },
     ],

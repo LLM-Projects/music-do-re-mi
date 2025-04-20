@@ -8,7 +8,6 @@ export const siteConfig = {
 
 // Navigation
 export const navigationLinks = [
-  { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/programs", label: "Programs" },
   { href: "/virtual-keyboard", label: "Virtual Piano" },
@@ -52,7 +51,7 @@ export const footerData = {
     { label: "Instrument Rentals", href: "/rentals" },
   ],
   contactInfo: {
-    address: "10475, Medlock Bridge Road",
+    address: "10475 Medlock Bridge Road, Street 101 Duluth, GA 30097",
     phone: "347-399-192",
     email: "musicdoremi@myyahoo.com",
   },
