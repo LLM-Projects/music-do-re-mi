@@ -15,8 +15,13 @@ export const aboutData = {
     mission: {
         title: "Our Mission",
         content: [
-            "At Music Do Re Mi, we believe that music education is a vital component of a well-rounded life. Our mission is to nurture musical talent, foster creativity, and build community through exceptional music education that is accessible, engaging, and inspiring.",
-            "We strive to create an inclusive environment where students can discover their unique musical voice, develop technical proficiency, and experience the joy of making music together.",
+            "Whether you're a beginner looking to start your musical journey or a seasoned player searching for quality gear, we got you covered.",
+            "At Music Do Re Mi, we offer a wide range of instrument rentals to make learning and playing more accessible.",
+            "Whether you need an instrument for school, a short-term event, or just want to try something new, our flexible rental options ensure you have what you need without a long-term commitment.",
+            "We also provide music lessons for all ages and skill levels.",
+            "Our experienced instructors are passionate about helping you grow, whether you’re picking up an instrument for the first time or refining advanced techniques.",
+            "We tailor our lessons to fit your goals, ensuring a fun and productive learning experience."
+
         ],
     },
     values: {
@@ -46,7 +51,7 @@ export const aboutData = {
     },
     facilities: {
         title: "Our Facilities",
-        image: "/placeholder.svg?height=400&width=600",
+        image: "https://s3-media0.fl.yelpcdn.com/bphoto/ReG7zdFnWMglstHGfQSI1g/o.jpg",
         imageAlt: "Music Do Re Mi facilities",
         items: [
             {
