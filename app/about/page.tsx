@@ -86,11 +86,16 @@ export default function AboutPage() {
                 : Music;
 
             return (
-              <div key={index} className="bg-background p-6 rounded-lg border border-border">
+              <div
+                key={index}
+                className="bg-background p-6 rounded-lg border border-border"
+              >
                 <div className="mb-4">
                   <IconComponent className="h-8 w-8 text-rose-500" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-foreground">{value.title}</h3>
+                <h3 className="text-xl font-semibold mb-2 text-foreground">
+                  {value.title}
+                </h3>
                 <p className="text-muted-foreground">{value.description}</p>
               </div>
             );
