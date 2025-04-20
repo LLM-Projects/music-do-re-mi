@@ -39,7 +39,7 @@ export const homeData = {
     description:
       "For over 15 years, Music Do Re Mi has been a cornerstone of musical education in our community. Our school combines traditional teaching methods with innovative approaches to inspire students of all ages and abilities.",
     cta: { label: "About Us", href: "/about" },
-    image: "/placeholder.svg?height=400&width=600",
+    image: "https://s3-media0.fl.yelpcdn.com/bphoto/AnpptvwrdW3WtYNq9b7Ytw/o.jpg",
     imageAlt: "Music students in a class",
   },
   programs: {
@@ -51,19 +51,19 @@ export const homeData = {
         title: "Piano Lessons",
         description:
           "Master the keyboard with our comprehensive piano curriculum.",
-        image: "/placeholder.svg?height=200&width=300",
+        image: "https://s3-media0.fl.yelpcdn.com/bphoto/tPLiSWyRgH67scV6q4XR5Q/o.jpg",
       },
       {
-        title: "Guitar & Strings",
+        title: "Violin/Viola Lessons",
         description:
           "From classical to rock, learn to play string instruments with confidence.",
-        image: "/placeholder.svg?height=200&width=300",
+        image: "https://s3-media0.fl.yelpcdn.com/bphoto/RUuM27ljarUqeRP23uJ_nw/o.jpg",
       },
       {
-        title: "Voice Training",
+        title: "Others",
         description:
-          "Develop your vocal technique and performance skills with expert coaches.",
-        image: "/placeholder.svg?height=200&width=300",
+          "We offer a wide range of other music lessons, including guitar, and more.",
+        image: "https://s3-media0.fl.yelpcdn.com/bphoto/aFKhZjg9edUKJsAEMxGjCA/o.jpg",
       },
     ],
     cta: { label: "View All Programs", href: "/programs" },
@@ -99,7 +99,7 @@ export const homeData = {
       { label: "Contact Us", href: "/contact", variant: "default" },
       { label: "Instrument Rentals", href: "/rentals", variant: "outline" },
     ],
-    image: "/placeholder.svg?height=250&width=400",
+    image: "https://s3-media0.fl.yelpcdn.com/bphoto/zad8YaSh8QTlBp7HuzeQfA/o.jpg",
     imageAlt: "Music instruments",
   },
 };

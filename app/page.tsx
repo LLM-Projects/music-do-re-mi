@@ -19,7 +19,18 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-rose-100 to-rose-50 opacity-70 dark:from-rose-950 dark:to-slate-900 dark:opacity-90" />
+        {/* Background Image */}
+        <div className="absolute inset-4">
+          <Image
+            src="https://s3-media0.fl.yelpcdn.com/bphoto/UMQ_tegNVXiEpk1cxzznDQ/o.jpg"
+            alt="Hero background"
+            fill
+            className="object-cover opacity-85"
+            priority
+          />
+        </div>
+
+        <div className="absolute inset-0 bg-gradient-to-r from-rose-100 to-rose-50 opacity-70 dark:from-rose-950 dark:to-slate-900 dark:opacity-90 mix-blend-overlay" />
 
         {/* Enhanced animated music notes */}
         <div className="absolute inset-0 overflow-hidden">

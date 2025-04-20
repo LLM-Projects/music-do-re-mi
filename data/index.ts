@@ -38,7 +38,7 @@ export const specialOfferData = {
 // Footer data
 export const footerData = {
   description:
-    "Inspiring musical excellence since 2005. We provide quality music education for students of all ages and abilities.",
+    "Inspiring musical excellence. We provide quality music education for students of all ages and abilities.",
   socialLinks: [
     { name: "Facebook", href: "#" },
     { name: "Instagram", href: "#" },
@@ -52,9 +52,9 @@ export const footerData = {
     { label: "Instrument Rentals", href: "/rentals" },
   ],
   contactInfo: {
-    address: "123 Music Avenue, Harmony City",
-    phone: "(555) 123-4567",
-    email: "info@musicdoremi.com",
+    address: "10475, Medlock Bridge Road",
+    phone: "347-399-192",
+    email: "musicdoremi@myyahoo.com",
   },
 };
 
