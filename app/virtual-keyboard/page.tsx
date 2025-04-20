@@ -133,8 +133,15 @@ export default function VirtualKeyboardPage() {
 
   // Calculate black key position
   const getBlackKeyPosition = (index: number) => {
-    const whiteKeysBefore = KEYS.filter((k, i) => !k.isBlack && i < index).length
-    return `calc(${whiteKeysBefore * 100}% - ${18}px)`
+    const key = KEYS[index]
+    const prevWhiteKey = KEYS.filter(k => !k.isBlack)[KEYS.filter(k => !k.isBlack).findIndex(k => 
+      k.note === key.note.replace('#', '') && k.octave === key.octave
+    )]
+    const prevWhiteKeyIndex = KEYS.findIndex(k => k === prevWhiteKey)
+    const whiteKeyWidth = 65 // This should match the CSS variable --white-key-width
+    
+    // Position the black key between the current and next white key
+    return `${(prevWhiteKeyIndex + 1) * whiteKeyWidth - (whiteKeyWidth / 4)}px`
   }
 
   return (
@@ -179,13 +186,13 @@ export default function VirtualKeyboardPage() {
             </div>
           </div>
 
-          <div className="piano-container relative mx-auto">
-            <div className="flex relative">
+          <div className="piano-container">
+            <div className="piano-keyboard">
               {/* White keys */}
-              {KEYS.filter((key) => !key.isBlack).map((key, index) => (
+              {KEYS.filter((key) => !key.isBlack).map((key) => (
                 <div
                   key={`${key.note}${key.octave}`}
-                  className={`piano-key piano-key-white flex items-end justify-center pb-4 select-none ${
+                  className={`piano-key piano-key-white ${
                     activeKeys.has(key.key) ? "piano-key-pressed" : ""
                   }`}
                   onMouseDown={() => playNote(key)}
@@ -197,11 +204,8 @@ export default function VirtualKeyboardPage() {
                   }}
                   onTouchEnd={() => stopNote(key)}
                 >
-                  <div className="text-xs text-gray-500">
-                    <div>
-                      {key.note}
-                      {key.octave}
-                    </div>
+                  <div className="piano-key-label">
+                    <div>{key.note}{key.octave}</div>
                     <div className="mt-1 text-[10px] uppercase">{key.key}</div>
                   </div>
                 </div>
@@ -213,7 +217,7 @@ export default function VirtualKeyboardPage() {
                 return (
                   <div
                     key={`${key.note}${key.octave}`}
-                    className={`piano-key piano-key-black flex items-end justify-center pb-2 select-none ${
+                    className={`piano-key piano-key-black ${
                       activeKeys.has(key.key) ? "piano-key-pressed" : ""
                     }`}
                     style={{ left: getBlackKeyPosition(blackKeyIndex) }}
@@ -226,11 +230,8 @@ export default function VirtualKeyboardPage() {
                     }}
                     onTouchEnd={() => stopNote(key)}
                   >
-                    <div className="text-xs text-gray-300">
-                      <div>
-                        {key.note}
-                        {key.octave}
-                      </div>
+                    <div className="piano-key-label">
+                      <div>{key.note}{key.octave}</div>
                       <div className="mt-1 text-[10px] uppercase">{key.key}</div>
                     </div>
                   </div>

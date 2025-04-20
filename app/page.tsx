@@ -415,7 +415,7 @@ export default function Home() {
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-foreground">
                 {homeData.cta.title}
               </h2>
-              <p className="text-muted-foreground">
+              <p className="text-black dark:text-muted-foreground">
                 {homeData.cta.description}
               </p>
               <div className="flex flex-col sm:flex-row gap-3">

@@ -74,6 +74,11 @@ const config = {
           "90%": { opacity: "0.5" },
           "100%": { transform: "translateY(-100vh) rotate(720deg)", opacity: "0" },
         },
+        "float-slow": {
+          "0%": { transform: "translateY(0) scale(1)", opacity: "0.2" },
+          "50%": { transform: "translateY(-40vh) scale(1.5)", opacity: "0.5" },
+          "100%": { transform: "translateY(-80vh) scale(1)", opacity: "0" },
+        },
         wave: {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-5px)" },
@@ -96,6 +101,7 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         float: "float linear infinite",
+        "float-slow": "float-slow 20s ease-in-out infinite",
         wave: "wave 2s ease-in-out infinite",
         "fade-in": "fade-in 1s ease-out forwards",
         "slide-up": "slide-up 1s ease-out forwards",
