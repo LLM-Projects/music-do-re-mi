@@ -24,14 +24,14 @@ import { contactData } from "./contact";
 
 // Special offer popup data
 export const specialOfferData = {
-  title: "🎵 Summer Special Offer 🎵",
-  discount: "20% OFF",
+  title: "🎵 Rising Starts Student Concert 🎵",
+  details: "Saturday May 10, 2025 (7 - 8:30 PM)",
   description:
-    "Sign up for summer music lessons before July 31st and receive 20% off your first month!",
+    "Northview Auditorium, 10625 Parson Rd, Johns Creek, GA 30097",
   buttonText: "Learn More",
-  buttonLink: "/contact",
+  buttonLink: "/programs",
   footnote:
-    "*Offer valid for new students only. Cannot be combined with other promotions.",
+    "Come learn, perform, and make lasting memories at Music Do Re Mi! 🎶",
 };
 
 // Footer data

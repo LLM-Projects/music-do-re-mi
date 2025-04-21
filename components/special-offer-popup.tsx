@@ -20,19 +20,16 @@ export default function SpecialOfferPopup() {
     // Show popup after 3 seconds
     const timer = setTimeout(() => {
       // Check if user has dismissed the popup before
-      const hasSeenPopup = localStorage.getItem("hasSeenMusicOffer");
-      if (!hasSeenPopup) {
+      if (!isOpen) {
         setIsOpen(true);
       }
-    }, 3000);
+    }, 2500);
 
     return () => clearTimeout(timer);
   }, []);
 
   const handleClose = () => {
     setIsOpen(false);
-    // Set flag in localStorage to not show again in this session
-    localStorage.setItem("hasSeenMusicOffer", "true");
   };
 
   if (!isOpen) return null;
@@ -57,7 +54,7 @@ export default function SpecialOfferPopup() {
         <CardContent className="p-6 pt-8">
           <div className="space-y-4">
             <div className="text-center text-2xl font-bold">
-              {specialOfferData.discount}
+              {specialOfferData.details}
             </div>
             <p className="text-center text-foreground">
               {specialOfferData.description}
