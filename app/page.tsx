@@ -19,15 +19,20 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        {/* Background Image */}
+        {/* Background Video */}
         <div className="absolute inset-4">
-          <Image
-            src="https://s3-media0.fl.yelpcdn.com/bphoto/UMQ_tegNVXiEpk1cxzznDQ/o.jpg"
-            alt="Hero background"
-            fill
-            className="object-cover opacity-85"
-            priority
-          />
+          <video
+            src={homeData.hero.video.src}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="object-cover w-full h-full opacity-85"
+            style={{ pointerEvents: 'none' }}
+          >
+            <source src={homeData.hero.video.src} type={homeData.hero.video.type} />
+            {homeData.hero.video.fallback}
+          </video>
         </div>
 
         <div className="absolute inset-0 bg-gradient-to-r from-rose-100 to-rose-50 opacity-70 dark:from-rose-950 dark:to-slate-900 dark:opacity-90 mix-blend-overlay" />

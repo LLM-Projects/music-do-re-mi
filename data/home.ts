@@ -3,6 +3,11 @@ export const homeData = {
     title: "Discover the Joy of Music",
     description:
       "At Music Do Re Mi, we nurture musical talent through expert instruction, inspiring facilities, and a supportive community.",
+    video: {
+      src: "/assets/hero-dynamic.MOV",
+      type: "video/quicktime",
+      fallback: "Your browser does not support the video tag."
+    },
     cta: [
       { label: "Explore Programs", href: "/programs", variant: "default" },
       { label: "Contact Us", href: "/contact", variant: "outline" },
