@@ -20,7 +20,7 @@ export const programsData = {
             title: "David Chong",
             content:
               "Mr. David Chong has a Bachelors and Masters in violin performance at Georgia State University where he served as Concertmaster with the University Orchestra. During his several decades of teaching, many of his students have auditioned in youth orchestras such as ASYO, ESYO, MYSO, All-State Orchestra and many other youth orchestras as principal and concertmaster; some even performed solos with orchestras. Mr. Chong has performed with many of the orchestras such as Atlanta ballet/pops, Macon, Savannah, Albany, Valdosta, New Atlanta, Lawrenceville, Georgia, Columbus, Dekalb, and many other symphony orchestras not listed. Currently Mr. Chong is serving as concertmaster with New Atlanta, and Lawrenceville Symphony Orchestra..",
-            image: "",
+            image: "assets/faculty/david-chong.jpg",
           },
           {
             title: "Hu Chen",
@@ -37,7 +37,7 @@ export const programsData = {
             title: "Joyce Doyle",
             content:
               "Ms. Joyce Doyal grew up in Chattanooga, Tennessee. She earned her BM from Oberlin Conservatory in Oberlin, Ohio, with a major in piano performance and a minor in organ. During her studies, she participated in a Junior Year Abroad program in Salzburg, Austria, where she studied at the Mozarteum Akademie für Musik und Darstellende Kunst. Ms. Doyal has also lived in Austria and Japan for extended periods. With many years of teaching experience, she has served as a church pianist at several churches. She has taught both group and private lessons for Steinway Piano Co., working with both adults and children. Ms. Doyal is a member of MTNA, NGPT, and NFMC. She is available to teach students of all ages and skill levels, from beginners to advanced pianists.",
-            image: "",
+            image: "assets/faculty/joyce-doyle.png",
           },
           {
             title: "Paul Chen",
@@ -59,7 +59,7 @@ export const programsData = {
           {
             title: "Patty Kuopei Chen",
             content: "I speacialize in Piano.",
-            image: "",
+            image: "assets/faculty/patty-kuopei-chen.JPEG",
           },
         ],
       },
@@ -88,7 +88,7 @@ export const programsData = {
             title: "Marina Dmitriyev",
             content:
               "Marina Dmitriyev has over 40 years of experience teaching Violin and Piano with traditional and Suzuki methods of all levels, beginners through advanced. She earned her degree in Violin Performance and Music Education from Music Conservatory in Saint Petersburg, Russia and received Suzuki Pedagogy training with Mary Cay Neal at SUNY Buffalo, NY. As a professional violinist, she performed with Buffalo Philharmonic Orchestra, Buffalo Opera Company, Western NY Chamber Players, and Gwinnett Symphony orchestra in Georgia. She is a member of Suzuki Association of Americas and NY State Music Teacher Association. Her philosophy is that the gift of music is for everyone and strives to bring out the best in each of her students.",
-            image: "",
+            image: "assets/faculty/marina-dmitriyev.png",
           },
           {
             title: "Annie Hui Lun Hsu",
@@ -126,13 +126,13 @@ export const programsData = {
             title: "Jay Webler",
             content:
               "Mr. Jay Webler performed in Air Force Bands for Ten years. During that time, he studied Music Theory through the Navy School of Music. He studied with the Principal Clarinetist of the Atlanta Ballet for 4 years and has been teaching full time in the Atlanta area for the last 25 years. His students have been accepted at UGA, Kennesaw State, & Indiana University just to name a few. Many of his students have performed in the ASYO, AYWS, MAYWE, and the summer Carnegie Hall Program. Mr. Webler has typically had 8 – 12 students annually in All State for the last 20 years.",
-            image: "",
+            image: "assets/faculty/jay-webler.png",
           },
           {
             title: "Ricardo Silva Ferreira",
             content:
               "With extensive experience as an educator, soloist, chamber musician, and orchestral musician, Dr. Ricardo Ferreira has served as a clarinet professor at Spelman College and a clarinet instructor at Buford City Schools. He worked as a clarinet faculty member at the Federal University of Rio de Janeiro (Brazil) and the University of Georgia Community Music School. During the summer, Dr. Ferreira is a clarinet instructor at the UGA Summer Music Camp and the Music Do-Re-Mi Clarinet Camp. He also has taught at the Londrina Music Festival, Domingos Martins Music Festival in Brazil, Colquitt County High School Band Camp, East Jackson High School Band Camp, and the Youth Middle School Clarinet Clinic. At the age of 20, Ricardo was appointed Principal Clarinet at the Rio de Janeiro Opera Theater Symphony Orchestra, a position he held for over two decades before moving to the United States to further his studies. Throughout his career as an orchestral musician, he has performed with distinguished orchestras in Brazil and abroad. He has played under the direction of renowned conductors such as Kurt Masur, Mstislav Rostropovich, Romano Gandolfi, Erich Bergel, Gustavo Plis-Sterenberg, Hilary Griffiths, Isaac Karabtchevsky, and Roberto Minczuk. Ricardo has performed at prominent events, including the ClarinetFest, El Sistema Clarinet Festival in Venezuela, College Band Directors National Association Conference, UGA Summer Music Camp, Clarinet Academy of America Day Camp, Londrina Music Festival, and Domingos Martins Music Festival. In 2022, he conducted the University of Georgia clarinet choir in its premiere performance. Dr. Ferreira received his Doctorate in Musical Arts from the University of Georgia under the supervision of Dr. D. Ray McClellan.",
-            image: "",
+            image: "assets/faculty/ricardo-silva-ferreira.jpg",
           },
         ],
       },
@@ -144,7 +144,7 @@ export const programsData = {
             title: "Scott Plato",
             content:
               "Mr. Scott Plato received his Bachelor's degree in Classical Guitar Performance from Georgia State University under the instruction of John Sutherland, a protege of Andres Segovia. Scott then completed a Master of Music degree from Adams State University in Alamosa, Colorado. His book on guitar improvisation, 'Creating Guitar Solos,' is now being sold worldwide on www.lulu.com. Previous collaborations have included performances with members of the Atlanta Symphony and the Atlanta Ballet Orchestra. Scott currently maintains a busy schedule as a performer and teacher in the Atlanta area. He is a guitar instructor at Oxford College of Emory and he teaches music courses online for the University System of Georgia. Scott is endorsed by Augustino LoPrinzi Guitars, Peterson Tuners, Boveda (Guitar Humidifiers), and KNA Pickups. Scott is also endorsed by and performs with Hannabach strings. Hannabach strings are handmade in Egglkofen, Germany. Scott was also a former voting member for the Grammy Awards. In 2017 Scott released a solo CD 'Sacred Music on Solo Guitar'. Scott has performed internationally on concert series in locations from the USA to the UK. He is currently on staff as a guitarist at the Northeast Georgia Health System in the Arts In Healthcare Department.",
-            image: "",
+            image: "assets/faculty/scott-plato.jpg",
           },
           {
             title: "Jordan Dumas",

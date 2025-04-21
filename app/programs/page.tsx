@@ -67,12 +67,13 @@ export default function ProgramsPage() {
 
                   return (
                     <Card key={index} className="overflow-hidden">
-                      <div className="relative h-[200px]">
+                      <div className="relative aspect-[4/3]">
                         <Image
                           src={person.image || "/placeholder.svg"}
                           alt={person.title}
                           fill
-                          className="object-cover"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          className="object-contain bg-muted"
                         />
                       </div>
                       <CardHeader>
