@@ -68,7 +68,7 @@ export default function Home() {
               </span>
             ))}
           </h1>
-          <p className="max-w-[700px] text-lg text-muted-foreground md:text-xl animate-slide-up">
+          <p className="max-w-[700px] text-base font-semibold text-black dark:text-white md:text-lg animate-slide-up drop-shadow-sm bg-white/30 dark:bg-black/30 backdrop-blur-sm px-6 py-3 rounded-lg border border-white/20 dark:border-white/10">
             {homeData.hero.description}
           </p>
           <div className="flex flex-col gap-4 sm:flex-row animate-bounce-in">
