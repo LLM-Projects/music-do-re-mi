@@ -10,7 +10,7 @@ export const siteConfig = {
 export const navigationLinks = [
   { href: "/about", label: "About" },
   { href: "/programs", label: "Programs" },
-  { href: "/virtual-keyboard", label: "Virtual Piano" },
+  // { href: "/virtual-keyboard", label: "Virtual Piano" },
   { href: "/contact", label: "Contact" },
   { href: "/rentals", label: "Instrument Rentals" },
 ];
