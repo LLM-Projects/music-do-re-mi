@@ -135,7 +135,7 @@ export default function AboutPage() {
       </section>
 
       {/* Timeline */}
-      <section className="container py-12 md:py-16">
+      {/* <section className="container py-12 md:py-16">
         <h2 className="text-3xl font-bold tracking-tighter text-center mb-8 text-foreground">
           {aboutData.timeline.title}
         </h2>
@@ -167,7 +167,7 @@ export default function AboutPage() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
