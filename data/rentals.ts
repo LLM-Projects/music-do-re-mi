@@ -1,185 +1,86 @@
 export const rentalsData = {
   hero: {
     title: "Instrument Rentals",
-    description: "Quality instruments for students at all levels. Rent with confidence from our well-maintained collection.",
+    description: "Start Playing Without the Commitment",
   },
   whyRent: {
     title: "Why Rent With Us?",
-    description: "Our instrument rental program is designed to provide students with high-quality instruments at affordable rates. We understand that purchasing an instrument is a significant investment, especially for beginners who are just starting their musical journey.",
+    description:
+      "At Music Do Re Mi, we make it easy for students to access the instruments they need. Whether you're just starting out or testing the waters before purchasing your own, our affordable rental program has you covered.",
     benefits: [
-      "Quality instruments from reputable manufacturers",
-      "Regular maintenance included in rental fee",
-      "Flexible rental periods: monthly, semester, or annual plans",
-      "Rent-to-own options available for long-term rentals",
-      "Size exchanges for growing students at no additional cost",
+      "Quality Instruments: We offer over 300 well-maintained, high-quality instruments to enhance your learning experience.",
+      "Affordable Plans: Flexible rental options to fit your budget including rent-to-buy",
+      "Convenient Process: Quick and easy rentals with no hassle.",
+      "Expert Support: Our knowledgeable staff will help you select the right instrument and provide guidance on care and maintenance.",
     ],
-    image: "/placeholder.svg?height=350&width=500",
-    imageAlt: "Musical instruments for rent",
+    image: "https://sloanschoolofmusic.com/wp-content/uploads/2021/05/musical-instrument-rental-1024x536.jpg",
+    imageAlt: "Musical instruments available for rent",
   },
   instruments: {
     title: "Available Instruments",
-    categories: [
+    items: [
       {
-        name: "strings",
-        label: "Strings",
-        items: [
-          {
-            name: "Violin",
-            sizes: "1/16, 1/10, 1/8, 1/4, 1/2, 3/4, 4/4",
-            monthlyRate: "$25-35",
-            image: "/placeholder.svg?height=200&width=300",
-          },
-          {
-            name: "Viola",
-            sizes: '12", 13", 14", 15", 16"',
-            monthlyRate: "$30-40",
-            image: "/placeholder.svg?height=200&width=300",
-          },
-          {
-            name: "Cello",
-            sizes: "1/8, 1/4, 1/2, 3/4, 4/4",
-            monthlyRate: "$45-60",
-            image: "/placeholder.svg?height=200&width=300",
-          },
-          {
-            name: "Double Bass",
-            sizes: "1/4, 1/2, 3/4",
-            monthlyRate: "$60-75",
-            image: "/placeholder.svg?height=200&width=300",
-          },
-          {
-            name: "Classical Guitar",
-            sizes: "1/4, 1/2, 3/4, 4/4",
-            monthlyRate: "$20-30",
-            image: "/placeholder.svg?height=200&width=300",
-          },
-          {
-            name: "Harp",
-            sizes: "Lever Harp, Small Pedal Harp",
-            monthlyRate: "$85-120",
-            image: "/placeholder.svg?height=200&width=300",
-          },
-        ],
+        name: "Violins and Violas",
+        description:
+          "Available in different sizes for different ages and levels",
+        monthlyRate: "$25/month",
+        image: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Violin_VL100.png",
       },
       {
-        name: "woodwinds",
-        label: "Woodwinds",
-        items: [
-          {
-            name: "Flute",
-            details: "Student & Intermediate Models",
-            monthlyRate: "$30-45",
-            image: "/placeholder.svg?height=200&width=300",
-          },
-          {
-            name: "Clarinet",
-            details: "B♭ Clarinet, Various Brands",
-            monthlyRate: "$25-40",
-            image: "/placeholder.svg?height=200&width=300",
-          },
-          {
-            name: "Saxophone",
-            details: "Alto, Tenor, Baritone",
-            monthlyRate: "$45-75",
-            image: "/placeholder.svg?height=200&width=300",
-          },
-          {
-            name: "Oboe",
-            details: "Student & Intermediate Models",
-            monthlyRate: "$50-70",
-            image: "/placeholder.svg?height=200&width=300",
-          },
-          {
-            name: "Bassoon",
-            details: "Student Models",
-            monthlyRate: "$75-95",
-            image: "/placeholder.svg?height=200&width=300",
-          },
-          {
-            name: "Recorder",
-            details: "Soprano, Alto, Tenor",
-            monthlyRate: "$15-25",
-            image: "/placeholder.svg?height=200&width=300",
-          },
-        ],
+        name: "Cellos",
+        description:
+          "Available in different sizes for different ages and levels",
+        monthlyRate: "$46/month",
+        image: "https://static.vecteezy.com/system/resources/thumbnails/044/812/508/small_2x/a-cello-isolated-on-transparent-background-png.png",
       },
       {
-        name: "brass",
-        label: "Brass",
-        items: [
-          {
-            name: "Trumpet",
-            details: "B♭ Trumpet, Various Brands",
-            monthlyRate: "$25-40",
-            image: "/placeholder.svg?height=200&width=300",
-          },
-          {
-            name: "Trombone",
-            details: "Tenor Trombone, F-Attachment",
-            monthlyRate: "$30-45",
-            image: "/placeholder.svg?height=200&width=300",
-          },
-          {
-            name: "French Horn",
-            details: "Single & Double Horn",
-            monthlyRate: "$45-65",
-            image: "/placeholder.svg?height=200&width=300",
-          },
-          {
-            name: "Euphonium",
-            details: "3 & 4 Valve Models",
-            monthlyRate: "$40-60",
-            image: "/placeholder.svg?height=200&width=300",
-          },
-          {
-            name: "Tuba",
-            details: "3/4 & 4/4 Size",
-            monthlyRate: "$60-85",
-            image: "/placeholder.svg?height=200&width=300",
-          },
-        ],
+        name: "Bass",
+        description:
+          "Available in different sizes for different ages and levels",
+        monthlyRate: "$76/month",
+        image: "https://static.vecteezy.com/system/resources/thumbnails/023/322/608/small_2x/watercolor-bass-music-instrument-png.png",
       },
       {
-        name: "percussion",
-        label: "Percussion",
-        items: [
-          {
-            name: "Snare Drum Kit",
-            details: "Practice Pad, Stand, Sticks",
-            monthlyRate: "$20-30",
-            image: "/placeholder.svg?height=200&width=300",
-          },
-          {
-            name: "Bell Kit",
-            details: "With Practice Pad",
-            monthlyRate: "$25-35",
-            image: "/placeholder.svg?height=200&width=300",
-          },
-          {
-            name: "Xylophone",
-            details: "Student Model",
-            monthlyRate: "$35-50",
-            image: "/placeholder.svg?height=200&width=300",
-          },
-          {
-            name: "Marimba",
-            details: "4.3 Octave",
-            monthlyRate: "$75-95",
-            image: "/placeholder.svg?height=200&width=300",
-          },
-          {
-            name: "Drum Set",
-            details: "5-Piece Kit",
-            monthlyRate: "$45-65",
-            image: "/placeholder.svg?height=200&width=300",
-          },
-          {
-            name: "Timpani",
-            details: "Set of 2",
-            monthlyRate: "$85-120",
-            image: "/placeholder.svg?height=200&width=300",
-          },
-        ],
+        name: "Guitars",
+        description:
+          "Available in different sizes for different ages and levels",
+        monthlyRate: "$25/month",
+        image: "https://pngfre.com/wp-content/uploads/guitar-poster.png",
+      },
+      {
+        name: "Flutes",
+        description:
+          "Available in sizes: 1/4, 1/2, 3/4, 4/4. Perfect for classical music, folk, and fingerstyle playing.",
+        monthlyRate: "$25/month",
+        image: "https://purepng.com/public/uploads/large/purepng.com-fluteobjectsflutemusic-object-instrument-flute-631522326012yyotp.png",
+      },
+      {
+        name: "Clarinets",
+        description:
+          "Available in different sizes for different ages and levels",
+        monthlyRate: "$85-120",
+        image: "https://upload.wikimedia.org/wikipedia/commons/2/20/Clarinet-rotate.png",
+      },
+      {
+        name: "Saxophones",
+        description:
+          "Available in different sizes for different ages and levels",
+        monthlyRate: "$25/month",
+        image: "https://pics.clipartpng.com/Saxophone_PNG_Clipart-896.png",
+      },
+      {
+        name: "Trumpet",
+        description:
+          "Available in different sizes for different ages and levels",
+        monthlyRate: "$25/month",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Trumpet_1.png/1200px-Trumpet_1.png",
+      },
+      {
+        name: "Trombones",
+        description:
+          "Available in different sizes for different ages and levels",
+        monthlyRate: "$25/month",
+        image: "https://static.vecteezy.com/system/resources/thumbnails/016/535/700/small_2x/watercolor-trombone-music-instrument-png.png",
       },
     ],
   },
@@ -243,22 +144,26 @@ export const rentalsData = {
       {
         step: "1",
         title: "Choose Your Instrument",
-        description: "Browse our selection and select the instrument you want to rent.",
+        description:
+          "Browse our selection and select the instrument you want to rent.",
       },
       {
         step: "2",
         title: "Select a Plan",
-        description: "Pick the rental plan that best fits your needs and budget.",
+        description:
+          "Pick the rental plan that best fits your needs and budget.",
       },
       {
         step: "3",
         title: "Complete Application",
-        description: "Fill out our rental application form online or in person.",
+        description:
+          "Fill out our rental application form online or in person.",
       },
       {
         step: "4",
         title: "Pick Up & Play",
-        description: "Pick up your instrument from our school and start making music!",
+        description:
+          "Pick up your instrument from our school and start making music!",
       },
     ],
   },
@@ -267,32 +172,38 @@ export const rentalsData = {
     items: [
       {
         policy: "Damage Protection",
-        details: "Optional damage protection plan available for $5/month covers accidental damage. Without protection, renter is responsible for all repairs beyond normal wear and tear.",
+        details:
+          "Optional damage protection plan available for $5/month covers accidental damage. Without protection, renter is responsible for all repairs beyond normal wear and tear.",
       },
       {
         policy: "Maintenance",
-        details: "Regular maintenance is included in all rental plans. Additional repairs due to misuse or neglect will be charged separately.",
+        details:
+          "Regular maintenance is included in all rental plans. Additional repairs due to misuse or neglect will be charged separately.",
       },
       {
         policy: "Early Returns",
-        details: "Monthly plans can be returned anytime. Semester and annual plans may be subject to an early termination fee if returned before the minimum commitment period.",
+        details:
+          "Monthly plans can be returned anytime. Semester and annual plans may be subject to an early termination fee if returned before the minimum commitment period.",
       },
       {
         policy: "Late Payments",
-        details: "Payments are due on the 1st of each month. A $15 late fee applies after the 10th day.",
+        details:
+          "Payments are due on the 1st of each month. A $15 late fee applies after the 10th day.",
       },
       {
         policy: "Rent-to-Own",
-        details: "A portion of rental payments can be applied toward the purchase of a new instrument. See specific plans for details.",
+        details:
+          "A portion of rental payments can be applied toward the purchase of a new instrument. See specific plans for details.",
       },
     ],
   },
   cta: {
-    title: "Ready to Start Making Music?",
-    description: "Contact us today to reserve your instrument or schedule a fitting appointment.",
+    title: "Start your musical journey today—no strings attached (unless it’s a violin, of course)! 🎶",
+    description:
+      "Ready to rent your first instrument? Stop by our location in Johns Creek, GA, or contact us to learn more about our rental options!",
     buttons: [
       { label: "Contact Us", href: "/contact" },
       { label: "Explore Programs", href: "/programs" },
     ],
   },
-} 
+};

@@ -29,7 +29,7 @@ export default function RentalsPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-rose-100 to-rose-50 opacity-70 dark:from-rose-950 dark:to-slate-900 dark:opacity-90" />
         <div className="container relative py-16 md:py-24">
           <div className="max-w-3xl">
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl text-foreground">
               {rentalsData.hero.title}
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
@@ -43,7 +43,7 @@ export default function RentalsPage() {
       <section className="container py-12 md:py-16">
         <div className="grid gap-8 md:grid-cols-2 items-center">
           <div className="space-y-4">
-            <h2 className="text-3xl font-bold tracking-tighter">
+            <h2 className="text-3xl font-bold tracking-tighter text-foreground">
               {rentalsData.whyRent.title}
             </h2>
             <p className="text-muted-foreground">
@@ -53,7 +53,7 @@ export default function RentalsPage() {
               {rentalsData.whyRent.benefits.map((benefit, index) => (
                 <li key={index} className="flex items-start">
                   <Check className="mr-2 h-5 w-5 text-rose-500 shrink-0 mt-0.5" />
-                  <span>{benefit}</span>
+                  <span className="text-foreground">{benefit}</span>
                 </li>
               ))}
             </ul>
@@ -70,74 +70,44 @@ export default function RentalsPage() {
       </section>
 
       {/* Rental Instruments */}
-      <section className="bg-slate-50 py-12 md:py-16">
+      <section className="bg-slate-50 dark:bg-slate-900 py-12 md:py-16">
         <div className="container">
-          <h2 className="text-3xl font-bold tracking-tighter text-center mb-8">
+          <h2 className="text-3xl font-bold tracking-tighter text-center mb-8 text-foreground">
             {rentalsData.instruments.title}
           </h2>
 
-          <Tabs
-            defaultValue={rentalsData.instruments.categories[0].name}
-            className="w-full"
-          >
-            <div className="flex justify-center mb-8">
-              <TabsList>
-                {rentalsData.instruments.categories.map((category) => (
-                  <TabsTrigger key={category.name} value={category.name}>
-                    {category.label}
-                  </TabsTrigger>
-                ))}
-              </TabsList>
-            </div>
-
-            {rentalsData.instruments.categories.map((category) => (
-              <TabsContent
-                key={category.name}
-                value={category.name}
-                className="space-y-8"
-              >
-                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                  {category.items.map((instrument, index) => (
-                    <Card key={index} className="overflow-hidden">
-                      <div className="relative h-[200px]">
-                        <Image
-                          src={instrument.image}
-                          alt={instrument.name}
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                      <CardHeader>
-                        <CardTitle>{instrument.name}</CardTitle>
-                        <CardDescription>
-                          {"sizes" in instrument
-                            ? `Available Sizes: ${instrument.sizes}`
-                            : instrument.details}
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p>
-                          <span className="font-semibold">Monthly Rate:</span>{" "}
-                          {instrument.monthlyRate}
-                        </p>
-                      </CardContent>
-                      <CardFooter>
-                        <Button variant="outline" className="w-full">
-                          Rental Details
-                        </Button>
-                      </CardFooter>
-                    </Card>
-                  ))}
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {rentalsData.instruments.items.map((instrument, index) => (
+              <Card key={index} className="overflow-hidden dark:border-slate-700">
+                <div className="relative h-[200px]">
+                  <Image
+                    src={instrument.image}
+                    alt={instrument.name}
+                    fill
+                    className="object-contain"
+                  />
                 </div>
-              </TabsContent>
+                <CardHeader>
+                  <CardTitle className="text-foreground">{instrument.name}</CardTitle>
+                  <CardDescription>
+                    {instrument.description}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-foreground">
+                    <span className="font-semibold">Monthly Rate:</span>{" "}
+                    {instrument.monthlyRate}
+                  </p>
+                </CardContent>
+              </Card>
             ))}
-          </Tabs>
+          </div>
         </div>
       </section>
 
       {/* Rental Plans */}
-      <section className="container py-12 md:py-16">
-        <h2 className="text-3xl font-bold tracking-tighter text-center mb-8">
+      {/* <section className="container py-12 md:py-16">
+        <h2 className="text-3xl font-bold tracking-tighter text-center mb-8 text-foreground">
           {rentalsData.plans.title}
         </h2>
         <div className="grid gap-8 md:grid-cols-3">
@@ -145,24 +115,24 @@ export default function RentalsPage() {
             <Card
               key={index}
               className={`relative overflow-hidden ${
-                plan.highlighted ? "border-rose-200 shadow-lg" : ""
+                plan.highlighted ? "border-rose-200 dark:border-rose-800 shadow-lg" : "dark:border-slate-700"
               }`}
             >
               <div
                 className={`absolute top-0 right-0 ${
                   plan.highlighted
                     ? "bg-rose-500 text-white"
-                    : "bg-rose-100 text-rose-700"
+                    : "bg-rose-100 dark:bg-rose-900 text-rose-700 dark:text-rose-300"
                 } px-3 py-1 text-sm font-medium rounded-bl-lg`}
               >
                 {plan.badge}
               </div>
               <CardHeader>
-                <CardTitle>{plan.title}</CardTitle>
+                <CardTitle className="text-foreground">{plan.title}</CardTitle>
                 <CardDescription>{plan.description}</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div className="text-4xl font-bold">
+                <div className="text-4xl font-bold text-foreground">
                   {plan.price}{" "}
                   <span className="text-base font-normal text-muted-foreground">
                     /{plan.period}
@@ -172,7 +142,7 @@ export default function RentalsPage() {
                   {plan.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start">
                       <Check className="mr-2 h-5 w-5 text-rose-500 shrink-0 mt-0.5" />
-                      <span>{feature}</span>
+                      <span className="text-foreground">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -198,12 +168,12 @@ export default function RentalsPage() {
             </Card>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Rental Process */}
-      <section className="bg-rose-50 py-12 md:py-16">
+      {/* <section className="bg-rose-50 dark:bg-rose-950/20 py-12 md:py-16">
         <div className="container">
-          <h2 className="text-3xl font-bold tracking-tighter text-center mb-8">
+          <h2 className="text-3xl font-bold tracking-tighter text-center mb-8 text-foreground">
             {rentalsData.process.title}
           </h2>
           <div className="grid gap-8 md:grid-cols-4">
@@ -212,43 +182,43 @@ export default function RentalsPage() {
                 <div className="flex items-center justify-center w-12 h-12 rounded-full bg-rose-500 text-white font-bold text-lg mx-auto mb-4">
                   {step.step}
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
+                <h3 className="text-xl font-semibold mb-2 text-foreground">{step.title}</h3>
                 <p className="text-muted-foreground">{step.description}</p>
               </div>
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Rental Policies */}
-      <section className="container py-12 md:py-16">
-        <h2 className="text-3xl font-bold tracking-tighter text-center mb-8">
+      {/* <section className="container py-12 md:py-16">
+        <h2 className="text-3xl font-bold tracking-tighter text-center mb-8 text-foreground">
           {rentalsData.policies.title}
         </h2>
         <div className="max-w-4xl mx-auto">
           <Table>
             <TableHeader>
-              <TableRow>
-                <TableHead className="w-[250px]">Policy</TableHead>
-                <TableHead>Details</TableHead>
+              <TableRow className="dark:border-slate-700">
+                <TableHead className="w-[250px] text-foreground">Policy</TableHead>
+                <TableHead className="text-foreground">Details</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               {rentalsData.policies.items.map((policy, index) => (
-                <TableRow key={index}>
-                  <TableCell className="font-medium">{policy.policy}</TableCell>
-                  <TableCell>{policy.details}</TableCell>
+                <TableRow key={index} className="dark:border-slate-700">
+                  <TableCell className="font-medium text-foreground">{policy.policy}</TableCell>
+                  <TableCell className="text-foreground">{policy.details}</TableCell>
                 </TableRow>
               ))}
             </TableBody>
           </Table>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="container py-12 md:py-16">
-        <div className="bg-slate-50 rounded-lg p-8 text-center">
-          <h2 className="text-2xl font-bold mb-4">{rentalsData.cta.title}</h2>
+        <div className="bg-slate-50 dark:bg-slate-900 rounded-lg p-8 text-center">
+          <h2 className="text-2xl font-bold mb-4 text-foreground">{rentalsData.cta.title}</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
             {rentalsData.cta.description}
           </p>
