@@ -33,8 +33,8 @@ export const contactData = {
         title: "Hours",
         content: [
           "Weekdays: 2PM - 7PM",
-          "Saturday: 9AM - 5PM",
-          "Sunday: 9AM - 12PM",
+          "Saturday: 10AM - 4PM",
+          "Sunday: Closed",
         ],
       },
     ],
