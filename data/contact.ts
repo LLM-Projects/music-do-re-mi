@@ -117,7 +117,7 @@ export const contactData = {
     items: [
       {
         question: "How do I enroll in lessons?",
-        answer: "To enroll, simply contact us through our online form, by phone, or in person. We'll schedule a consultation to discuss your goals and find the right program for you.",
+        answer: "To enroll, simply reach out to us by phone, email, or in person. We'll schedule a consultation to discuss your goals and find the right program for you.",
       },
       {
         question: "What ages do you teach?",
@@ -130,14 +130,6 @@ export const contactData = {
       {
         question: "How long are lessons?",
         answer: "Lesson length varies by program and age. Typically, younger students have 30-minute lessons, while older students and adults may have 45-60 minute lessons.",
-      },
-      {
-        question: "Do you offer financial aid?",
-        answer: "Yes, we have scholarship programs and financial aid options available for qualifying students. Please contact our administrative office for more information.",
-      },
-      {
-        question: "What is your cancellation policy?",
-        answer: "We require 24-hour notice for lesson cancellations. Lessons cancelled with less than 24 hours notice may not be eligible for makeup lessons or refunds.",
       },
     ],
   },
