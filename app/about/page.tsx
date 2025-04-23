@@ -1,6 +1,5 @@
-import { Metadata } from "next";
 import Image from "next/image";
-import { Music, Award, Clock, Calendar, Users } from "lucide-react";
+import { Music, Award, Clock, Users } from "lucide-react";
 import { aboutData } from "@/data/about";
 
 export default function AboutPage() {

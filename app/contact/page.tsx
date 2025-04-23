@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { MapPin, Phone, Mail, Clock, ChevronDown, ChevronUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { toast } from "@/components/ui/use-toast";
 import { contactData } from "@/data/contact";
 
 export default function ContactPage() {
