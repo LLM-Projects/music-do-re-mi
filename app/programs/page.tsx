@@ -40,12 +40,14 @@ export default function ProgramsPage() {
         </h2>
         <Tabs defaultValue="piano" className="w-full">
           <div className="flex justify-center mb-8">
-            <TabsList>
+            <TabsList className="max-w-full">
+              <div className="flex items-center overflow-x-auto">
               {programsData.faculty.categories.map((category) => (
                 <TabsTrigger key={category.name} value={category.name}>
                   {category.label}
                 </TabsTrigger>
               ))}
+              </div>
             </TabsList>
           </div>
 
@@ -124,15 +126,21 @@ export default function ProgramsPage() {
                   <h3 className="text-xl font-semibold">{event.name}</h3>
                   <div className="flex items-center gap-2 mb-2">
                     <MapPin className="h-4 w-4 text-rose-500" />
-                    <p className="text-base text-rose-500 dark:text-rose-400">{event.location}</p>
+                    <p className="text-base text-rose-500 dark:text-rose-400">
+                      {event.location}
+                    </p>
                   </div>
                   <div className="flex items-center gap-2 mb-2">
                     <CalendarDays className="h-4 w-4 text-rose-500" />
-                    <p className="text-base text-muted-foreground">{event.date}</p>
+                    <p className="text-base text-muted-foreground">
+                      {event.date}
+                    </p>
                   </div>
                   <div className="flex items-center gap-2 mb-4">
                     <Clock className="h-4 w-4 text-rose-500" />
-                    <p className="text-base text-muted-foreground">{event.time}</p>
+                    <p className="text-base text-muted-foreground">
+                      {event.time}
+                    </p>
                   </div>
                   <p className="text-base text-muted-foreground">{event.bio}</p>
                 </div>
