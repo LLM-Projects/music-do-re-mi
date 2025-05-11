@@ -9,9 +9,9 @@ export const siteConfig = {
 // Navigation
 export const navigationLinks = [
   { href: "/about", label: "About" },
-  { href: "/programs", label: "Programs" },
+  { href: "/programs", label: "Programs & Faculty" },
   // { href: "/virtual-keyboard", label: "Virtual Piano" },
-  { href: "/contact", label: "Contact" },
+  { href: "/contact", label: "Contact Us" },
   { href: "/rentals", label: "Instrument Rentals" },
 ];
 

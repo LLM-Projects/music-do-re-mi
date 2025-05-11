@@ -42,9 +42,9 @@ export const homeData = {
   about: {
     title: "Our Passion for Music Education",
     description:
-      "For over 15 years, Music Do Re Mi has been a cornerstone of musical education in our community. Our school combines traditional teaching methods with innovative approaches to inspire students of all ages and abilities.",
+      "For over 15 years, Music Do Re Mi has been a cornerstone of musical education in the Johns Creek, Suwanee, and Duluth community",
     cta: { label: "About Us", href: "/about" },
-    image: "https://s3-media0.fl.yelpcdn.com/bphoto/AnpptvwrdW3WtYNq9b7Ytw/o.jpg",
+    image: "https://i.ibb.co/rRjn8PyB/9-cello-lesson.jpg",
     imageAlt: "Music students in a class",
   },
   programs: {
@@ -56,19 +56,19 @@ export const homeData = {
         title: "Piano Lessons",
         description:
           "Master the keyboard with our comprehensive piano curriculum.",
-        image: "https://s3-media0.fl.yelpcdn.com/bphoto/tPLiSWyRgH67scV6q4XR5Q/o.jpg",
+        image: "https://i.ibb.co/5XnvhCVs/4-Piano.jpg",
       },
       {
-        title: "Violin/Viola Lessons",
+        title: "Strings - Violin, Viola, Cello, Bass",
         description:
           "From classical to rock, learn to play string instruments with confidence.",
         image: "https://s3-media0.fl.yelpcdn.com/bphoto/RUuM27ljarUqeRP23uJ_nw/o.jpg",
       },
       {
-        title: "Others",
+        title: "Others – Guitar, Flute, Clarinet, Saxophone",
         description:
           "We offer a wide range of other music lessons, including guitar, and more.",
-        image: "https://s3-media0.fl.yelpcdn.com/bphoto/aFKhZjg9edUKJsAEMxGjCA/o.jpg",
+        image: "https://i.ibb.co/W4QdXPTt/14-clarinet-lesson.jpg",
       },
     ],
     cta: { label: "View All Programs", href: "/programs" },
@@ -78,21 +78,27 @@ export const homeData = {
     items: [
       {
         quote:
-          "My daughter has flourished under the guidance of Music Do Re Mi's instructors. Their patience and expertise have made all the difference.",
-        author: "Sarah Johnson",
+          "Great music school for kids! My 5 yo son goes for piano lessons and really enjoys class with Ms. Irena!",
+        author: "Skanda and Chao",
+        role: "Parents",
+      },
+      {
+        quote:
+          "“My kid loves Sunny Kim. She is a piano teacher but also teach my kid about fundamentals music keys . I was so frustrated when my daughter learned 1 year of piano outside and didn’t even know how to read the music scores. She enjoys her class and now at least she can play piano without any help. I will recommend this school.",
+        author: "Yang",
         role: "Parent",
       },
       {
         quote:
-          "As an adult beginner, I was nervous about taking up an instrument, but the supportive environment here made it a joy to learn.",
-        author: "Michael Chen",
-        role: "Adult Student",
+          "My daughter has been going to this school for more than ten years now for different music lessons. DoReMi maintains the quality of its teachers. Special mention to Ms Irina and Ms Bonnie. Great music school!",
+        author: "Sukesh",
+        role: "Parent",
       },
       {
         quote:
-          "The recital opportunities and ensemble programs have helped me grow not just as a musician, but as a performer.",
-        author: "Emma Rodriguez",
-        role: "Teen Student",
+          "Great music school! Tons of variety and the teachers are all amazing! Greatly recommend to any new learners.",
+        author: "Ellyne",
+        role: "Student",
       },
     ],
   },
@@ -104,7 +110,7 @@ export const homeData = {
       { label: "Contact Us", href: "/contact", variant: "default" },
       { label: "Instrument Rentals", href: "/rentals", variant: "outline" },
     ],
-    image: "https://s3-media0.fl.yelpcdn.com/bphoto/zad8YaSh8QTlBp7HuzeQfA/o.jpg",
+    image: "https://i.ibb.co/7xSxcQC7/8-kinderkey-group-lesson.jpg",
     imageAlt: "Music instruments",
   },
 };

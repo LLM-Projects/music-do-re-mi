@@ -27,8 +27,8 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <Music className="h-6 w-6 text-rose-500" />
-          <span className="text-xl font-bold text-foreground">
+          <img src="https://i.ibb.co/G4dsJbn9/logo-alternative.png" alt="Music Logo" className="h-12 w-12" />
+          <span className="text-2xl font-bold text-foreground">
             Music Do Re Mi
           </span>
         </Link>
