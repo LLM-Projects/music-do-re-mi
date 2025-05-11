@@ -44,7 +44,7 @@ export const homeData = {
     description:
       "For over 15 years, Music Do Re Mi has been a cornerstone of musical education in the Johns Creek, Suwanee, and Duluth community",
     cta: { label: "About Us", href: "/about" },
-    image: "assets/generic/9 - cello lesson.HEIC",
+    image: "assets/generic/9 - cello lesson.jpg",
     imageAlt: "Music students in a class",
   },
   programs: {
@@ -68,7 +68,7 @@ export const homeData = {
         title: "Others – Guitar, Flute, Clarinet, Saxophone",
         description:
           "We offer a wide range of other music lessons, including guitar, and more.",
-        image: "assets/generic/14 - clarinet lesson.heic",
+        image: "assets/generic/14 - clarinet lesson.jpg",
       },
     ],
     cta: { label: "View All Programs", href: "/programs" },
@@ -84,7 +84,7 @@ export const homeData = {
       },
       {
         quote:
-          "My kid loves Sunny Kim. She is a piano teacher but also teach my kid about fundamentals music keys . I was so frustrated when my daughter learned 1 year of piano outside and didn’t even know how to read the music scores. She enjoys her class and now at least she can play piano without any help. I will recommend this school.",
+          "My kid loves Sunny Kim. She is a piano teacher but also teach my kid about fundamentals music keys . I was so frustrated when my daughter learned 1 year of piano outside and didn't even know how to read the music scores. She enjoys her class and now at least she can play piano without any help. I will recommend this school.",
         author: "Yang",
         role: "Parent",
       },
@@ -110,7 +110,7 @@ export const homeData = {
       { label: "Contact Us", href: "/contact", variant: "default" },
       { label: "Instrument Rentals", href: "/rentals", variant: "outline" },
     ],
-    image: "assets/generic/8 - kinderkey group lesson.HEIC",
+    image: "assets/generic/8 - kinderkey group lesson.jpg",
     imageAlt: "Music instruments",
   },
 };

@@ -10,7 +10,7 @@ export const siteConfig = {
 export const navigationLinks = [
   { href: "/about", label: "About" },
   { href: "/programs", label: "Programs & Faculty" },
-  // { href: "/virtual-keyboard", label: "Virtual Piano" },
+  { href: "/news", label: "News & Events" },
   { href: "/contact", label: "Contact Us" },
   { href: "/rentals", label: "Instrument Rentals" },
 ];
@@ -21,6 +21,7 @@ import { aboutData } from "./about";
 import { programsData } from "./programs";
 import { rentalsData } from "./rentals";
 import { contactData } from "./contact";
+import { newsData } from "./news";
 
 // Special offer popup data
 export const specialOfferData = {
@@ -29,7 +30,7 @@ export const specialOfferData = {
   description:
     "Join us for an unforgettable Summer Music Adventure.  No experience?  No problem – we provide beginner workshops too!  Enjoy music classes, arts and crafts, and other fun activities! Open to ages 5-16.",
   buttonText: "Learn More",
-  buttonLink: "/programs",
+  buttonLink: "/news",
   footnote:
     "Come learn, perform, and make lasting memories at Music Do Re Mi! 🎶",
 };
@@ -47,6 +48,7 @@ export const footerData = {
     { label: "Home", href: "/" },
     { label: "About Us", href: "/about" },
     { label: "Programs & Faculty", href: "/programs" },
+    { label: "News & Events", href: "/news" },
     { label: "Contact Us", href: "/contact" },
     { label: "Instrument Rentals", href: "/rentals" },
   ],
@@ -58,4 +60,4 @@ export const footerData = {
 };
 
 // Re-export all data
-export { homeData, aboutData, programsData, rentalsData, contactData };
+export { homeData, aboutData, programsData, rentalsData, contactData, newsData };

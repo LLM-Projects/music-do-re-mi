@@ -14,7 +14,7 @@ export const programsData = {
           {
             title: "Annie Hui Lun Hsu",
             content:
-              "Mrs. Annie Hsu has been playing the violin and piano at the age of four and won several violin competitions in Taipei, Taiwan when she was in elementary school. Ms. Annie began teaching violin, piano, and music theory when she was 18 years old and she received her bachelor degree in Soochow University. In 2023, she got her master degree from Georgia State University. Ms. Annie has won the Brumby concerto competition in 2021 playing Tchaikovsky’s Violin Concerto. She has attended numerous summer music festivals including Walnut Hill Music Festival in Boston, Summit Music Festival in New York, Salzburg Music Festival in Germany, and Enlightenment Music Festival in Taiwan.",
+              "Mrs. Annie Hsu has been playing the violin and piano at the age of four and won several violin competitions in Taipei, Taiwan when she was in elementary school. Ms. Annie began teaching violin, piano, and music theory when she was 18 years old and she received her bachelor degree in Soochow University. In 2023, she got her master degree from Georgia State University. Ms. Annie has won the Brumby concerto competition in 2021 playing Tchaikovsky's Violin Concerto. She has attended numerous summer music festivals including Walnut Hill Music Festival in Boston, Summit Music Festival in New York, Salzburg Music Festival in Germany, and Enlightenment Music Festival in Taiwan.",
             image: "assets/faculty/annie.jpeg",
             languages: ["English", "Mandarin Chinese"],
           },
@@ -35,8 +35,8 @@ export const programsData = {
           {
             title: "Irina Jermakyan",
             content:
-              "Ms. Irina has close to 30 years’ experience in educating children and adults of all ages and levels in classical piano. Her educational background is most impressive. As a student, she started her studies at the age of 6, entering a classical piano school in Yerevan, Armenia – a former Soviet Union Republic. At the age of 14, she was admitted to the Tchaikovsky Musical Academy in Yerevan. After graduation, she successfully passed the Komitas Conservatory admittance exams and joined the class of renowned pianist, Professor Georgie Saradjev, earning a Master of Arts degree in Piano Performance and Teaching. Her performance career started at the age of 7 when soloing in her first city performance concert. Since then, Ms. Irina has performed as a soloist and with orchestras for many audiences. Ms. Irina started her pedagogical career while being a student at the Komitas Conservatory. Since then, Irina has educated hundreds of children and adults enrolled in her classes. Many of them have participated and have won professional performance contests. Some of Irina’s students have chosen the path of professional performers or educators themselves. Ms. Irina’s teaching style combines the best European academic traditions with her abilities to motivate students, build good student-teacher relationships, inject love of music, and esthetic values in general. Her program for piano is unique and innovative, serious, responsible, and result oriented. She emphasizes the development of the student’s musical abilities through a well-balanced and well-thought-out program, which covers Baroque, Classical, Romantic, and Contemporary music with the following: various piano technique exercises, music theory, ear training, memory skills, sight-reading, piano ensembles, and public performance skills",
-            image: "assets/faculty/irina.heic",
+              "Ms. Irina has close to 30 years' experience in educating children and adults of all ages and levels in classical piano. Her educational background is most impressive. As a student, she started her studies at the age of 6, entering a classical piano school in Yerevan, Armenia – a former Soviet Union Republic. At the age of 14, she was admitted to the Tchaikovsky Musical Academy in Yerevan. After graduation, she successfully passed the Komitas Conservatory admittance exams and joined the class of renowned pianist, Professor Georgie Saradjev, earning a Master of Arts degree in Piano Performance and Teaching. Her performance career started at the age of 7 when soloing in her first city performance concert. Since then, Ms. Irina has performed as a soloist and with orchestras for many audiences. Ms. Irina started her pedagogical career while being a student at the Komitas Conservatory. Since then, Irina has educated hundreds of children and adults enrolled in her classes. Many of them have participated and have won professional performance contests. Some of Irina's students have chosen the path of professional performers or educators themselves. Ms. Irina's teaching style combines the best European academic traditions with her abilities to motivate students, build good student-teacher relationships, inject love of music, and esthetic values in general. Her program for piano is unique and innovative, serious, responsible, and result oriented. She emphasizes the development of the student's musical abilities through a well-balanced and well-thought-out program, which covers Baroque, Classical, Romantic, and Contemporary music with the following: various piano technique exercises, music theory, ear training, memory skills, sight-reading, piano ensembles, and public performance skills",
+            image: "assets/faculty/irina.jpg",
             languages: ["English", "Russian"],
           },
           {
@@ -49,8 +49,8 @@ export const programsData = {
           {
             title: "Paul Chen",
             content:
-              "Mr. Paul Chen (American Chinese Pianist) has over 30 years of experience teaching classical piano and piano theory. He currently teaches in the Johns Creek Community at Music Do-Re-Mi with 2025 being his 17th year. He is active as a world class piano soloist and chamber musician. He attended China Central Conservatory of Music where he earned his master’s degree in classical piano. His students have attended several national and international piano competitions, where they earned outstanding achievements.",
-            image: "assets/faculty/paul-chen.heic",
+              "Mr. Paul Chen (American Chinese Pianist) has over 30 years of experience teaching classical piano and piano theory. He currently teaches in the Johns Creek Community at Music Do-Re-Mi with 2025 being his 17th year. He is active as a world class piano soloist and chamber musician. He attended China Central Conservatory of Music where he earned his master's degree in classical piano. His students have attended several national and international piano competitions, where they earned outstanding achievements.",
+            image: "assets/faculty/paul-chen.jpg",
             languages: ["English", "Mandarin Chinese"],
           },
           {
@@ -62,20 +62,23 @@ export const programsData = {
           },
           {
             title: "Patty Kuopei Chen",
-            content: "I speacialize in Piano.",
+            content: "Mrs. Patty Chen has over 30 years of experience with teaching classical piano and piano theory to children and adults. She attended the Taipei National University of the Arts and began her teaching career in Taiwan. She currently teaches in the John's Creek community at Music Do-Re-Mi, with this year being her 25th year with the studio. She was one of two teachers that helped this studio grow when it first opened its doors.\n\nMrs. Patty's students participate in the National Federation of Music Club annually. Students consistently receive superior awards and honorable mentions at the concerto. Aside from the federation and winter recitals, many of Mrs. Patty's students practice diligently and study hard to participate in ABRSM (The Associated Board of the Royal Schools of Music). Students have been invited to the 'High Score Concerts' based on their stellar performances.\n\nIt is the true passion of Mrs. Patty to share the world of piano and classical music with curious minds of all ages. Her approach is rooted in fostering a strong foundation of musical technique while also nurturing creativity and self-expression. Known for her patience, enthusiasm, and commitment to her craft, Mrs. Patty believes in the power of music to enrich lives and is devoted to helping every student reach their fullest potential on the piano.",
+            education: "Bachelors - Taipei National University",
+            experience: "Has been teaching piano for 25+ years and has sent many students to NFMC and ABRSM",
+            associations: ["National Federation of Music Club", "Associated Board of the Royal Schools of Music"],
             image: "assets/faculty/patty-kuopei-chen.JPEG",
             languages: ["English", "Mandarin Chinese"],
           },
           {
             title: "Sunhee Hwang",
-            content: "I speacialize in Piano.",
-            image: "",
+            content: "",
+            image: "https://i.postimg.cc/dQ6bH2r3/temp-Image5-Ys-ASi.avif",
             languages: ["English", "Korean"],
           },
           {
             title: "Hu Chen",
-            content: "I speacialize in Piano.",
-            image: "",
+            content: "",
+            image: "https://i.postimg.cc/dQ6bH2r3/temp-Image5-Ys-ASi.avif",
             languages: ["English", "Mandarin Chinese"],
           },
         ],
@@ -88,7 +91,7 @@ export const programsData = {
             title: "Bonnie Kim",
             content:
               "Native of Seoul, Korea, Bonnie Bo-Kyung Kim started her music studies with piano. After moving with her family to Tokyo, Japan, she began her flute studies. When she returned to Seoul, she graduated from Seoul Arts High School. Ms. Kim continued her study in Paris and New York earning her Master degree and Professional studies degree from the Manhattan School of Music. As a student, Ms. Kim won numerous prizes, including the Bellin, Nerini, l'UFAM, and the Young Artist Competition in France. Ms. Kim has performed often in France, New York and in Seoul, including solo and chamber performances in Carnegie Weil Recital Hall and Alice Tully Hall in New York. Much of Ms. Kim's music career has been devoted to teaching young flutists. Prior to joining Music DoReMi, she was a member of the faculty of Manhattan School of Music, Preparatory Division. During that time Ms. Kim guided numerous students into America's most prestigious music conservatories, including The Julliard School, Curtis Institute, Manhattan School of Music, Oberlin, and Mannes Conservatory. Her students won many prestigious competitions including NFA. Ms. Kim has served as a director of International Flute Institute of New York Summer Music Festival and adjunct faculty at Christopher Newport University and Old Dominion University.",
-            image: "assets/faculty/bonnie.heic",
+            image: "assets/faculty/bonnie.jpg",
             languages: ["English", "Korean"],
           },
         ],
@@ -114,14 +117,14 @@ export const programsData = {
           {
             title: "Annie Hui Lun Hsu",
             content:
-              "Mrs. Annie Hsu has been playing the violin and piano at the age of four and won several violin competitions in Taipei, Taiwan when she was in elementary school. Ms. Annie began teaching violin, piano, and music theory when she was 18 years old and she received her bachelor degree in Soochow University. In 2023, she got her master degree from Georgia State University. Ms. Annie has won the Brumby concerto competition in 2021 playing Tchaikovsky’s Violin Concerto. She has attended numerous summer music festivals including Walnut Hill Music Festival in Boston, Summit Music Festival in New York, Salzburg Music Festival in Germany, and Enlightenment Music Festival in Taiwan.",
+              "Mrs. Annie Hsu has been playing the violin and piano at the age of four and won several violin competitions in Taipei, Taiwan when she was in elementary school. Ms. Annie began teaching violin, piano, and music theory when she was 18 years old and she received her bachelor degree in Soochow University. In 2023, she got her master degree from Georgia State University. Ms. Annie has won the Brumby concerto competition in 2021 playing Tchaikovsky's Violin Concerto. She has attended numerous summer music festivals including Walnut Hill Music Festival in Boston, Summit Music Festival in New York, Salzburg Music Festival in Germany, and Enlightenment Music Festival in Taiwan.",
             image: "assets/faculty/annie.jpeg",
             languages: ["English", "Mandarin Chinese"],
           },
           {
             title: "Chris Thurstone",
             content:
-              "Mr. Christopher Thurstone’s dedication to violin performance is evident from a young age, marked by his first-place win at the NCMTA junior division at just thirteen, performing Mozart's Violin Concerto No. 3. This early success propelled a distinguished career encompassing numerous prestigious engagements.",
+              "Mr. Christopher Thurstone's dedication to violin performance is evident from a young age, marked by his first-place win at the NCMTA junior division at just thirteen, performing Mozart's Violin Concerto No. 3. This early success propelled a distinguished career encompassing numerous prestigious engagements.",
             image: "assets/faculty/chris-thurstone.jpeg",
             languages: ["English"],
           },
@@ -134,7 +137,7 @@ export const programsData = {
           {
             title: "Chris Thurstone",
             content:
-              "Mr. Christopher Thurstone’s dedication to violin performance is evident from a young age, marked by his first-place win at the NCMTA junior division at just thirteen, performing Mozart's Violin Concerto No. 3. This early success propelled a distinguished career encompassing numerous prestigious engagements.",
+              "Mr. Christopher Thurstone's dedication to violin performance is evident from a young age, marked by his first-place win at the NCMTA junior division at just thirteen, performing Mozart's Violin Concerto No. 3. This early success propelled a distinguished career encompassing numerous prestigious engagements.",
             image: "assets/faculty/chris-thurstone.jpeg",
             languages: ["English"],
           },
@@ -182,7 +185,7 @@ export const programsData = {
             title: "Jordan Dumas",
             content:
               "Jordan Michael Dumas is a musician and audio professional with four years of teaching and performing experience. He specializes in jazz, rock, pop, and country, working as a bassist with several top corporate bands while guiding students in bass guitar, double bass, guitar, ukulele, and beginner piano. Whether mixing full bands live or in the studio, Jordan is dedicated to delivering clear, dynamic sound. He also designs and builds custom acoustic treatments for studios, game rooms, and movie rooms. With an Associate Degree in The Science and Art of Mixing and Mastering from the Atlanta Institute of Music and Media, he is now preparing to launch his own recording studio.",
-            image: "assets/faculty/jordan-dumas.heic",
+            image: "assets/faculty/jordan-dumas.jpg",
             languages: ["English"],
           },
         ],
@@ -192,7 +195,7 @@ export const programsData = {
   events: {
     title: "Events & Activities",
     description:
-      "At Music Do Re Mi, we believe that music is more than just lessons—it’s about community, creativity, and celebration. Check out our upcoming events and activities in Johns Creek, GA, and be part of the music magic!",
+      "At Music Do Re Mi, we believe that music is more than just lessons—it's about community, creativity, and celebration. Check out our upcoming events and activities in Johns Creek, GA, and be part of the music magic!",
     items: [
       {
         name: "Rising Starts Student Concert",
