@@ -34,7 +34,7 @@ export const homeData = {
       icon: "BookOpen",
       title: "Diverse Curriculum",
       description:
-        "From classical to contemporary, explore various musical styles and techniques.",
+        "From classical to modern, explore various musical styles and techniques.",
       link: "/programs",
       linkText: "Explore Courses",
     },
