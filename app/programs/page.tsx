@@ -42,11 +42,11 @@ export default function ProgramsPage() {
           <div className="flex justify-center mb-8">
             <TabsList className="max-w-full">
               <div className="flex items-center overflow-x-auto">
-              {programsData.faculty.categories.map((category) => (
-                <TabsTrigger key={category.name} value={category.name}>
-                  {category.label}
-                </TabsTrigger>
-              ))}
+                {programsData.faculty.categories.map((category) => (
+                  <TabsTrigger key={category.name} value={category.name}>
+                    {category.label}
+                  </TabsTrigger>
+                ))}
               </div>
             </TabsList>
           </div>
@@ -91,6 +91,18 @@ export default function ProgramsPage() {
                           >
                             {isExpanded ? "Read less" : "Read more"}
                           </Button>
+                        )}
+                        {person.languages && person.languages.length > 0 && (
+                          <div className="mt-2 flex flex-wrap gap-1">
+                            {person.languages.map((language, i) => (
+                              <span
+                                key={i}
+                                className="bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200 rounded px-2 py-1 text-sm"
+                              >
+                                {language}
+                              </span>
+                            ))}
+                          </div>
                         )}
                       </CardContent>
                     </Card>
