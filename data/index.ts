@@ -46,8 +46,8 @@ export const footerData = {
   quickLinks: [
     { label: "Home", href: "/" },
     { label: "About Us", href: "/about" },
-    { label: "Programs", href: "/programs" },
-    { label: "Contact", href: "/contact" },
+    { label: "Programs & Faculty", href: "/programs" },
+    { label: "Contact Us", href: "/contact" },
     { label: "Instrument Rentals", href: "/rentals" },
   ],
   contactInfo: {
