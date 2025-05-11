@@ -56,7 +56,7 @@ export const homeData = {
         title: "Piano Lessons",
         description:
           "Master the keyboard with our comprehensive piano curriculum.",
-        image: "https://i.ibb.co/5XnvhCVs/4-Piano.jpg",
+        image: "https://iili.io/3veoj6B.md.jpg",
       },
       {
         title: "Strings - Violin, Viola, Cello, Bass",
@@ -68,7 +68,7 @@ export const homeData = {
         title: "Others – Guitar, Flute, Clarinet, Saxophone",
         description:
           "We offer a wide range of other music lessons, including guitar, and more.",
-        image: "https://i.ibb.co/W4QdXPTt/14-clarinet-lesson.jpg",
+        image: "https://iili.io/3venqJe.md.jpg",
       },
     ],
     cta: { label: "View All Programs", href: "/programs" },
@@ -110,7 +110,7 @@ export const homeData = {
       { label: "Contact Us", href: "/contact", variant: "default" },
       { label: "Instrument Rentals", href: "/rentals", variant: "outline" },
     ],
-    image: "https://i.ibb.co/7xSxcQC7/8-kinderkey-group-lesson.jpg",
+    image: "https://iili.io/3vezCen.md.jpg",
     imageAlt: "Music instruments",
   },
 };
