@@ -44,7 +44,7 @@ export const homeData = {
     description:
       "For over 15 years, Music Do Re Mi has been a cornerstone of musical education in the Johns Creek, Suwanee, and Duluth community",
     cta: { label: "About Us", href: "/about" },
-    image: "https://i.ibb.co/rRjn8PyB/9-cello-lesson.jpg",
+    image: "https://iili.io/3vOmAlV.md.jpg",
     imageAlt: "Music students in a class",
   },
   programs: {
