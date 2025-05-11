@@ -50,7 +50,7 @@ export const programsData = {
             title: "Paul Chen",
             content:
               "Mr. Paul Chen (American Chinese Pianist) has over 30 years of experience teaching classical piano and piano theory. He currently teaches in the Johns Creek Community at Music Do-Re-Mi with 2025 being his 17th year. He is active as a world class piano soloist and chamber musician. He attended China Central Conservatory of Music where he earned his master’s degree in classical piano. His students have attended several national and international piano competitions, where they earned outstanding achievements.",
-            image: "assets/faculty/paul-chen.HEIC",
+            image: "assets/faculty/paul-chen.heic",
             languages: ["English", "Mandarin Chinese"],
           },
           {
@@ -190,7 +190,7 @@ export const programsData = {
     ],
   },
   events: {
-    title: "Upcoming Events & Activities",
+    title: "Events & Activities",
     description:
       "At Music Do Re Mi, we believe that music is more than just lessons—it’s about community, creativity, and celebration. Check out our upcoming events and activities in Johns Creek, GA, and be part of the music magic!",
     items: [

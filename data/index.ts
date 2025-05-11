@@ -24,10 +24,10 @@ import { contactData } from "./contact";
 
 // Special offer popup data
 export const specialOfferData = {
-  title: "🎵 Rising Starts Student Concert 🎵",
-  details: "Saturday May 10, 2025 (7 - 8:30 PM)",
+  title: "☀️ Summer Music Camp 🎵",
+  details: "June 9 – July 18, 2025",
   description:
-    "Northview Auditorium, 10625 Parson Rd, Johns Creek, GA 30097",
+    "Join us for an unforgettable Summer Music Adventure.  No experience?  No problem – we provide beginner workshops too!  Enjoy music classes, arts and crafts, and other fun activities! Open to ages 5-16.",
   buttonText: "Learn More",
   buttonLink: "/programs",
   footnote:
