@@ -2,7 +2,7 @@ export const homeData = {
   hero: {
     title: "Discover the Joy of Music",
     description:
-      "At Music Do Re Mi, we nurture musical talent through expert instruction, inspiring facilities, and a supportive community.",
+      "At Music Do Re Mi, we nurture music talent through expert instruction, inspiring facilities, and a supportive community.",
     video: {
       src: "assets/hero-dynamic.MOV",
       type: "video/quicktime",
