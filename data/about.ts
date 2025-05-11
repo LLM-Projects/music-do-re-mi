@@ -9,8 +9,8 @@ export const aboutData = {
             "Welcome to Music Do Re Mi, your local destination for all things music! Music has the power to transform lives. Located in the heart of Johns Creek, GA, we offer personalized music instruction for piano, guitar, violin, flute, and more. Our dedicated teachers bring a wealth of experience and a passion for teaching, ensuring every student thrives.",
             "Whether you're preparing for a recital, mastering a favorite song, or simply discovering the joy of music, we’re here to guide you every step. We offer lessons for children, teens, and adults.",
         ],
-        image: "https://s3-media0.fl.yelpcdn.com/bphoto/344IcNg6qcXmioxqcmuMmg/o.jpg",
-        imageAlt: "Music Do Re Mi founders",
+        image: "https://i.postimg.cc/zGGX2DyZ/temp-Imagenlu7-BM.avif",
+        imageAlt: "Music Do Re Mi Building",
     },
     mission: {
         title: "Our Mission",
@@ -51,7 +51,7 @@ export const aboutData = {
     },
     facilities: {
         title: "Our Facilities",
-        image: "https://s3-media0.fl.yelpcdn.com/bphoto/ReG7zdFnWMglstHGfQSI1g/o.jpg",
+        image: "https://s3-media0.fl.yelpcdn.com/bphoto/UMQ_tegNVXiEpk1cxzznDQ/o.jpg",
         imageAlt: "Music Do Re Mi facilities",
         items: [
             {

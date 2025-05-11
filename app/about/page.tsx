@@ -47,7 +47,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Mission */}
-      <section className="bg-slate-50 dark:bg-slate-900 py-12 md:py-16">
+      {/* <section className="bg-slate-50 dark:bg-slate-900 py-12 md:py-16">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center space-y-4">
             <Music className="h-12 w-12 text-rose-500 mx-auto" />
@@ -63,7 +63,7 @@ export default function AboutPage() {
             </ul>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Our Values */}
       <section className="container py-12 md:py-16">
