@@ -44,7 +44,7 @@ export const homeData = {
     description:
       "For over 15 years, Music Do Re Mi has been a cornerstone of musical education in the Johns Creek, Suwanee, and Duluth community",
     cta: { label: "About Us", href: "/about" },
-    image: "https://iili.io/3vOmAlV.md.jpg",
+    image: "assets/generic/9 - cello lesson.HEIC",
     imageAlt: "Music students in a class",
   },
   programs: {
@@ -56,7 +56,7 @@ export const homeData = {
         title: "Piano Lessons",
         description:
           "Master the keyboard with our comprehensive piano curriculum.",
-        image: "https://iili.io/3veoj6B.md.jpg",
+        image: "assets/generic/4 - Piano.JPG",
       },
       {
         title: "Strings - Violin, Viola, Cello, Bass",
@@ -68,7 +68,7 @@ export const homeData = {
         title: "Others – Guitar, Flute, Clarinet, Saxophone",
         description:
           "We offer a wide range of other music lessons, including guitar, and more.",
-        image: "https://iili.io/3venqJe.md.jpg",
+        image: "assets/generic/14 - clarinet lesson.heic",
       },
     ],
     cta: { label: "View All Programs", href: "/programs" },
@@ -110,7 +110,7 @@ export const homeData = {
       { label: "Contact Us", href: "/contact", variant: "default" },
       { label: "Instrument Rentals", href: "/rentals", variant: "outline" },
     ],
-    image: "https://iili.io/3vezCen.md.jpg",
+    image: "assets/generic/8 - kinderkey group lesson.HEIC",
     imageAlt: "Music instruments",
   },
 };
