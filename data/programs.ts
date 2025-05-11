@@ -50,7 +50,7 @@ export const programsData = {
             title: "Paul Chen",
             content:
               "Mr. Paul Chen (American Chinese Pianist) has over 30 years of experience teaching classical piano and piano theory. He currently teaches in the Johns Creek Community at Music Do-Re-Mi with 2025 being his 17th year. He is active as a world class piano soloist and chamber musician. He attended China Central Conservatory of Music where he earned his master’s degree in classical piano. His students have attended several national and international piano competitions, where they earned outstanding achievements.",
-            image: "assets/faculty/paul-chen.heic",
+            image: "assets/faculty/paul-chen.HEIC",
             languages: ["English", "Mandarin Chinese"],
           },
           {
