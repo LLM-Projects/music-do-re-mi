@@ -10,8 +10,6 @@ const nextConfig = {
     unoptimized: true,
   },
   output: 'export',
-  basePath: process.env.NODE_ENV === 'production' ? '/music-do-re-mi' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/music-do-re-mi/' : '',
 };
 
 export default nextConfig;
