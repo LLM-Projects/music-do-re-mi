@@ -13,7 +13,7 @@ export const rentalsData = {
       "Convenient Process: Quick and easy rentals with no hassle.",
       "Expert Support: Our knowledgeable staff will help you select the right instrument and provide guidance on care and maintenance.",
     ],
-    image: "https://sloanschoolofmusic.com/wp-content/uploads/2021/05/musical-instrument-rental-1024x536.jpg",
+    image: "https://media.istockphoto.com/id/894058154/photo/musical-instruments.jpg?s=612x612&w=0&k=20&c=uB0TFyqeY1wu1BPyH2EB7NMoOCaSb86pk7YNQ5QVCGQ=",
     imageAlt: "Musical instruments available for rent",
   },
   instruments: {
