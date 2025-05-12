@@ -9,7 +9,7 @@ export const siteConfig = {
 // Navigation
 export const navigationLinks = [
   { href: "/about", label: "About" },
-  { href: "/programs", label: "Programs & Faculty" },
+  { href: "/faculty", label: "Faculty" },
   { href: "/news", label: "News & Events" },
   { href: "/contact", label: "Contact Us" },
   { href: "/rentals", label: "Instrument Rentals" },
@@ -18,7 +18,7 @@ export const navigationLinks = [
 // Import data from individual files
 import { homeData } from "./home";
 import { aboutData } from "./about";
-import { programsData } from "./programs";
+import { facultyData } from "./faculty";
 import { rentalsData } from "./rentals";
 import { contactData } from "./contact";
 import { newsData } from "./news";
@@ -47,7 +47,7 @@ export const footerData = {
   quickLinks: [
     { label: "Home", href: "/" },
     { label: "About Us", href: "/about" },
-    { label: "Programs & Faculty", href: "/programs" },
+    { label: "Faculty", href: "/faculty" },
     { label: "News & Events", href: "/news" },
     { label: "Contact Us", href: "/contact" },
     { label: "Instrument Rentals", href: "/rentals" },
@@ -60,4 +60,4 @@ export const footerData = {
 };
 
 // Re-export all data
-export { homeData, aboutData, programsData, rentalsData, contactData, newsData };
+export { homeData, aboutData, facultyData, rentalsData, contactData, newsData };

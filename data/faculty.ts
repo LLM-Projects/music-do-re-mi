@@ -1,11 +1,11 @@
-export const programsData = {
+export const facultyData = {
   hero: {
-    title: "Programs & Faculty",
+    title: "Faculty",
     description:
-      "Explore our diverse music programs and meet our expert instructors.",
+      "Meet our exceptional faculty of professional musicians and educators dedicated to nurturing musical talent",
   },
   faculty: {
-    title: "Meet Our Faculty",
+    title: "Our Faculty",
     categories: [
       {
         name: "piano",
@@ -62,10 +62,15 @@ export const programsData = {
           },
           {
             title: "Patty Kuopei Chen",
-            content: "Mrs. Patty Chen has over 30 years of experience with teaching classical piano and piano theory to children and adults. She attended the Taipei National University of the Arts and began her teaching career in Taiwan. She currently teaches in the John's Creek community at Music Do-Re-Mi, with this year being her 25th year with the studio. She was one of two teachers that helped this studio grow when it first opened its doors.\n\nMrs. Patty's students participate in the National Federation of Music Club annually. Students consistently receive superior awards and honorable mentions at the concerto. Aside from the federation and winter recitals, many of Mrs. Patty's students practice diligently and study hard to participate in ABRSM (The Associated Board of the Royal Schools of Music). Students have been invited to the 'High Score Concerts' based on their stellar performances.\n\nIt is the true passion of Mrs. Patty to share the world of piano and classical music with curious minds of all ages. Her approach is rooted in fostering a strong foundation of musical technique while also nurturing creativity and self-expression. Known for her patience, enthusiasm, and commitment to her craft, Mrs. Patty believes in the power of music to enrich lives and is devoted to helping every student reach their fullest potential on the piano.",
+            content:
+              "Mrs. Patty Chen has over 30 years of experience with teaching classical piano and piano theory to children and adults. She attended the Taipei National University of the Arts and began her teaching career in Taiwan. She currently teaches in the John's Creek community at Music Do-Re-Mi, with this year being her 25th year with the studio. She was one of two teachers that helped this studio grow when it first opened its doors.\n\nMrs. Patty's students participate in the National Federation of Music Club annually. Students consistently receive superior awards and honorable mentions at the concerto. Aside from the federation and winter recitals, many of Mrs. Patty's students practice diligently and study hard to participate in ABRSM (The Associated Board of the Royal Schools of Music). Students have been invited to the 'High Score Concerts' based on their stellar performances.\n\nIt is the true passion of Mrs. Patty to share the world of piano and classical music with curious minds of all ages. Her approach is rooted in fostering a strong foundation of musical technique while also nurturing creativity and self-expression. Known for her patience, enthusiasm, and commitment to her craft, Mrs. Patty believes in the power of music to enrich lives and is devoted to helping every student reach their fullest potential on the piano.",
             education: "Bachelors - Taipei National University",
-            experience: "Has been teaching piano for 25+ years and has sent many students to NFMC and ABRSM",
-            associations: ["National Federation of Music Club", "Associated Board of the Royal Schools of Music"],
+            experience:
+              "Has been teaching piano for 25+ years and has sent many students to NFMC and ABRSM",
+            associations: [
+              "National Federation of Music Club",
+              "Associated Board of the Royal Schools of Music",
+            ],
             image: "assets/faculty/patty-kuopei-chen.JPEG",
             languages: ["English", "Mandarin Chinese"],
           },
@@ -189,30 +194,6 @@ export const programsData = {
             languages: ["English"],
           },
         ],
-      },
-    ],
-  },
-  events: {
-    title: "Events & Activities",
-    description:
-      "At Music Do Re Mi, we believe that music is more than just lessons—it's about community, creativity, and celebration. Check out our upcoming events and activities in Johns Creek, GA, and be part of the music magic!",
-    items: [
-      {
-        name: "Rising Starts Student Concert",
-        date: "Saturday, May 10 2025",
-        time: "7:00 PM – 8:30 PM",
-        location:
-          "Northview Auditorium, 10625 Parson Rd, Johns Creek, GA 30097",
-        bio: "This performance is a formal concert organized for the outstanding students of Music Do Re Mi. The venue features an auditorium with 500 seats and a Steinway grand piano. The program includes Do Re Mi award winners from international, nation, and state level competitions, students who enrolled in the top three state youth orchestra of the 2024-2025 academic year, and big improvement students of this year as well!",
-        image: "https://i.postimg.cc/dQ6bH2r3/temp-Image5-Ys-ASi.avif",
-      },
-      {
-        name: "Summer Music Camp",
-        date: "June 9 – July 18, 2025",
-        time: "9:00 AM – 4:00 PM All Day or 9:00 AM – 12:00 PM Half Day",
-        location: "Music Do Re Mi Studio",
-        bio: "Join us for an unforgettable Summer Music Adventure.  No experience?  No problem – we provide beginner workshops too!  Enjoy music classes, arts and crafts, and other fun activities! Open to ages 5-16.",
-        image: "https://i.postimg.cc/fW8PjwQ0/temp-Image-QMok-Sa.avif",
       },
     ],
   },
