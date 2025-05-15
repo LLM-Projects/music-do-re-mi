@@ -11,7 +11,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { MapPin, CalendarDays, Clock } from "lucide-react";
 import { facultyData } from "@/data/faculty";
 import { useState } from "react";
 
@@ -40,10 +39,14 @@ export default function ProgramsPage() {
         </h2>
         <Tabs defaultValue="piano" className="w-full">
           <div className="flex justify-center mb-8">
-            <TabsList className="max-w-full">
+            <TabsList className="max-w-full bg-rose-50 dark:bg-rose-900/20 px-5 py-7 shadow-md">
               <div className="flex items-center overflow-x-auto">
                 {facultyData.faculty.categories.map((category) => (
-                  <TabsTrigger key={category.name} value={category.name}>
+                  <TabsTrigger
+                    key={category.name}
+                    value={category.name}
+                    className="px-6 text-lg font-semibold"
+                  >
                     {category.label}
                   </TabsTrigger>
                 ))}
