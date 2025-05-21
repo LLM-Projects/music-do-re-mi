@@ -9,7 +9,7 @@ export const homeData = {
       fallback: "Your browser does not support the video tag."
     },
     cta: [
-      { label: "Explore Programs", href: "/programs", variant: "default" },
+      { label: "Latest Updates", href: "/news", variant: "default" },
       { label: "Contact Us", href: "/contact", variant: "outline" },
     ],
   },

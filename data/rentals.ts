@@ -203,7 +203,7 @@ export const rentalsData = {
       "Ready to rent your first instrument? Stop by our location in Johns Creek, GA, or contact us to learn more about our rental options!",
     buttons: [
       { label: "Contact Us", href: "/contact" },
-      { label: "Explore Programs", href: "/programs" },
+      { label: "Latest Updates", href: "/news" },
     ],
   },
 };
