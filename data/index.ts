@@ -54,7 +54,7 @@ export const footerData = {
   ],
   contactInfo: {
     address: "10475 Medlock Bridge Road, Street 101 Duluth, GA 30097",
-    phone: "347-399-192",
+    phone: "347-399-1924",
     email: "musicdoremi@myyahoo.com",
   },
 };
