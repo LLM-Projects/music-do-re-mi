@@ -78,13 +78,13 @@ export const facultyData = {
             title: "Sunhee Hwang",
             content:
               "Ms. Sunhee Hwang is a dedicated and passionate piano instructor with over 30 years of teaching experience. She holds a Bachelor of Arts in Music from Rollins College and has completed extensive certification training in Suzuki Piano Pedagogy at the University of Miami, University of Wisconsin-Stevens Point, and Converse College. In addition, she is certified in Musikgarten early childhood music education.",
-            image: "assets/faculty/sunhee-hwang.png",
+            image: "assets/faculty/Sunhee pic.PNG",
             languages: ["English", "Korean"],
           },
           {
             title: "Hu Chen",
-            content: "",
-            image: "https://i.postimg.cc/dQ6bH2r3/temp-Image5-Ys-ASi.avif",
+            content: "Ms. Hu Chen is an experienced music teacher having taught piano and voice for over 15 years. She earned her Bachelor of Arts in Piano Pedagogy from Wuhan Conservatory of Music and has won numerous awards including the Gold Price in Pearl River Cup Piano Competition, Young Maestro International Competition and Silver Prize in Professional Skills Pentathlon Competition. Several of her students have been recognized as well. Her students span the ages of 4 to 60. She teaches classical, contemporary, and performance piano as well as music theory.",
+            image: "assets/faculty/huchen photo.jpeg",
             languages: ["English", "Mandarin Chinese"],
           },
         ],
