@@ -194,6 +194,13 @@ export const facultyData = {
             image: "assets/faculty/jordan-dumas.jpg",
             languages: ["English"],
           },
+          {
+            title: "Aaron Richard",
+            content:
+              "Aaron Richard is an Atlanta-based singer-songwriter with over a decade of experience in music performance, theory, and production. He is fluent in traditional notation in treble & bass clef, guitar/ukulele/bass guitar tablature, and modern chord structures (the 'Universal Chord Families', the 'Circle of Fifths', & the 'Nashville Number System'). He currently specializes as a by-instrument instructor for students interested in learning Acoustic & Electric Guitar, Bass Guitar, Ukulele, and Trombone. He also offers rudimentary music theory in tandem with guided curricula to further encourage and guide students towards a healthy development of instrumental proficiency, in addition to musical literacy.",
+            image: "assets/faculty/aaron-richard.jpeg",
+            languages: ["English"],
+          },
         ],
       },
     ],
