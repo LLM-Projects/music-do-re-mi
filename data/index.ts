@@ -12,7 +12,7 @@ export const navigationLinks = [
   { href: "/faculty", label: "Faculty" },
   { href: "/news", label: "News & Events" },
   { href: "/contact", label: "Contact Us" },
-  { href: "/rentals", label: "Instrument Rentals" },
+  { href: "/rentals", label: "Instruments for Rent and Purchase" },
 ];
 
 // Import data from individual files
@@ -50,7 +50,7 @@ export const footerData = {
     { label: "Faculty", href: "/faculty" },
     { label: "News & Events", href: "/news" },
     { label: "Contact Us", href: "/contact" },
-    { label: "Instrument Rentals", href: "/rentals" },
+    { label: "Instruments for Rent and Purchase", href: "/rentals" },
   ],
   contactInfo: {
     address: "10475 Medlock Bridge Road, Street 101 Duluth, GA 30097",

@@ -75,7 +75,7 @@ export const contactData = {
   //         { value: "percussion", label: "Percussion" },
   //         { value: "theory", label: "Music Theory" },
   //         { value: "ensembles", label: "Ensembles" },
-  //         { value: "rentals", label: "Instrument Rentals" },
+  //         { value: "rentals", label: "Instruments for Rent and Purchase" },
   //         { value: "other", label: "Other" },
   //       ],
   //       required: true,
@@ -125,7 +125,7 @@ export const contactData = {
       },
       {
         question: "Do I need my own instrument?",
-        answer: "While having your own instrument is ideal for regular practice, we offer instrument rentals for many instruments. Our staff can help you choose the right option for your needs.",
+        answer: "While having your own instrument is ideal for regular practice, we offer instruments for rent and purchase. Our staff can help you choose the right option for your needs.",
       },
       {
         question: "How long are lessons?",

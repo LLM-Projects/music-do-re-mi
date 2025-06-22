@@ -1,6 +1,6 @@
 export const rentalsData = {
   hero: {
-    title: "Instrument Rentals",
+    title: "Instruments for Rent and Purchase",
     description: "Start Playing Without the Commitment",
   },
   whyRent: {
@@ -24,6 +24,7 @@ export const rentalsData = {
         description:
           "Available in different sizes for different ages and levels",
         monthlyRate: "$25/month",
+        sellingPrice: "Starts from $450",
         image: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Violin_VL100.png",
       },
       {
@@ -31,6 +32,7 @@ export const rentalsData = {
         description:
           "Available in different sizes for different ages and levels",
         monthlyRate: "$46/month",
+        sellingPrice: "Starts from $550",
         image: "https://static.vecteezy.com/system/resources/thumbnails/044/812/508/small_2x/a-cello-isolated-on-transparent-background-png.png",
       },
       {
@@ -38,6 +40,7 @@ export const rentalsData = {
         description:
           "Available in different sizes for different ages and levels",
         monthlyRate: "$76/month",
+        sellingPrice: "",
         image: "https://static.vecteezy.com/system/resources/thumbnails/023/322/608/small_2x/watercolor-bass-music-instrument-png.png",
       },
       {
@@ -45,6 +48,7 @@ export const rentalsData = {
         description:
           "Available in different sizes for different ages and levels",
         monthlyRate: "$25/month",
+        sellingPrice: "Starts from $125",
         image: "https://pngfre.com/wp-content/uploads/guitar-poster.png",
       },
       {
@@ -52,6 +56,7 @@ export const rentalsData = {
         description:
           "Available in sizes: 1/4, 1/2, 3/4, 4/4. Perfect for classical music, folk, and fingerstyle playing.",
         monthlyRate: "$25/month",
+        sellingPrice: "Starts from $650",
         image: "https://purepng.com/public/uploads/large/purepng.com-fluteobjectsflutemusic-object-instrument-flute-631522326012yyotp.png",
       },
       {
@@ -59,6 +64,7 @@ export const rentalsData = {
         description:
           "Available in different sizes for different ages and levels",
         monthlyRate: "$85-120",
+        sellingPrice: "",
         image: "https://upload.wikimedia.org/wikipedia/commons/2/20/Clarinet-rotate.png",
       },
       {
@@ -66,6 +72,7 @@ export const rentalsData = {
         description:
           "Available in different sizes for different ages and levels",
         monthlyRate: "$25/month",
+        sellingPrice: "",
         image: "https://pics.clipartpng.com/Saxophone_PNG_Clipart-896.png",
       },
       {
@@ -73,6 +80,7 @@ export const rentalsData = {
         description:
           "Available in different sizes for different ages and levels",
         monthlyRate: "$25/month",
+        sellingPrice: "",
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Trumpet_1.png/1200px-Trumpet_1.png",
       },
       {
@@ -80,6 +88,7 @@ export const rentalsData = {
         description:
           "Available in different sizes for different ages and levels",
         monthlyRate: "$25/month",
+        sellingPrice: "",
         image: "https://static.vecteezy.com/system/resources/thumbnails/016/535/700/small_2x/watercolor-trombone-music-instrument-png.png",
       },
     ],

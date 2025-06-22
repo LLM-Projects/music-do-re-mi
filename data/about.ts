@@ -16,10 +16,10 @@ export const aboutData = {
         title: "Our Mission",
         content: [
             "Whether you're a beginner looking to start your musical journey or a seasoned player searching for quality gear, we got you covered.",
-            "At Music Do Re Mi, we offer a wide range of instrument rentals to make learning and playing more accessible.",
+            "At Music Do Re Mi, we offer a wide range of instrument for rent and purchase, to make learning and playing more accessible.",
             "Whether you need an instrument for school, a short-term event, or just want to try something new, our flexible rental options ensure you have what you need without a long-term commitment.",
             "We also provide music lessons for all ages and skill levels.",
-            "Our experienced instructors are passionate about helping you grow, whether you’re picking up an instrument for the first time or refining advanced techniques.",
+            "Our experienced instructors are passionate about helping you grow, whether you're picking up an instrument for the first time or refining advanced techniques.",
             "We tailor our lessons to fit your goals, ensuring a fun and productive learning experience."
 
         ],

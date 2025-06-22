@@ -108,7 +108,7 @@ export const homeData = {
       "Contact us today to schedule a tour, learn about our programs, or sign up for lessons.",
     buttons: [
       { label: "Contact Us", href: "/contact", variant: "default" },
-      { label: "Instrument Rentals", href: "/rentals", variant: "outline" },
+      { label: "Instruments for Rent and Purchase", href: "/rentals", variant: "outline" },
     ],
     image: "assets/generic/8 - kinderkey group lesson.jpg",
     imageAlt: "Music instruments",

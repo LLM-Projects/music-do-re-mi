@@ -88,6 +88,12 @@ export default function RentalsPage() {
                     <span className="font-semibold">Monthly Rate:</span>{" "}
                     {instrument.monthlyRate}
                   </p>
+                  {instrument.sellingPrice && (
+                    <p className="text-foreground">
+                      <span className="font-semibold">Price:</span>{" "}
+                      {instrument.sellingPrice}
+                    </p>
+                  )}
                 </CardContent>
               </Card>
             ))}
