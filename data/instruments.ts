@@ -1,4 +1,4 @@
-export const rentalsData = {
+export const instrumentsData = {
   hero: {
     title: "Instruments for Rent and Purchase",
     description: "Start Playing Without the Commitment",

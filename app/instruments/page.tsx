@@ -9,9 +9,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { rentalsData } from "@/data/rentals";
+import { instrumentsData } from "@/data/instruments";
 
-export default function RentalsPage() {
+export default function InstrumentsPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
@@ -20,10 +20,10 @@ export default function RentalsPage() {
         <div className="container relative py-16 md:py-24">
           <div className="max-w-3xl">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl text-foreground">
-              {rentalsData.hero.title}
+              {instrumentsData.hero.title}
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              {rentalsData.hero.description}
+              {instrumentsData.hero.description}
             </p>
           </div>
         </div>
@@ -34,13 +34,13 @@ export default function RentalsPage() {
         <div className="grid gap-8 md:grid-cols-2 items-center">
           <div className="space-y-4">
             <h2 className="text-3xl font-bold tracking-tighter text-foreground">
-              {rentalsData.whyRent.title}
+              {instrumentsData.whyRent.title}
             </h2>
             <p className="text-muted-foreground">
-              {rentalsData.whyRent.description}
+              {instrumentsData.whyRent.description}
             </p>
             <ul className="space-y-2">
-              {rentalsData.whyRent.benefits.map((benefit, index) => (
+              {instrumentsData.whyRent.benefits.map((benefit, index) => (
                 <li key={index} className="flex items-start">
                   <Check className="mr-2 h-5 w-5 text-rose-500 shrink-0 mt-0.5" />
                   <span className="text-foreground">{benefit}</span>
@@ -50,8 +50,8 @@ export default function RentalsPage() {
           </div>
           <div className="relative h-[350px] rounded-lg overflow-hidden">
             <Image
-              src={rentalsData.whyRent.image}
-              alt={rentalsData.whyRent.imageAlt}
+              src={instrumentsData.whyRent.image}
+              alt={instrumentsData.whyRent.imageAlt}
               fill
               className="object-cover"
             />
@@ -63,11 +63,11 @@ export default function RentalsPage() {
       <section className="bg-slate-50 dark:bg-slate-900 py-12 md:py-16">
         <div className="container">
           <h2 className="text-3xl font-bold tracking-tighter text-center mb-8 text-foreground">
-            {rentalsData.instruments.title}
+            {instrumentsData.instruments.title}
           </h2>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {rentalsData.instruments.items.map((instrument, index) => (
+            {instrumentsData.instruments.items.map((instrument, index) => (
               <Card key={index} className="overflow-hidden dark:border-slate-700">
                 <div className="relative h-[200px]">
                   <Image
@@ -104,10 +104,10 @@ export default function RentalsPage() {
       {/* Rental Plans */}
       {/* <section className="container py-12 md:py-16">
         <h2 className="text-3xl font-bold tracking-tighter text-center mb-8 text-foreground">
-          {rentalsData.plans.title}
+          {instrumentsData.plans.title}
         </h2>
         <div className="grid gap-8 md:grid-cols-3">
-          {rentalsData.plans.items.map((plan, index) => (
+          {instrumentsData.plans.items.map((plan, index) => (
             <Card
               key={index}
               className={`relative overflow-hidden ${
@@ -170,10 +170,10 @@ export default function RentalsPage() {
       {/* <section className="bg-rose-50 dark:bg-rose-950/20 py-12 md:py-16">
         <div className="container">
           <h2 className="text-3xl font-bold tracking-tighter text-center mb-8 text-foreground">
-            {rentalsData.process.title}
+            {instrumentsData.process.title}
           </h2>
           <div className="grid gap-8 md:grid-cols-4">
-            {rentalsData.process.items.map((step, index) => (
+            {instrumentsData.process.items.map((step, index) => (
               <div key={index} className="text-center">
                 <div className="flex items-center justify-center w-12 h-12 rounded-full bg-rose-500 text-white font-bold text-lg mx-auto mb-4">
                   {step.step}
@@ -189,7 +189,7 @@ export default function RentalsPage() {
       {/* Rental Policies */}
       {/* <section className="container py-12 md:py-16">
         <h2 className="text-3xl font-bold tracking-tighter text-center mb-8 text-foreground">
-          {rentalsData.policies.title}
+          {instrumentsData.policies.title}
         </h2>
         <div className="max-w-4xl mx-auto">
           <Table>
@@ -200,7 +200,7 @@ export default function RentalsPage() {
               </TableRow>
             </TableHeader>
             <TableBody>
-              {rentalsData.policies.items.map((policy, index) => (
+              {instrumentsData.policies.items.map((policy, index) => (
                 <TableRow key={index} className="dark:border-slate-700">
                   <TableCell className="font-medium text-foreground">{policy.policy}</TableCell>
                   <TableCell className="text-foreground">{policy.details}</TableCell>
@@ -214,12 +214,12 @@ export default function RentalsPage() {
       {/* CTA Section */}
       <section className="container py-12 md:py-16">
         <div className="bg-slate-50 dark:bg-slate-900 rounded-lg p-8 text-center">
-          <h2 className="text-2xl font-bold mb-4 text-foreground">{rentalsData.cta.title}</h2>
+          <h2 className="text-2xl font-bold mb-4 text-foreground">{instrumentsData.cta.title}</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
-            {rentalsData.cta.description}
+            {instrumentsData.cta.description}
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            {rentalsData.cta.buttons.map((button, index) => (
+            {instrumentsData.cta.buttons.map((button, index) => (
               <Button
                 key={index}
                 asChild

@@ -12,14 +12,14 @@ export const navigationLinks = [
   { href: "/faculty", label: "Faculty" },
   { href: "/news", label: "News & Events" },
   { href: "/contact", label: "Contact Us" },
-  { href: "/rentals", label: "Instruments for Rent and Purchase" },
+  { href: "/instruments", label: "Instruments for Rent and Purchase" },
 ];
 
 // Import data from individual files
 import { homeData } from "./home";
 import { aboutData } from "./about";
 import { facultyData } from "./faculty";
-import { rentalsData } from "./rentals";
+import { instrumentsData } from "./instruments";
 import { contactData } from "./contact";
 import { newsData } from "./news";
 
@@ -60,4 +60,4 @@ export const footerData = {
 };
 
 // Re-export all data
-export { homeData, aboutData, facultyData, rentalsData, contactData, newsData };
+export { homeData, aboutData, facultyData, instrumentsData, contactData, newsData };
