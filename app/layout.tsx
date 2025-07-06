@@ -2,6 +2,7 @@ import type React from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
@@ -67,6 +68,7 @@ export default function RootLayout({
           </div>
         </ThemeProvider>
       </body>
+      <GoogleAnalytics gaId={siteConfig.gaId} />
     </html>
   );
 }
