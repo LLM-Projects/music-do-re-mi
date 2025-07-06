@@ -128,9 +128,25 @@ export const contactData = {
         answer: "While having your own instrument is ideal for regular practice, we offer instruments for rent and purchase. Our staff can help you choose the right option for your needs.",
       },
       {
-        question: "How long are lessons?",
-        answer: "Lesson length varies by program and age. Typically, younger students have 30-minute lessons, while older students and adults may have 45-60 minute lessons.",
+        question: "Can I test out my instrument?",
+        answer: "Yes! If you're thinking of buying an instrument from us, we allow you to take home your instrument for a one week trial to help make sure it's perfect for you.",
       },
+      {
+        question: "Do you have instruments for small children?",
+        answer: "Yes! We have instruments like violins and ukuleles for young children.",
+      },
+      {
+        question: "Can I cancel my rental at any time?",
+        answer: "Yes, you can cancel at any time. No cancellation fee",
+      },
+      {
+        question: "What if my child grows and needs a larger instrument?",
+        answer: "No problem!  If your child has grown out of their rental instrument, we will swap your current instrument for the right size.",
+      },
+      {
+        question: "Where are you located?",
+        answer: "Our school and office are located in Johns Creek.  Many of our customers are also in the Alpharetta, Cumming, Duluth, and Suwanee neighborhoods.",
+      }
     ],
   },
 } 
