@@ -1,3 +1,5 @@
+import { Languages } from "lucide-react";
+
 export const facultyData = {
   hero: {
     title: "Faculty",
@@ -133,6 +135,13 @@ export const facultyData = {
               "Mr. Christopher Thurstone's dedication to violin performance is evident from a young age, marked by his first-place win at the NCMTA junior division at just thirteen, performing Mozart's Violin Concerto No. 3. This early success propelled a distinguished career encompassing numerous prestigious engagements.",
             image: "assets/faculty/chris-thurstone.jpeg",
             languages: ["English"],
+          },
+          {
+            title: "Esther Kim",
+            content:
+              "Esther Kim is a violinist, educator, and music contractor based in Atlanta, Georgia. She holds a Bachelors in Violin Performance and a Certificate in Music and Entertainment Business at Kennesaw State University, where she served as Concertmaster of the Symphony Orchestra. Esther performs with many orchestras in the region, including the Dekalb, Valdosta, Rome, LaGrange, and Alpharetta Symphony Orchestras, and plays as a pit musician for the City Springs Theater Company. Besides classical music, Esther has also collaborated and performed with many artists, including the rapper Jeezy, R&amp;B singer Alfreda, Grammy-winning jazz singer Nicole Zuraitis, and many others. In addition to her performing career, Esther teaches private violin and viola lessons in metro-Atlanta and contracts musicians for weddings and events. She also serves on the worship team at Passion City Church as a violinist. Prior to pursuing her freelance career as a violinist, she worked administratively for the Atlanta Symphony Orchestra.",
+              image: "assets/faculty/esther-kim.jpeg",
+              languages: ["English"],
           },
         ],
       },
