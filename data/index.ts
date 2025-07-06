@@ -42,8 +42,8 @@ export const navigationLinks = [
   { href: "/about", label: "About" },
   { href: "/faculty", label: "Faculty" },
   { href: "/news", label: "News & Events" },
-  { href: "/contact", label: "Contact Us" },
   { href: "/instruments", label: "Instruments for Rent and Purchase" },
+  { href: "/contact", label: "Contact Us" },
 ];
 
 // Import data from individual files
