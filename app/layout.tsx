@@ -11,8 +11,23 @@ import AOSInit from "@/components/aos-init";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: siteConfig.name,
+  title: {
+    default: siteConfig.name,
+    template: `%s | ${siteConfig.name}`,
+  },
+  applicationName: siteConfig.name,
   description: siteConfig.description,
+  keywords: siteConfig.keywords,
+  authors: [
+    {
+      name: siteConfig.author,
+      url: siteConfig.url,
+    },
+  ],
+  creator: siteConfig.creator,
+  publisher: siteConfig.publisher,
+  openGraph: siteConfig.openGraph,
+  robots: siteConfig.robots,
 };
 
 export default function RootLayout({

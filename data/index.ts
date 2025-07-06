@@ -3,7 +3,38 @@ export const siteConfig = {
   name: "Music Do Re Mi",
   description: "Learn music with our expert instructors at Music Do Re Mi",
   url: "https://musicdoremi.com",
-  ogImage: "https://musicdoremi.com/og.jpg",
+  keywords: [
+    "music school",
+    "instrument rentals",
+    "instrument purchase",
+    "john creeks music school",
+    "music school near me",
+    "violin lessons",
+    "piano classes",
+    "guitar lessons",
+  ],
+  author: "Music Do Re Mi",
+  creator: "Music Do Re Mi",
+  publisher: "Music Do Re Mi",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://musicdoremi.com",
+    siteName: "Music Do Re Mi",
+    title: "Music Do Re Mi - Premier Music School & Lessons",
+    description:
+      "Learn music with expert instructors at Music Do Re Mi. Offering piano, guitar, voice, strings, and more for all ages and skill levels.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+    },
+  },
+
 };
 
 // Navigation
