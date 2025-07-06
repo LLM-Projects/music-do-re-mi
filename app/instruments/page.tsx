@@ -47,6 +47,7 @@ export default function InstrumentsPage() {
                 </li>
               ))}
             </ul>
+            <p className="text-muted-foreground">Stop by our office to see our selection and test out your next instrument!</p>
           </div>
           <div className="relative h-[350px] rounded-lg overflow-hidden">
             <Image

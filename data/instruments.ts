@@ -1,16 +1,17 @@
 export const instrumentsData = {
   hero: {
     title: "Instruments for Rent and Purchase",
-    description: "Start Playing Without the Commitment",
+    description: "Providing instruments for rental and purchase in Johns Creek for over 30 years",
   },
   whyRent: {
-    title: "Why Rent With Us?",
+    title: "Why Rent or Purchase With Us?",
     description:
-      "At Music Do Re Mi, we make it easy for students to access the instruments they need. Whether you're just starting out or testing the waters before purchasing your own, our affordable rental program has you covered.",
+      "Music DoReMi offers affordable, professionally maintained instruments serving the Johns Creek, Alpharetta, Duluth, Suwanee, and Cumming communities for over 30 years. Whether you're just starting, testing the waters before purchasing your own, or looking for the perfect sound for the next few years, we've got you covered!",
     benefits: [
-      "Quality Instruments: We offer over 300 well-maintained, high-quality instruments to enhance your learning experience.",
+      "Quality Instruments: All our instruments are well-maintained and high-quality to enhance your learning experience.",
+      "Wide Selection to match your needs: With over 300 instruments on hand, we can meet your specific skill level and size. We have beginner, intermediate, and advanced level instruments and have different sizes for all ages from 4 years old to adult sizes.",
       "Affordable Plans: Flexible rental options to fit your budget including rent-to-buy",
-      "Convenient Process: Quick and easy rentals with no hassle.",
+      "Convenient Process: Quick and easy rentals.",
       "Expert Support: Our knowledgeable staff will help you select the right instrument and provide guidance on care and maintenance.",
     ],
     image: "https://media.istockphoto.com/id/894058154/photo/musical-instruments.jpg?s=612x612&w=0&k=20&c=uB0TFyqeY1wu1BPyH2EB7NMoOCaSb86pk7YNQ5QVCGQ=",
