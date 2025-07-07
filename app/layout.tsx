@@ -2,6 +2,7 @@ import type React from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
@@ -11,8 +12,23 @@ import AOSInit from "@/components/aos-init";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: siteConfig.name,
+  title: {
+    default: siteConfig.name,
+    template: `%s | ${siteConfig.name}`,
+  },
+  applicationName: siteConfig.name,
   description: siteConfig.description,
+  keywords: siteConfig.keywords,
+  authors: [
+    {
+      name: siteConfig.author,
+      url: siteConfig.url,
+    },
+  ],
+  creator: siteConfig.creator,
+  publisher: siteConfig.publisher,
+  openGraph: siteConfig.openGraph,
+  robots: siteConfig.robots,
 };
 
 export default function RootLayout({
@@ -52,6 +68,7 @@ export default function RootLayout({
           </div>
         </ThemeProvider>
       </body>
+      <GoogleAnalytics gaId={siteConfig.gaId} />
     </html>
   );
 }

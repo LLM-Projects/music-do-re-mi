@@ -68,15 +68,32 @@ export default function Footer() {
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4 text-rose-500" />
-                <span>{footerData.contactInfo.address}</span>
+                <a
+                  href={`https://maps.app.goo.gl/72ix6jkf4rkgJQsK7`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary"
+                >
+                  {footerData.contactInfo.address}
+                </a>
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4 text-rose-500" />
-                <span>{footerData.contactInfo.phone}</span>
+                <a
+                  href={`tel:${footerData.contactInfo.phone}`}
+                  className="hover:text-primary"
+                >
+                  {footerData.contactInfo.phone}
+                </a>
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4 text-rose-500" />
-                <span>{footerData.contactInfo.email}</span>
+                <a
+                  href={`mailto:${footerData.contactInfo.email}`}
+                  className="hover:text-primary"
+                >
+                  {footerData.contactInfo.email}
+                </a>
               </div>
             </div>
           </div>
