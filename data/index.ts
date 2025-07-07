@@ -34,7 +34,7 @@ export const siteConfig = {
       "max-image-preview": "large",
     },
   },
-  gaId: "",
+  gaId: "G-TJRVQMPP52",
 };
 
 // Navigation
