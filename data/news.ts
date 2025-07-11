@@ -130,23 +130,23 @@ export const newsData = {
       "Join us for our exciting events and activities throughout the year.",
     items: [
       {
-        name: "Summer Music Camp",
-        date: "June 9, 2025",
-        time: "9:00 AM – 4:00 PM All Day or 9:00 AM – 12:00 PM Half Day",
-        location: "Music Do Re Mi Studio",
-        image: "/assets/generic/15 - camp iStock-1045440394.jpg",
+        name: "🥁 Drums Lesson 🥁",
+        date: "TBD",
+        time: "Ages 3+",
+        location: "Music Do Re Mi School",
+        image: "/assets/events/drum-lessons.png",
         description:
-          "Join us for an unforgettable Summer Music Adventure. No experience? No problem – we provide beginner workshops too! Enjoy music classes, arts and crafts, and other fun activities! Open to ages 5-16.",
+          "New Semester, New Adventure of Drum Rolls!",
       },
       {
-        name: "Rising Stars Student Concert",
-        date: "May 10, 2025",
-        time: "7:00 PM – 8:30 PM",
+        name: "Chamber Music Program",
+        date: "August 13, 2025 - December 10th 2025",
+        time: "Total 18 sessions",
         location:
-          "Northview Auditorium, 10625 Parson Rd, Johns Creek, GA 30097",
-        image: "/assets/generic/10 - recital event.jpg",
+          "Music Do Re Mi School - Recital Hall, Suite #525, 10740 Medlock Bridge Road, John Creek, GA",
+        image: "/assets/events/chamber-music.png",
         description:
-          "This performance is a formal concert organized for the outstanding students of Music Do Re Mi. The venue features an auditorium with 500 seats and a Steinway grand piano. The program includes Do Re Mi award winners from international, nation, and state level competitions, students who enrolled in the top three state youth orchestra of the 2024-2025 academic year, and big improvement students of this year as well!",
+          "Improving Musical Skills, Sightreading, Rhythm, Music Theory, Musical sensitivities, Musical confidence, Communication and Teamwork.",
       },
     ],
   },
