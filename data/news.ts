@@ -135,6 +135,7 @@ export const newsData = {
         name: "☀️ Summer Concert 🎙️",
         date: "July 19, 2025",
         time: "7:00 PM onwards",
+        image: "/assets/events/summer-concert.png",
         location: "Music Do Re Mi School, Suite#525, 10740 Medlock Bridge Road, John Creek, GA",
         description: "Come Join Us for Our Concert, Free Admission 🆓",
       },
