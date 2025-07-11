@@ -1,3 +1,5 @@
+import { Description } from "@radix-ui/react-toast";
+
 export const newsData = {
   hero: {
     title: "News & Events",
@@ -129,6 +131,13 @@ export const newsData = {
     description:
       "Join us for our exciting events and activities throughout the year.",
     items: [
+      {
+        name: "☀️ Summer Concert 🎙️",
+        date: "July 19, 2025",
+        time: "7:00 PM onwards",
+        location: "Music Do Re Mi School, Suite#525, 10740 Medlock Bridge Road, John Creek, GA",
+        description: "Come Join Us for Our Concert, Free Admission 🆓",
+      },
       {
         name: "🥁 Drums Lesson 🥁",
         date: "TBD",
