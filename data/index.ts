@@ -56,14 +56,14 @@ import { newsData } from "./news";
 
 // Special offer popup data
 export const specialOfferData = {
-  title: "☀️ Summer Music Camp 🎵",
-  details: "June 9 – July 18, 2025",
+  title: "☀️ Summer Concert 🎵",
+  details: "July 19, 2025 (7 PM Onwards)",
   description:
-    "Join us for an unforgettable Summer Music Adventure.  No experience?  No problem – we provide beginner workshops too!  Enjoy music classes, arts and crafts, and other fun activities! Open to ages 5-16.",
+    "Come join us for an unforgettable Summer Music Adventure. ",
   buttonText: "Learn More",
   buttonLink: "/news",
   footnote:
-    "Come learn, perform, and make lasting memories at Music Do Re Mi! 🎶",
+    "Come learn, perform, and make lasting memories at Music Do Re Mi 🎶",
 };
 
 // Footer data
