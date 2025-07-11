@@ -212,6 +212,19 @@ export const facultyData = {
           },
         ],
       },
+      {
+        name: "drums",
+        label: "Drums",
+        items: [
+          {
+            title: "Noah Samuelson",
+            content:
+              "Mr. Noah Samuelson, an active musician and educator, has been serving the communities of Middle and North Georgia since 2015. As a percussionist, Mr. Samuelson has performed throughout the United States and Europe with notable performances at PASIC in 2018 and the IPCL in 2022. He works with the Alpharetta Symphony Orchestra as principal percussionist and development coordinator. Since 2021, Mr. Samuelson has been a clinician and instructor to Henry, Fayette, and Coweta County schools, teaching percussion techniques to middle and high school students. He has been a percussion instructor for the East Coweta Indoor Percussion and East Coweta Marching Indians for the past two seasons. Mr. Samuelson also holds a successful private lessons studio, with several students in the GMEA District and All-State Honor Bands annually. Mr. Samuelson holds a bachelor’s in music from Georgia State University and a master’s in music from the University of Illinois Urbana-Champaign. ",
+            image: "assets/faculty/noah.JPEG",
+            languages: ["English"]
+          },
+        ],
+      },
     ],
   },
   cta: {
