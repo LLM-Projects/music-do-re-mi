@@ -46,7 +46,7 @@ export default function NewsPage() {
                     src={event.image || "/placeholder.svg"}
                     alt={event.name}
                     fill
-                    className="object-cover"
+                    className="object-contain"
                   />
                 </div>
                 <div className="p-6">
