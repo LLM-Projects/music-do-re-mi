@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://musicdoremi.com
+
+# Sitemaps
+Sitemap: https://musicdoremi.com/sitemap.xml
