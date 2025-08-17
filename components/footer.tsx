@@ -31,6 +31,8 @@ export default function Footer() {
                   key={social.name}
                   href={social.href}
                   className="text-muted-foreground hover:text-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {social.name === "Facebook" && (
                     <Facebook className="h-5 w-5" />

@@ -25,7 +25,7 @@ export const contactData = {
         icon: "Mail",
         title: "Email Us",
         content: [
-          "musicdoremi@myyahoo.com"
+          "musicdoremi525@gmail.com"
         ],
       },
       {
