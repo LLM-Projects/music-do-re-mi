@@ -71,9 +71,8 @@ export const footerData = {
   description:
     "Inspiring musical excellence. We provide quality music education for students of all ages and abilities.",
   socialLinks: [
-    { name: "Facebook", href: "#" },
-    { name: "Instagram", href: "#" },
-    { name: "Twitter", href: "#" },
+    { name: "Facebook", href: "https://www.facebook.com/people/Music-Do-Re-Mi/61576684795987/" },
+    { name: "Instagram", href: "https://www.instagram.com/musicdoremi525/" },
   ],
   quickLinks: [
     { label: "Home", href: "/" },
@@ -86,7 +85,7 @@ export const footerData = {
   contactInfo: {
     address: "10475 Medlock Bridge Road, Street 101 Duluth, GA 30097",
     phone: "347-399-1924",
-    email: "musicdoremi@myyahoo.com",
+    email: "musicdoremi525@gmail.com",
   },
 };
 
