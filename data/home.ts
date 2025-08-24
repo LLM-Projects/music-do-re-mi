@@ -110,7 +110,7 @@ export const homeData = {
       { label: "Contact Us", href: "/contact", variant: "default" },
       { label: "Instruments for Rent and Purchase", href: "/instruments", variant: "outline" },
     ],
-    image: "assets/generic/8 - kinderkey group lesson.jpg",
+    image: "assets/generic/2-piano_theory.jpg",
     imageAlt: "Music instruments",
   },
 };
