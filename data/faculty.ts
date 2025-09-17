@@ -89,6 +89,12 @@ export const facultyData = {
             image: "assets/faculty/huchen photo.jpeg",
             languages: ["English", "Mandarin Chinese"],
           },
+          {
+            title: "Ian Smith",
+            content: "Ian Smith is a violist from Fayetteville, Georgia. Since starting viola at the age of 10, his love for the instrument has grown immensely.  Ian received both his Bachelors and Masters degrees in Viola Performance from Georgia State University in 2018 and 2020 respectively, studying with Tania Maxwell Clements. Since graduating in 2020, Ian has performed with the Rome Symphony Orchestra, Carroll Symphony Orchestra, Griffin Choral Arts, and the Gainesville Theater Alliance. He also plays in various string quartets at weddings across Georgia.   He has been teaching private lessons in the north Atlanta area for three years, including running viola sectionals at Northview High School.",
+            image: "assets/faculty/ian-smith.jpg",
+            languages: ["English"],
+          }
         ],
       },
       {
