@@ -1,9 +1,16 @@
-import { Description } from "@radix-ui/react-toast";
-
 export const newsData = {
   hero: {
     title: "News & Events",
     description: "Stay updated with the latest happenings at Music Do Re Mi",
+  },
+  feed: {
+    social: "Instagram",
+    items: [
+      {
+        url: "https://www.instagram.com/reel/DN-5H--AULw/",
+        type: "reel",
+      },
+    ]
   },
   news: {
     title: "Latest News",

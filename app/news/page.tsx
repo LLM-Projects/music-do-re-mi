@@ -29,6 +29,9 @@ export default function NewsPage() {
         </div>
       </section>
 
+      {/* Social Media Feed */}
+      <section></section>
+
       {/* Events Section */}
       <section className="bg-slate-50 dark:bg-slate-900 py-12 md:py-16">
         <h2 className="text-3xl font-bold tracking-tighter text-center mb-8 text-foreground">
@@ -69,7 +72,9 @@ export default function NewsPage() {
                       {event.time}
                     </p>
                   </div>
-                  <p className="text-base text-muted-foreground">{event.description}</p>
+                  <p className="text-base text-muted-foreground">
+                    {event.description}
+                  </p>
                 </div>
               </div>
             ))}
