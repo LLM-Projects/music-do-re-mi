@@ -1,17 +1,19 @@
+"use client";
+
 import Image from "next/image";
 import { CalendarDays, Clock, MapPin, Award, Users, Music } from "lucide-react";
-import { parse } from "date-fns";
 import { newsData } from "@/data/news";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 export default function NewsPage() {
-  // Sort events by date
-  const sortedEvents = [...newsData.events.items].sort((a, b) => {
-    const dateA = parse(a.date.split(",")[0], "MMMM d yyyy", new Date());
-    const dateB = parse(b.date.split(",")[0], "MMMM d yyyy", new Date());
-    return dateA.getTime() - dateB.getTime();
-  });
-
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
@@ -30,7 +32,39 @@ export default function NewsPage() {
       </section>
 
       {/* Social Media Feed */}
-      <section></section>
+      <section className="bg-slate-50 dark:bg-slate-900 py-12 md:py-16">
+        <h2 className="text-3xl font-bold tracking-tighter text-center mb-8 text-foreground">
+          Feed
+        </h2>
+        <div className="flex justify-center">
+          <Carousel
+            opts={{
+              align: "center",
+              loop: true,
+            }}
+            plugins={[Autoplay({ delay: 3000 })]}
+            className="w-full max-w-xl md:max-w-2xl"
+          >
+            <CarouselContent>
+              {Array.from({ length: 5 }).map((_, index) => (
+                <CarouselItem key={index}>
+                  <div className="p-2">
+                    <Card>
+                      <CardContent className="flex aspect-square items-center justify-center p-10">
+                        <span className="text-4xl font-semibold">
+                          {index + 1}
+                        </span>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </div>
+      </section>
 
       {/* Events Section */}
       <section className="bg-slate-50 dark:bg-slate-900 py-12 md:py-16">
