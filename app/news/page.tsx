@@ -1,8 +1,18 @@
 "use client";
 
 import Image from "next/image";
-import { CalendarDays, Clock, MapPin, Award, Users, Music } from "lucide-react";
+import {
+  CalendarDays,
+  Clock,
+  MapPin,
+  Award,
+  Users,
+  Music,
+  ArrowUpRight,
+  Link,
+} from "lucide-react";
 import { newsData } from "@/data/news";
+import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Carousel,
@@ -46,20 +56,47 @@ export default function NewsPage() {
             className="w-full max-w-xl md:max-w-2xl"
           >
             <CarouselContent>
-              {Array.from({ length: 5 }).map((_, index) => (
-                <CarouselItem key={index}>
+              {newsData.feed.instagram.posts.map((post, index) => (
+                <CarouselItem key={index + 1}>
                   <div className="p-2">
-                    <Card>
-                      <CardContent className="flex aspect-square items-center justify-center p-10">
-                        <span className="text-4xl font-semibold">
-                          {index + 1}
-                        </span>
-                      </CardContent>
-                    </Card>
+                    <a
+                      href={post.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group"
+                    >
+                      <Card className="relative overflow-hidden border-0 shadow-sm bg-white/80 dark:bg-zinc-900/80 backdrop-blur-xl transition-all duration-300 hover:shadow-md group-hover:shadow-lg">
+                        <CardContent className="flex aspect-square items-center justify-center p-10">
+                          <div className="relative h-[320px] overflow-hidden rounded-lg"></div>
+                          <iframe
+                            src={post.url + `embed`}
+                            width="100%"
+                            height="100%"
+                            className="absolute inset-0 w-full h-full object-cover"
+                            title={post.title}
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent rounded-lg"></div>
+
+                          <div className="absolute bottom-0 left-0 right-0 p-5">
+                            <div className="flex items-center justify-between gap-3">
+                              <div className="space-y-1.5">
+                                <h3 className="text-lg font-semibold text-white dark:text-zinc-100 leading-snug">
+                                  {post.title}
+                                </h3>
+                              </div>
+                              <div className="p-2 rounded-full dark:bg-zinc-800/50 backdrop-blur-md group-hover:bg-white/20 dark:group-hover:bg-zinc-700/50 transition-colors duration-300">
+                                <ArrowUpRight className="w-4 h-4 text-white group-hover:-rotate-12 transition-transform duration-300" />
+                              </div>
+                            </div>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </a>
                   </div>
                 </CarouselItem>
               ))}
             </CarouselContent>
+
             <CarouselPrevious />
             <CarouselNext />
           </Carousel>
