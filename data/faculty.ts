@@ -58,7 +58,7 @@ export const facultyData = {
           {
             title: "Sunny Kim",
             content:
-              "Is a music educator with considerable experience in teaching different ages and skill levels and an experienced accompanist with 20 years of experience accompanying choirs, soloists, and bands. I also orchestrate for the symphony orchestras. Adept at adapting to different musical styles and pieces of the era. I still educate students, collaborate with many musicians, perform, and record.",
+              "Is a pianist, arranger, and educator with over 22 years of teaching experience. She has earned her Master of Music degree on a full scholarship from Florida Atlantic University, where she studied piano performance with Dr. Irena Kofman and composition with Dr. Stuart Glazer. She currently teaches music in public schools in Gwinnett County and Fulton County, and serves as a collaborative pianist for women’s vocal ensembles and the Georgia choir community. She has also worked as a collaborative pianist for orchestras, high school and college choirs, and is active in orchestral arranging. In addition, she directs a student band and teaches piano and theory in Georgia.",
             image: "assets/faculty/sunny-kim.png",
             languages: ["English", "Korean"],
           },
