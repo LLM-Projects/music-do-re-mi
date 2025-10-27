@@ -80,18 +80,6 @@ export const newsData = {
                   },
                   { name: "Teddy Marshall", awards: ["NFMC Superior Rating"] },
                   { name: "Philip Deng", awards: ["NFMC Superior Rating"] },
-                  {
-                    name: "Eric",
-                    awards: ["Local, Regional and State Awards"],
-                  },
-                  {
-                    name: "Edward",
-                    awards: ["Local, Regional and State Awards"],
-                  },
-                  {
-                    name: "Emily",
-                    awards: ["Local, Regional and State Awards"],
-                  },
                 ],
               },
               {
