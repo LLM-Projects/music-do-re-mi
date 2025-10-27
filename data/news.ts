@@ -118,7 +118,7 @@ export const newsData = {
                 name: "Jay Webler",
                 students: [
                   { name: "Yangyang Gao", awards: ["All State"] },
-                  { name: "Eric Mao", awards: ["All State"] },
+                  { name: "Eric Mao", awards: ["Local, Regional and State"] },
                   { name: "Alex Zhou", awards: ["All State"] },
                   { name: "Zhenbo Jaydon Jiang", awards: ["All State"] },
                   { name: "Andrew Chen", awards: ["All State"] },
@@ -148,7 +148,7 @@ export const newsData = {
                   },
                   {
                     name: "Edward Kim",
-                    awards: ["GMTA Outstanding Performer Regional"],
+                    awards: ["GMTA Outstanding Performer Regional, Local and State"],
                   },
                   { name: "Abigail Kim", awards: ["GMTA"] },
                 ],
