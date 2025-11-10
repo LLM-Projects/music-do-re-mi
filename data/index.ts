@@ -21,18 +21,13 @@ export const siteConfig = {
     locale: "en_US",
     url: "https://musicdoremi.com",
     siteName: "Music Do Re Mi",
-    title: "Music Do Re Mi - Premier Music School & Lessons",
     description:
       "Learn music with expert instructors at Music Do Re Mi. Offering piano, guitar, voice, strings, and more for all ages and skill levels.",
   },
+  title: "Music Do Re Mi - Premier Music School & Lessons",
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-    },
   },
   gaId: "G-TJRVQMPP52",
 };

@@ -1,4 +1,6 @@
 User-Agent: *
 Allow: /
+Disallow: /admin
+Disallow: /virtual-keyboard
 
 Sitemap: https://musicdoremi.com/sitemap.xml

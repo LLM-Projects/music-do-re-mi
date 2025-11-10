@@ -9,10 +9,8 @@ import {
   Users,
   Music,
   ArrowUpRight,
-  Link,
 } from "lucide-react";
 import { newsData } from "@/data/news";
-import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Carousel,
