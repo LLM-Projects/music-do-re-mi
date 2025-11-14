@@ -51,10 +51,10 @@ import { newsData } from "./news";
 
 // Special offer popup data
 export const specialOfferData = {
-  title: "☀️ Summer Concert 🎵",
-  details: "July 19, 2025 (7 PM Onwards)",
+  title: "❄️ Thanks Giving Concert 🎵",
+  details: "Novemeber 25th, 2025 at 3 PM",
   description:
-    "Come join us for an unforgettable Summer Music Adventure. ",
+    "Join us for a festive evening of music and celebration at our Thanks Giving Concert!",
   buttonText: "Learn More",
   buttonLink: "/news",
   footnote:

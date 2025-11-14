@@ -148,7 +148,9 @@ export const newsData = {
                   },
                   {
                     name: "Edward Kim",
-                    awards: ["GMTA Outstanding Performer Regional, Local and State"],
+                    awards: [
+                      "GMTA Outstanding Performer Regional, Local and State",
+                    ],
                   },
                   { name: "Abigail Kim", awards: ["GMTA"] },
                 ],
@@ -165,6 +167,25 @@ export const newsData = {
       "Join us for our exciting events and activities throughout the year.",
     items: [
       {
+        name: "Thanks Giving Concert",
+        date: "November 23, 2025",
+        time: "3:00 PM - 5:00 PM",
+        location: "Johns Creek Presbyterian Church",
+        image: "/assets/events/thanks-giving-concert-2025.jpg",
+        description:
+          "Join us for an afternoon of music and gratitude at our annual Thanksgiving Concert! Enjoy performances by our talented students and celebrate the season with us.",
+      },
+      {
+        name: "Chamber Music Program",
+        date: "August 13, 2025 - December 10th 2025",
+        time: "Total 18 sessions",
+        location:
+          "Music Do Re Mi School - Recital Hall, Suite #525, 10740 Medlock Bridge Road, John Creek, GA",
+        image: "/assets/events/chamber-music.png",
+        description:
+          "Improving Musical Skills, Sightreading, Rhythm, Music Theory, Musical sensitivities, Musical confidence, Communication and Teamwork.",
+      },
+      {
         name: "☀️ Summer Concert 🎙️",
         date: "July 19, 2025",
         time: "7:00 PM onwards",
@@ -180,16 +201,6 @@ export const newsData = {
         location: "Music Do Re Mi School",
         image: "/assets/events/drum-lessons.png",
         description: "New Semester, New Adventure of Drum Rolls!",
-      },
-      {
-        name: "Chamber Music Program",
-        date: "August 13, 2025 - December 10th 2025",
-        time: "Total 18 sessions",
-        location:
-          "Music Do Re Mi School - Recital Hall, Suite #525, 10740 Medlock Bridge Road, John Creek, GA",
-        image: "/assets/events/chamber-music.png",
-        description:
-          "Improving Musical Skills, Sightreading, Rhythm, Music Theory, Musical sensitivities, Musical confidence, Communication and Teamwork.",
       },
     ],
   },
