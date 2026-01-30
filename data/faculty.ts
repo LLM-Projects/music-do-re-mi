@@ -1,5 +1,3 @@
-import { Languages } from "lucide-react";
-
 export const facultyData = {
   hero: {
     title: "Faculty",
@@ -225,8 +223,21 @@ export const facultyData = {
           {
             title: "Noah Samuelson",
             content:
-              "Mr. Noah Samuelson, an active musician and educator, has been serving the communities of Middle and North Georgia since 2015. As a percussionist, Mr. Samuelson has performed throughout the United States and Europe with notable performances at PASIC in 2018 and the IPCL in 2022. He works with the Alpharetta Symphony Orchestra as principal percussionist and development coordinator. Since 2021, Mr. Samuelson has been a clinician and instructor to Henry, Fayette, and Coweta County schools, teaching percussion techniques to middle and high school students. He has been a percussion instructor for the East Coweta Indoor Percussion and East Coweta Marching Indians for the past two seasons. Mr. Samuelson also holds a successful private lessons studio, with several students in the GMEA District and All-State Honor Bands annually. Mr. Samuelson holds a bachelor’s in music from Georgia State University and a master’s in music from the University of Illinois Urbana-Champaign. ",
+              "Mr. Noah Samuelson, an active musician and educator, has been serving the communities of Middle and North Georgia since 2015. As a percussionist, Mr. Samuelson has performed throughout the United States and Europe with notable performances at PASIC in 2018 and the IPCL in 2022. He works with the Alpharetta Symphony Orchestra as principal percussionist and development coordinator. Since 2021, Mr. Samuelson has been a clinician and instructor to Henry, Fayette, and Coweta County schools, teaching percussion techniques to middle and high school students. He has been a percussion instructor for the East Coweta Indoor Percussion and East Coweta Marching Indians for the past two seasons. Mr. Samuelson also holds a successful private lessons studio, with several students in the GMEA District and All-State Honor Bands annually. Mr. Samuelson holds a bachelor’s in music from Georgia State University and a master’s in music from the University of Illinois Urbana-Champaign.",
             image: "assets/faculty/noah.JPEG",
+            languages: ["English"]
+          },
+        ],
+      },
+      {
+        name: "vocal",
+        label: "Vocal",
+        items: [
+          {
+            title: "Shihan Wang",
+            content:
+              "Shihan Wang has Master’s in Vocal Performance (Bel Canto), Zhejiang Conservatory of Music (2016); featured vocalist in major national concerts and opera productions (Mozart’s Le Nozze di Figaro – Contessa); award-winning bel canto singer with multiple national and international prizes; experienced instructor specializing in bel canto training, children’s vocal education, choir direction, and stage performance coaching.",
+            image: "assets/faculty/shihan-wang.png",
             languages: ["English"]
           },
         ],
