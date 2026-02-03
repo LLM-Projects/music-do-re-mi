@@ -43,7 +43,7 @@ export const newsData = {
     items: [
       {
         title: "Celebrating Our Students' Outstanding Achievements in 2026",
-        date: "2025",
+        date: "2026",
         image: "/assets/generic/10 - recital event.jpg",
         summary:
           "Congratulations to our talented students and dedicated teachers for getting selected to the All-State Ensemble 26'",
