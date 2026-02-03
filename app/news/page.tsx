@@ -178,7 +178,7 @@ export default function NewsPage() {
                 <p className="text-lg text-muted-foreground mb-4">
                   {item.summary}
                 </p>
-                <p className="text-muted-foreground">{item.content}</p>
+                <p className="text-muted-foreground whitespace-pre-line">{item.content}</p>
               </div>
             </div>
 

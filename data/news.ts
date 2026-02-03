@@ -42,13 +42,13 @@ export const newsData = {
     title: "Latest News",
     items: [
       {
-        title: "Celebrating Our Students' Outstanding Achievements in 2025",
+        title: "Celebrating Our Students' Outstanding Achievements in 2026",
         date: "2025",
         image: "/assets/generic/10 - recital event.jpg",
         summary:
-          "Congratulations to our talented students and dedicated teachers for their remarkable achievements in ABRSM, NFMC, GMTA, and All State competitions!",
+          "Congratulations to our talented students and dedicated teachers for getting selected to the All-State Ensemble 26'",
         content:
-          "We are incredibly proud to announce that our students have achieved exceptional results across multiple prestigious music examinations and competitions. Here are our outstanding achievers:",
+          "Instructor: Jay Webler\n\nStudents: Alex Zheng, Eric Mao, Zhenbo Jiang, Yinan Chen, Yesheng Yao, Joseph Lee",
         achievements: {
           piano: {
             title: "Piano Excellence",
