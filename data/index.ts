@@ -51,14 +51,14 @@ import { newsData } from "./news";
 
 // Special offer popup data
 export const specialOfferData = {
-  title: "❄️ Thanks Giving Concert 🎵",
-  details: "Novemeber 25th, 2025 at 3 PM",
+  title: "☀️ Music Summer Camp 2026 🎵",
+  details: "Starts May 25, 2026",
   description:
-    "Join us for a festive evening of music and celebration at our Thanks Giving Concert!",
+    "Join us for an UNFORGETTABLE Musical Summer Adventure, Beginner Workshop included.",
   buttonText: "Learn More",
   buttonLink: "/news",
   footnote:
-    "Come learn, perform, and make lasting memories at Music Do Re Mi 🎶",
+    "🎸🥁🎹 Rehersals, Instrument Exposure, Music Games, and a Grand Finale Concert! 🎙️🎤📻",
 };
 
 // Footer data

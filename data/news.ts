@@ -167,6 +167,16 @@ export const newsData = {
       "Join us for our exciting events and activities throughout the year.",
     items: [
       {
+        name: "Music Summer Camp 2026",
+        date: "May(25-29), June(1-5), July(8-12), July(27-31), 2026",
+        time: "9:00 AM - 4:00 PM",
+        location:
+          "Music Do Re Mi School - Recital Hall, Suite #525, 10740 Medlock Bridge Road, John Creek, GA",
+        image: "/assets/events/summer-camp-2026.png",
+        description:
+          "🎸🥁🎹 Join us for an UNFORGETTABLE Musical Summer Adventure, Beginner Workshop included. Rehersals, Instrument Exposure, Music Games, and a Grand Finale Concert! 🎙️🎤📻",
+      },
+      {
         name: "Thanks Giving Concert",
         date: "November 23, 2025",
         time: "3:00 PM - 5:00 PM",
