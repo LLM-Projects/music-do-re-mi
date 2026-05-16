@@ -12,13 +12,6 @@ export const facultyData = {
         label: "Piano",
         items: [
           {
-            title: "Annie Hui Lun Hsu",
-            content:
-              "Mrs. Annie Hsu has been playing the violin and piano at the age of four and won several violin competitions in Taipei, Taiwan when she was in elementary school. Ms. Annie began teaching violin, piano, and music theory when she was 18 years old and she received her bachelor degree in Soochow University. In 2023, she got her master degree from Georgia State University. Ms. Annie has won the Brumby concerto competition in 2021 playing Tchaikovsky's Violin Concerto. She has attended numerous summer music festivals including Walnut Hill Music Festival in Boston, Summit Music Festival in New York, Salzburg Music Festival in Germany, and Enlightenment Music Festival in Taiwan.",
-            image: "assets/faculty/annie.jpeg",
-            languages: ["English", "Mandarin Chinese"],
-          },
-          {
             title: "Chen Xi",
             content:
               "Ms. Chen Yixin has been teaching piano for 6 years. Ms. Chen has a Master of music degree in Piano Performance at the Hartt School, University of Hartford, USA. She studied Piano with Maggie Francis, Former department chair at the University of Hartford, and Professor Marija Stroke , University of Hartford.  She also Studied chamber music with Professor Robison Susan.",
@@ -78,7 +71,7 @@ export const facultyData = {
             title: "Sunhee Hwang",
             content:
               "Ms. Sunhee Hwang is a dedicated and passionate piano instructor with over 30 years of teaching experience. She holds a Bachelor of Arts in Music from Rollins College and has completed extensive certification training in Suzuki Piano Pedagogy at the University of Miami, University of Wisconsin-Stevens Point, and Converse College. In addition, she is certified in Musikgarten early childhood music education.",
-            image: "assets/faculty/Sunhee pic.PNG",
+            image: "assets/faculty/sunhee.png",
             languages: ["English", "Korean"],
           },
           {
@@ -121,20 +114,6 @@ export const facultyData = {
             languages: ["English", "Russian"],
           },
           {
-            title: "Annie Hui Lun Hsu",
-            content:
-              "Mrs. Annie Hsu has been playing the violin and piano at the age of four and won several violin competitions in Taipei, Taiwan when she was in elementary school. Ms. Annie began teaching violin, piano, and music theory when she was 18 years old and she received her bachelor degree in Soochow University. In 2023, she got her master degree from Georgia State University. Ms. Annie has won the Brumby concerto competition in 2021 playing Tchaikovsky's Violin Concerto. She has attended numerous summer music festivals including Walnut Hill Music Festival in Boston, Summit Music Festival in New York, Salzburg Music Festival in Germany, and Enlightenment Music Festival in Taiwan.",
-            image: "assets/faculty/annie.jpeg",
-            languages: ["English", "Mandarin Chinese"],
-          },
-          {
-            title: "Chris Thurstone",
-            content:
-              "Mr. Christopher Thurstone's dedication to violin performance is evident from a young age, marked by his first-place win at the NCMTA junior division at just thirteen, performing Mozart's Violin Concerto No. 3. This early success propelled a distinguished career encompassing numerous prestigious engagements.",
-            image: "assets/faculty/chris-thurstone.jpeg",
-            languages: ["English"],
-          },
-          {
             title: "Esther Kim",
             content:
               "Esther Kim is a violinist, educator, and music contractor based in Atlanta, Georgia. She holds a Bachelors in Violin Performance and a Certificate in Music and Entertainment Business at Kennesaw State University, where she served as Concertmaster of the Symphony Orchestra. Esther performs with many orchestras in the region, including the Dekalb, Valdosta, Rome, LaGrange, and Alpharetta Symphony Orchestras, and plays as a pit musician for the City Springs Theater Company. Besides classical music, Esther has also collaborated and performed with many artists, including the rapper Jeezy, R&amp;B singer Alfreda, Grammy-winning jazz singer Nicole Zuraitis, and many others. In addition to her performing career, Esther teaches private violin and viola lessons in metro-Atlanta and contracts musicians for weddings and events. She also serves on the worship team at Passion City Church as a violinist. Prior to pursuing her freelance career as a violinist, she worked administratively for the Atlanta Symphony Orchestra.",
@@ -154,13 +133,6 @@ export const facultyData = {
         label: "Cello",
         items: [
           {
-            title: "Chris Thurstone",
-            content:
-              "Mr. Christopher Thurstone's dedication to violin performance is evident from a young age, marked by his first-place win at the NCMTA junior division at just thirteen, performing Mozart's Violin Concerto No. 3. This early success propelled a distinguished career encompassing numerous prestigious engagements.",
-            image: "assets/faculty/chris-thurstone.jpeg",
-            languages: ["English"],
-          },
-          {
             title: "Ayu Wang",
             content:
               "Ayu Wang is an American Chinese Cellist and Faculty Member of the Shanghai Conservatory of Music.  Ms. Ayu is active on the world stage as a Solo and Chamber music cellist and improvisation musician.",
@@ -179,13 +151,6 @@ export const facultyData = {
               "Mr. Jay Webler performed in Air Force Bands for Ten years. During that time, he studied Music Theory through the Navy School of Music. He studied with the Principal Clarinetist of the Atlanta Ballet for 4 years and has been teaching full time in the Atlanta area for the last 25 years. His students have been accepted at UGA, Kennesaw State, & Indiana University just to name a few. Many of his students have performed in the ASYO, AYWS, MAYWE, and the summer Carnegie Hall Program. Mr. Webler has typically had 8 – 12 students annually in All State for the last 20 years.",
             image: "assets/faculty/jay-webler.png",
             languages: ["English"],
-          },
-          {
-            title: "Ricardo Silva Ferreira",
-            content:
-              "With extensive experience as an educator, soloist, chamber musician, and orchestral musician, Dr. Ricardo Ferreira has served as a clarinet professor at Spelman College and a clarinet instructor at Buford City Schools. He worked as a clarinet faculty member at the Federal University of Rio de Janeiro (Brazil) and the University of Georgia Community Music School. During the summer, Dr. Ferreira is a clarinet instructor at the UGA Summer Music Camp and the Music Do-Re-Mi Clarinet Camp. He also has taught at the Londrina Music Festival, Domingos Martins Music Festival in Brazil, Colquitt County High School Band Camp, East Jackson High School Band Camp, and the Youth Middle School Clarinet Clinic. At the age of 20, Ricardo was appointed Principal Clarinet at the Rio de Janeiro Opera Theater Symphony Orchestra, a position he held for over two decades before moving to the United States to further his studies. Throughout his career as an orchestral musician, he has performed with distinguished orchestras in Brazil and abroad. He has played under the direction of renowned conductors such as Kurt Masur, Mstislav Rostropovich, Romano Gandolfi, Erich Bergel, Gustavo Plis-Sterenberg, Hilary Griffiths, Isaac Karabtchevsky, and Roberto Minczuk. Ricardo has performed at prominent events, including the ClarinetFest, El Sistema Clarinet Festival in Venezuela, College Band Directors National Association Conference, UGA Summer Music Camp, Clarinet Academy of America Day Camp, Londrina Music Festival, and Domingos Martins Music Festival. In 2022, he conducted the University of Georgia clarinet choir in its premiere performance. Dr. Ferreira received his Doctorate in Musical Arts from the University of Georgia under the supervision of Dr. D. Ray McClellan.",
-            image: "assets/faculty/ricardo-silva-ferreira.jpg",
-            languages: ["English", "Portugese"],
           },
         ],
       },
