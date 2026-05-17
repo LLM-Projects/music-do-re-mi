@@ -105,7 +105,7 @@ export const homeData = {
   cta: {
     title: "Ready to Begin Your Musical Journey?",
     description:
-      "Contact us today to schedule a tour, learn about our programs, or sign up for lessons.",
+      "Experience a trial lesson at $45 for a 30 minute session with our expert instructors. Reach us to schedule your trial and discover the joy of music!",
     buttons: [
       { label: "Contact Us", href: "/contact", variant: "default" },
       { label: "Instruments for Rent and Purchase", href: "/instruments", variant: "outline" },

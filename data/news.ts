@@ -16,7 +16,7 @@ export const newsData = {
           images: [
             "https://scontent-atl3-3.cdninstagram.com/v/t51.82787-15/539037217_17857988736496525_3775087704216063383_n.jpg?stp=c216.0.648.648a_dst-jpg_e35_s640x640_tt6&_nc_cat=107&ccb=1-7&_nc_sid=18de74&_nc_ohc=c5ITQEgIrjIQ7kNvwH9-kvt&_nc_oc=AdlOIRaDL0xs86BSk3FFDYTI_TfOd1EA6m072ZWqhgzveRC80h00oXQy0fXvKumaWkqTEDwZpYkkGmgrxETMRQK-&_nc_zt=23&_nc_ht=scontent-atl3-3.cdninstagram.com&_nc_gid=7BLahmE15dpyh1creveTIg&oh=00_AfZ_JlJsxUi6FTb04VQ5kmMLrjYPPRZB0a4gN5O8XqUGqA&oe=68D2EB59",
           ],
-          duration: 768,
+          duration: 500,
           url: "https://www.instagram.com/reel/DN-5H--AULw/",
           meta: {
             type: "reel",
@@ -29,8 +29,138 @@ export const newsData = {
           images: [
             "https://scontent-atl3-3.cdninstagram.com/v/t51.82787-15/539037217_17857988736496525_3775087704216063383_n.jpg?stp=c216.0.648.648a_dst-jpg_e35_s640x640_tt6&_nc_cat=107&ccb=1-7&_nc_sid=18de74&_nc_ohc=c5ITQEgIrjIQ7kNvwH9-kvt&_nc_oc=AdlOIRaDL0xs86BSk3FFDYTI_TfOd1EA6m072ZWqhgzveRC80h00oXQy0fXvKumaWkqTEDwZpYkkGmgrxETMRQK-&_nc_zt=23&_nc_ht=scontent-atl3-3.cdninstagram.com&_nc_gid=niRCPxhWVt_AxF0kIgQg0Q&oh=00_AfbTMcbPT906t0NEg0cb7NE_6tF3ru597fGagt288PMwQA&oe=68D2EB59",
           ],
-          duration: 783,
+          duration: 500,
           url: "https://www.instagram.com/p/DN1cxDbXNUf/",
+          meta: {
+            type: "post",
+          },
+        },
+        {
+          title: "Sound of Spring 2026",
+          description:
+            "An annual spring concert at Northview High School.",
+          images: [
+            "/assets/events/sound-of-spring/IMG_20260514_194913.png",
+          ],
+          duration: 500,
+          url: "",
+          meta: {
+            type: "post",
+          },
+        },
+        {
+          title: "Sound of Spring 2026",
+          description:
+            "An annual spring concert at Northview High School.",
+          images: [
+            "/assets/events/sound-of-spring/IMG_20260514_194923.png",
+          ],
+          duration: 500,
+          url: "",
+          meta: {
+            type: "post",
+          },
+        },
+        {
+          title: "Sound of Spring 2026",
+          description:
+            "An annual spring concert at Northview High School.",
+          images: [
+            "/assets/events/sound-of-spring/IMG_20260514_194944.png",
+          ],
+          duration: 500,
+          url: "",
+          meta: {
+            type: "post",
+          },
+        },
+        {
+          title: "Sound of Spring 2026",
+          description:
+            "An annual spring concert at Northview High School.",
+          images: [
+            "/assets/events/sound-of-spring/IMG_20260514_194916.png",
+          ],
+          duration: 500,
+          url: "",
+          meta: {
+            type: "post",
+          },
+        },
+        {
+          title: "Sound of Spring 2026",
+          description:
+            "An annual spring concert at Northview High School.",
+          images: [
+            "/assets/events/sound-of-spring/IMG_20260514_194925.png",
+          ],
+          duration: 500,
+          url: "",
+          meta: {
+            type: "post",
+          },
+        },
+        {
+          title: "Sound of Spring 2026",
+          description:
+            "An annual spring concert at Northview High School.",
+          images: [
+            "/assets/events/sound-of-spring/IMG_20260514_194945.png",
+          ],
+          duration: 500,
+          url: "",
+          meta: {
+            type: "post",
+          },
+        },
+        {
+          title: "Sound of Spring 2026",
+          description:
+            "An annual spring concert at Northview High School.",
+          images: [
+            "/assets/events/sound-of-spring/IMG_20260514_194918.png",
+          ],
+          duration: 500,
+          url: "",
+          meta: {
+            type: "post",
+          },
+        },
+        {
+          title: "Sound of Spring 2026",
+          description:
+            "An annual spring concert at Northview High School.",
+          images: [
+            "/assets/events/sound-of-spring/IMG_20260514_194922.png",
+          ],
+          duration: 500,
+          url: "",
+          meta: {
+            type: "post",
+          },
+        },
+        {
+          title: "Sound of Spring 2026",
+          description:
+            "An annual spring concert at Northview High School.",
+          images: [
+            "/assets/events/sound-of-spring/IMG_20260514_194926.png",
+          ],
+          duration: 500,
+          url: "",
+          meta: {
+            type: "post",
+          },
+        },
+        {
+          title: "Sound of Spring 2026",
+          description:
+            "An annual spring concert at Northview High School.",
+          images: [
+            "/assets/events/sound-of-spring/IMG_20260514_194919.jpg",
+          ],
+          duration: 500,
+          url: "",
           meta: {
             type: "post",
           },
