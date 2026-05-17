@@ -29,20 +29,12 @@ export const instrumentsData = {
         image: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Violin_VL100.png",
       },
       {
-        name: "Cellos",
+        name: "Flutes",
         description:
-          "Available in different sizes for different ages and levels",
-        monthlyRate: "$46/month",
-        sellingPrice: "Starts from $550",
-        image: "https://static.vecteezy.com/system/resources/thumbnails/044/812/508/small_2x/a-cello-isolated-on-transparent-background-png.png",
-      },
-      {
-        name: "Bass",
-        description:
-          "Available in different sizes for different ages and levels",
-        monthlyRate: "$76/month",
-        sellingPrice: "",
-        image: "https://static.vecteezy.com/system/resources/thumbnails/023/322/608/small_2x/watercolor-bass-music-instrument-png.png",
+          "Available in sizes: 1/4, 1/2, 3/4, 4/4. Perfect for classical music, folk, and fingerstyle playing.",
+        monthlyRate: "$45/month",
+        sellingPrice: "Starts from $650",
+        image: "https://purepng.com/public/uploads/large/purepng.com-fluteobjectsflutemusic-object-instrument-flute-631522326012yyotp.png",
       },
       {
         name: "Guitars",
@@ -51,6 +43,14 @@ export const instrumentsData = {
         monthlyRate: "$25/month",
         sellingPrice: "Starts from $125",
         image: "https://pngfre.com/wp-content/uploads/guitar-poster.png",
+      },
+      {
+        name: "Cellos",
+        description:
+          "Available in different sizes for different ages and levels",
+        monthlyRate: "$45/month",
+        sellingPrice: "Starts from $550",
+        image: "https://static.vecteezy.com/system/resources/thumbnails/044/812/508/small_2x/a-cello-isolated-on-transparent-background-png.png",
       },
       {
         name: "Flutes",
@@ -64,7 +64,7 @@ export const instrumentsData = {
         name: "Clarinets",
         description:
           "Available in different sizes for different ages and levels",
-        monthlyRate: "$85-120",
+        monthlyRate: "$36/month",
         sellingPrice: "",
         image: "https://upload.wikimedia.org/wikipedia/commons/2/20/Clarinet-rotate.png",
       },
@@ -72,23 +72,31 @@ export const instrumentsData = {
         name: "Saxophones",
         description:
           "Available in different sizes for different ages and levels",
-        monthlyRate: "$25/month",
+        monthlyRate: "$45/month",
         sellingPrice: "",
         image: "https://pics.clipartpng.com/Saxophone_PNG_Clipart-896.png",
+      },
+      {
+        name: "Double Bass",
+        description:
+          "Available in different sizes for different ages and levels",
+        monthlyRate: "$76/month",
+        sellingPrice: "",
+        image: "https://static.vecteezy.com/system/resources/thumbnails/046/828/227/small/double-bass-isolated-on-transparent-background-png.png",
       },
       {
         name: "Trumpet",
         description:
           "Available in different sizes for different ages and levels",
-        monthlyRate: "$25/month",
+        monthlyRate: "$45/month",
         sellingPrice: "",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Trumpet_1.png/1200px-Trumpet_1.png",
+        image: "https://static.vecteezy.com/system/resources/thumbnails/051/686/630/small_2x/high-quality-stock-photo-of-a-golden-trumpet-isolated-on-a-transparent-background-showing-intricate-details-and-craftsmanship-of-the-musical-instrument-png.png",
       },
       {
         name: "Trombones",
         description:
           "Available in different sizes for different ages and levels",
-        monthlyRate: "$25/month",
+        monthlyRate: "$45/month",
         sellingPrice: "",
         image: "https://static.vecteezy.com/system/resources/thumbnails/016/535/700/small_2x/watercolor-trombone-music-instrument-png.png",
       },

@@ -54,45 +54,83 @@ export default function NewsPage() {
             className="w-full max-w-xl md:max-w-2xl"
           >
             <CarouselContent>
-              {newsData.feed.instagram.posts.map((post, index) => (
-                <CarouselItem key={index + 1}>
-                  <div className="p-2">
-                    <a
-                      href={post.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group"
-                    >
-                      <Card className="relative overflow-hidden border-0 shadow-sm bg-white/80 dark:bg-zinc-900/80 backdrop-blur-xl transition-all duration-300 hover:shadow-md group-hover:shadow-lg">
-                        <CardContent className="flex aspect-square items-center justify-center p-10">
-                          <div className="relative h-[320px] overflow-hidden rounded-lg"></div>
+              {newsData.feed.instagram.posts.map((post, index) => {
+                const contentType = post.meta?.type;
+                const isInstagram =
+                  contentType === "reel" || contentType === "post";
+                const isLocalImage = post.images?.[0]?.startsWith("/assets/") || post.images?.[0]?.startsWith("assets/");
+                const hasUrl = post.url && post.url.trim() !== "";
+
+                const cardContent = (
+                  <Card className="relative overflow-hidden border-0 shadow-sm bg-white/80 dark:bg-zinc-900/80 backdrop-blur-xl transition-all duration-300 hover:shadow-md group-hover:shadow-lg">
+                    <CardContent className="flex aspect-square items-center justify-center p-0 overflow-hidden">
+                      {/* Instagram Embed */}
+                      {isInstagram && hasUrl && (
+                        <>
                           <iframe
-                            src={post.url + `embed`}
+                            src={`${post.url}embed/`}
                             width="100%"
                             height="100%"
-                            className="absolute inset-0 w-full h-full object-cover"
+                            className="absolute inset-0 w-full h-full border-none"
                             title={post.title}
+                            allowFullScreen
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent rounded-lg"></div>
+                        </>
+                      )}
 
-                          <div className="absolute bottom-0 left-0 right-0 p-5">
-                            <div className="flex items-center justify-between gap-3">
-                              <div className="space-y-1.5">
-                                <h3 className="text-lg font-semibold text-white dark:text-zinc-100 leading-snug">
-                                  {post.title}
-                                </h3>
-                              </div>
-                              <div className="p-2 rounded-full dark:bg-zinc-800/50 backdrop-blur-md group-hover:bg-white/20 dark:group-hover:bg-zinc-700/50 transition-colors duration-300">
-                                <ArrowUpRight className="w-4 h-4 text-white group-hover:-rotate-12 transition-transform duration-300" />
-                              </div>
-                            </div>
+                      {/* Local Image */}
+                      {isLocalImage && (
+                        <>
+                          <div className="relative w-full h-full">
+                            <Image
+                              src={post.images[0].startsWith("/") ? post.images[0] : `/${post.images[0]}`}
+                              alt={post.title}
+                              fill
+                              className="object-cover"
+                            />
                           </div>
-                        </CardContent>
-                      </Card>
-                    </a>
-                  </div>
-                </CarouselItem>
-              ))}
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent rounded-lg"></div>
+                        </>
+                      )}
+
+                      <div className="absolute bottom-0 left-0 right-0 p-5 z-10">
+                        <div className="flex items-center justify-between gap-3">
+                          <div className="space-y-1.5">
+                            <h3 className="text-lg font-semibold text-white dark:text-zinc-100 leading-snug">
+                              {post.title}
+                            </h3>
+                          </div>
+                          {hasUrl && (
+                            <div className="p-2 rounded-full dark:bg-zinc-800/50 backdrop-blur-md group-hover:bg-white/20 dark:group-hover:bg-zinc-700/50 transition-colors duration-300">
+                              <ArrowUpRight className="w-4 h-4 text-white group-hover:-rotate-12 transition-transform duration-300" />
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                );
+
+                return (
+                  <CarouselItem key={index + 1}>
+                    <div className="p-2">
+                      {hasUrl ? (
+                        <a
+                          href={post.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="group"
+                        >
+                          {cardContent}
+                        </a>
+                      ) : (
+                        <div className="group">{cardContent}</div>
+                      )}
+                    </div>
+                  </CarouselItem>
+                );
+              })}
             </CarouselContent>
 
             <CarouselPrevious />
@@ -178,7 +216,9 @@ export default function NewsPage() {
                 <p className="text-lg text-muted-foreground mb-4">
                   {item.summary}
                 </p>
-                <p className="text-muted-foreground whitespace-pre-line">{item.content}</p>
+                <p className="text-muted-foreground whitespace-pre-line">
+                  {item.content}
+                </p>
               </div>
             </div>
 
@@ -230,7 +270,7 @@ export default function NewsPage() {
                                           {student.awards.map(
                                             (
                                               award: string,
-                                              awardIndex: number
+                                              awardIndex: number,
                                             ) => (
                                               <div
                                                 key={awardIndex}
@@ -239,20 +279,20 @@ export default function NewsPage() {
                                                 <Award className="h-4 w-4 text-rose-500" />
                                                 <span>{award}</span>
                                               </div>
-                                            )
+                                            ),
                                           )}
                                         </div>
                                       </CardContent>
                                     </Card>
-                                  )
+                                  ),
                                 )}
                               </div>
                             </div>
-                          )
+                          ),
                         )}
                       </div>
                     </div>
-                  )
+                  ),
                 )}
               </div>
             )}

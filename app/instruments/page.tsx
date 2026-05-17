@@ -95,6 +95,7 @@ export default function InstrumentsPage() {
                       {instrument.sellingPrice}
                     </p>
                   )}
+                  <b>Rent-to-Own Program</b>
                 </CardContent>
               </Card>
             ))}
