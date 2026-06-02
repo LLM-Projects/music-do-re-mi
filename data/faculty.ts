@@ -139,6 +139,13 @@ export const facultyData = {
             image: "assets/faculty/ayu-wang.png",
             languages: ["English", "Mandarin Chinese"],
           },
+          {
+            title: "Daniel Kim",
+            content:
+              "Daniel Kim is the Orchestra Director of Paul Duke STEM High School in Gwinnett County Public Schools. He received his Bachelor of Music Education degree from Kennesaw State University as a Dean’s List Student. With over a decade of public string education and private cello and double bass lesson experience, Mr. Kim’s students have performed for the likes of the GMEA All-State Orchestra, Gwinnett County Youth Symphony Orchestra, and the Metropolitan Youth Symphony Orchestra. He also enjoys clinician work for events such as the annual GCPS 6 th Grade Honor Orchestra and works for other local schools.",
+            image: "assets/faculty/daniel-kim.jpg",
+            languages: ["English"],
+          },
         ],
       },
       {
