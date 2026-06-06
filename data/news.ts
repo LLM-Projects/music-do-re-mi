@@ -47,8 +47,7 @@ export const newsData = {
         {
           title:
             "Music Do-Re-Mi | What makes a champion? Here's 14-year-old Sashya Kumar playing the winning piece from the US International Open Music Competition! 🏆🎹❤️...",
-          description:
-            "",
+          description: "",
           images: [
             "https://scontent-atl3-3.cdninstagram.com/v/t51.82787-15/539037217_17857988736496525_3775087704216063383_n.jpg?stp=c216.0.648.648a_dst-jpg_e35_s640x640_tt6&_nc_cat=107&ccb=1-7&_nc_sid=18de74&_nc_ohc=c5ITQEgIrjIQ7kNvwH9-kvt&_nc_oc=AdlOIRaDL0xs86BSk3FFDYTI_TfOd1EA6m072ZWqhgzveRC80h00oXQy0fXvKumaWkqTEDwZpYkkGmgrxETMRQK-&_nc_zt=23&_nc_ht=scontent-atl3-3.cdninstagram.com&_nc_gid=7BLahmE15dpyh1creveTIg&oh=00_AfZ_JlJsxUi6FTb04VQ5kmMLrjYPPRZB0a4gN5O8XqUGqA&oe=68D2EB59",
           ],
@@ -60,8 +59,7 @@ export const newsData = {
         },
         {
           title: "2025 Federation Gold Cup Recipients!",
-          description:
-            "",
+          description: "",
           images: [
             "https://scontent-atl3-3.cdninstagram.com/v/t51.82787-15/539037217_17857988736496525_3775087704216063383_n.jpg?stp=c216.0.648.648a_dst-jpg_e35_s640x640_tt6&_nc_cat=107&ccb=1-7&_nc_sid=18de74&_nc_ohc=c5ITQEgIrjIQ7kNvwH9-kvt&_nc_oc=AdlOIRaDL0xs86BSk3FFDYTI_TfOd1EA6m072ZWqhgzveRC80h00oXQy0fXvKumaWkqTEDwZpYkkGmgrxETMRQK-&_nc_zt=23&_nc_ht=scontent-atl3-3.cdninstagram.com&_nc_gid=niRCPxhWVt_AxF0kIgQg0Q&oh=00_AfbTMcbPT906t0NEg0cb7NE_6tF3ru597fGagt288PMwQA&oe=68D2EB59",
           ],
