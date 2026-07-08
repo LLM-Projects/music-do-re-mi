@@ -1,7 +1,8 @@
 export const contactData = {
   hero: {
     title: "Contact Us",
-    description: "We'd love to hear from you. Reach out with questions about our programs, schedule a tour, or inquire about enrollment.",
+    description:
+      "We'd love to hear from you. Reach out with questions about our programs, schedule a tour, or inquire about enrollment.",
   },
   contactInfo: {
     items: [
@@ -17,123 +18,53 @@ export const contactData = {
       {
         icon: "Phone",
         title: "Call Us",
-        content: [
-          "347-399-1924",
-        ],
+        content: ["347-399-1924"],
       },
       {
         icon: "Mail",
         title: "Email Us",
-        content: [
-          "musicdoremi525@gmail.com"
-        ],
+        content: ["musicdoremi525@gmail.com"],
       },
       {
         icon: "Clock",
-        title: "Hours",
+        title: "Office Hours",
         content: [
-          "Weekdays: 2PM - 7PM",
-          "Saturday: 10AM - 4PM",
+          "Weekdays: 3 PM - 7 PM",
+          "Saturday: 9 AM - 6 PM",
           "Sunday: Closed",
+          "",
+          "until August 1, 2026 Summer Office Hours would vary",
         ],
       },
     ],
-  },
-  // form: {
-  //   title: "Send Us a Message",
-  //   fields: [
-  //     {
-  //       id: "name",
-  //       label: "Name",
-  //       type: "text",
-  //       placeholder: "Your name",
-  //       required: true,
-  //     },
-  //     {
-  //       id: "email",
-  //       label: "Email",
-  //       type: "email",
-  //       placeholder: "Your email",
-  //       required: true,
-  //     },
-  //     {
-  //       id: "phone",
-  //       label: "Phone",
-  //       type: "tel",
-  //       placeholder: "Your phone number",
-  //       required: false,
-  //     },
-  //     {
-  //       id: "interest",
-  //       label: "I'm interested in",
-  //       type: "select",
-  //       options: [
-  //         { value: "piano", label: "Piano Lessons" },
-  //         { value: "guitar", label: "Guitar & Strings" },
-  //         { value: "voice", label: "Voice Training" },
-  //         { value: "woodwinds", label: "Woodwinds & Brass" },
-  //         { value: "percussion", label: "Percussion" },
-  //         { value: "theory", label: "Music Theory" },
-  //         { value: "ensembles", label: "Ensembles" },
-  //         { value: "rentals", label: "Instruments for Rent and Purchase" },
-  //         { value: "other", label: "Other" },
-  //       ],
-  //       required: true,
-  //     },
-  //     {
-  //       id: "contactPreference",
-  //       label: "Preferred contact method",
-  //       type: "radio",
-  //       options: [
-  //         { value: "email", label: "Email" },
-  //         { value: "phone", label: "Phone" },
-  //       ],
-  //       required: true,
-  //     },
-  //     {
-  //       id: "message",
-  //       label: "Message",
-  //       type: "textarea",
-  //       placeholder: "Your message",
-  //       required: true,
-  //     },
-  //   ],
-  //   submitButton: {
-  //     text: "Send Message",
-  //     icon: "Send",
-  //   },
-  // },
-  map: {
-    title: "Find Us",
-    placeholder: "Interactive Map Would Be Embedded Here",
-  },
-  tour: {
-    title: "Schedule a Tour",
-    description: "Want to see our facilities in person? Schedule a tour to visit our studios, meet our faculty, and learn more about our programs.",
-    buttonText: "Schedule a Tour",
   },
   faq: {
     title: "Frequently Asked Questions",
     items: [
       {
         question: "How do I enroll in lessons?",
-        answer: "To enroll, simply reach out to us by phone, email, or in person. We'll schedule a consultation to discuss your goals and find the right program for you.",
+        answer:
+          "To enroll, simply reach out to us by phone, email, or in person. We'll schedule a consultation to discuss your goals and find the right program for you.",
       },
       {
         question: "What ages do you teach?",
-        answer: "We offer programs for all ages, from early childhood (starting at age 3) through adult learners. It's never too early or too late to start your musical journey!",
+        answer:
+          "We offer programs for all ages, from early childhood (starting at age 3) through adult learners. It's never too early or too late to start your musical journey!",
       },
       {
         question: "Do I need my own instrument?",
-        answer: "While having your own instrument is ideal for regular practice, we offer instruments for rent and purchase. Our staff can help you choose the right option for your needs.",
+        answer:
+          "While having your own instrument is ideal for regular practice, we offer instruments for rent and purchase. Our staff can help you choose the right option for your needs.",
       },
       {
         question: "Can I test out my instrument?",
-        answer: "Yes! If you're thinking of buying an instrument from us, we allow you to take home your instrument for a one week trial to help make sure it's perfect for you.",
+        answer:
+          "Yes! If you're thinking of buying an instrument from us, we allow you to take home your instrument for a one week trial to help make sure it's perfect for you.",
       },
       {
         question: "Do you have instruments for small children?",
-        answer: "Yes! We have instruments like violins and ukuleles for young children.",
+        answer:
+          "Yes! We have instruments like violins and ukuleles for young children.",
       },
       {
         question: "Can I cancel my rental at any time?",
@@ -141,12 +72,14 @@ export const contactData = {
       },
       {
         question: "What if my child grows and needs a larger instrument?",
-        answer: "No problem!  If your child has grown out of their rental instrument, we will swap your current instrument for the right size.",
+        answer:
+          "No problem!  If your child has grown out of their rental instrument, we will swap your current instrument for the right size.",
       },
       {
         question: "Where are you located?",
-        answer: "Our school and office are located in Johns Creek.  Many of our customers are also in the Alpharetta, Cumming, Duluth, and Suwanee neighborhoods.",
-      }
+        answer:
+          "Our school and office are located in Johns Creek.  Many of our customers are also in the Alpharetta, Cumming, Duluth, and Suwanee neighborhoods.",
+      },
     ],
   },
-} 
+};
