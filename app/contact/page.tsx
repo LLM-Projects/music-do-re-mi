@@ -1,20 +1,11 @@
 "use client";
 
-import React, { useState } from "react";
-import { MapPin, Phone, Mail, Clock, ChevronDown, ChevronUp } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import React from "react";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { contactData } from "@/data/contact";
 
 export default function ContactPage() {
-  const [expandedFaqs, setExpandedFaqs] = useState<Record<number, boolean>>({});
-
-  const toggleFaq = (index: number) => {
-    setExpandedFaqs((prev) => ({
-      ...prev,
-      [index]: !prev[index],
-    }));
-  };
 
   return (
     <div className="flex flex-col">
@@ -69,33 +60,7 @@ export default function ContactPage() {
               <Card key={index}>
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold mb-2">{faq.question}</h3>
-                  <div className="text-muted-foreground">
-                    {expandedFaqs[index] ? (
-                      <>
-                        <p>{faq.answer}</p>
-                        <Button 
-                          variant="ghost" 
-                          size="sm" 
-                          className="mt-2 p-0 h-auto text-rose-500 hover:text-rose-600"
-                          onClick={() => toggleFaq(index)}
-                        >
-                          Read Less <ChevronUp className="h-4 w-4 ml-1" />
-                        </Button>
-                      </>
-                    ) : (
-                      <>
-                        <p className="line-clamp-3">{faq.answer}</p>
-                        <Button 
-                          variant="ghost" 
-                          size="sm" 
-                          className="mt-2 p-0 h-auto text-rose-500 hover:text-rose-600"
-                          onClick={() => toggleFaq(index)}
-                        >
-                          Read More <ChevronDown className="h-4 w-4 ml-1" />
-                        </Button>
-                      </>
-                    )}
-                  </div>
+                  <p className="text-muted-foreground">{faq.answer}</p>
                 </CardContent>
               </Card>
             ))}

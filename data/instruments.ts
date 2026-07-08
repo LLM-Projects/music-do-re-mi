@@ -1,104 +1,113 @@
 export const instrumentsData = {
   hero: {
     title: "Instruments for Rent and Purchase",
-    description: "Providing instruments for rental and purchase in Johns Creek for over 30 years",
-  },
-  whyRent: {
-    title: "Why Rent or Purchase With Us?",
     description:
-      "Music DoReMi offers affordable, professionally maintained instruments serving the Johns Creek, Alpharetta, Duluth, Suwanee, and Cumming communities for over 30 years. Whether you're just starting, testing the waters before purchasing your own, or looking for the perfect sound for the next few years, we've got you covered!",
+      "Providing instruments for rental and purchase in Johns Creek for over 30 years",
+  },
+  rent: {
+    title: "RENT-TO-OWN Program",
+    description: "",
     benefits: [
-      "Quality Instruments: All our instruments are well-maintained and high-quality to enhance your learning experience.",
-      "Wide Selection to match your needs: With over 300 instruments on hand, we can meet your specific skill level and size. We have beginner, intermediate, and advanced level instruments and have different sizes for all ages from 4 years old to adult sizes.",
-      "Affordable Plans: Flexible rental options to fit your budget including rent-to-buy",
-      "Convenient Process: Quick and easy rentals.",
-      "Expert Support: Our knowledgeable staff will help you select the right instrument and provide guidance on care and maintenance.",
+      "Low monthly rates: Our rental plans are designed to be affordable and flexible, making it easy for you to get started with music.",
+      "No large upfront costs: We offer a variety of rental plans to fit your budget, so you can start playing without breaking the bank.",
+      "Payments count towards ownership.",
+      "Flexible upgrade options for growing musicians.",
+      "Quality instruments that support successful learning.",
     ],
-    image: "https://media.istockphoto.com/id/894058154/photo/musical-instruments.jpg?s=612x612&w=0&k=20&c=uB0TFyqeY1wu1BPyH2EB7NMoOCaSb86pk7YNQ5QVCGQ=",
+    image:
+      "https://media.istockphoto.com/id/894058154/photo/musical-instruments.jpg?s=612x612&w=0&k=20&c=uB0TFyqeY1wu1BPyH2EB7NMoOCaSb86pk7YNQ5QVCGQ=",
     imageAlt: "Musical instruments available for rent",
   },
   instruments: {
     title: "Available Instruments",
     items: [
       {
-        name: "Violins and Violas",
+        name: "Violins",
         description:
           "Available in different sizes for different ages and levels",
-        monthlyRate: "$25/month",
-        sellingPrice: "Starts from $450",
-        image: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Violin_VL100.png",
+        creditsReceived: "17",
+        sellingPrice: "25",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/1/1b/Violin_VL100.png",
       },
       {
-        name: "Flutes",
-        description:
-          "Available in sizes: 1/4, 1/2, 3/4, 4/4. Perfect for classical music, folk, and fingerstyle playing.",
-        monthlyRate: "$45/month",
-        sellingPrice: "Starts from $650",
-        image: "https://purepng.com/public/uploads/large/purepng.com-fluteobjectsflutemusic-object-instrument-flute-631522326012yyotp.png",
-      },
-      {
-        name: "Guitars",
+        name: "Viola",
         description:
           "Available in different sizes for different ages and levels",
-        monthlyRate: "$25/month",
-        sellingPrice: "Starts from $125",
-        image: "https://pngfre.com/wp-content/uploads/guitar-poster.png",
+        creditsReceived: "17",
+        sellingPrice: "25",
+        image:
+          "https://png.pngtree.com/png-vector/20230905/ourmid/pngtree-violin-isolated-bass-png-image_9947662.png",
       },
       {
         name: "Cellos",
         description:
           "Available in different sizes for different ages and levels",
-        monthlyRate: "$45/month",
-        sellingPrice: "Starts from $550",
-        image: "https://static.vecteezy.com/system/resources/thumbnails/044/812/508/small_2x/a-cello-isolated-on-transparent-background-png.png",
+        creditsReceived: "35",
+        sellingPrice: "45",
+        image:
+          "https://static.vecteezy.com/system/resources/thumbnails/044/812/508/small_2x/a-cello-isolated-on-transparent-background-png.png",
       },
       {
-        name: "Flutes",
+        name: "Flute",
         description:
           "Available in sizes: 1/4, 1/2, 3/4, 4/4. Perfect for classical music, folk, and fingerstyle playing.",
-        monthlyRate: "$25/month",
-        sellingPrice: "Starts from $650",
-        image: "https://purepng.com/public/uploads/large/purepng.com-fluteobjectsflutemusic-object-instrument-flute-631522326012yyotp.png",
+        creditsReceived: "35",
+        sellingPrice: "45",
+        image:
+          "https://www.freeiconspng.com/uploads/flute-instrument-transparent-png-7.png",
       },
       {
         name: "Clarinets",
         description:
           "Available in different sizes for different ages and levels",
-        monthlyRate: "$36/month",
-        sellingPrice: "",
-        image: "https://upload.wikimedia.org/wikipedia/commons/2/20/Clarinet-rotate.png",
+        creditsReceived: "35",
+        sellingPrice: "45",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/2/20/Clarinet-rotate.png",
       },
       {
         name: "Saxophones",
         description:
           "Available in different sizes for different ages and levels",
-        monthlyRate: "$45/month",
-        sellingPrice: "",
+        creditsReceived: "35",
+        sellingPrice: "45",
         image: "https://pics.clipartpng.com/Saxophone_PNG_Clipart-896.png",
-      },
-      {
-        name: "Double Bass",
-        description:
-          "Available in different sizes for different ages and levels",
-        monthlyRate: "$76/month",
-        sellingPrice: "",
-        image: "https://static.vecteezy.com/system/resources/thumbnails/046/828/227/small/double-bass-isolated-on-transparent-background-png.png",
       },
       {
         name: "Trumpet",
         description:
           "Available in different sizes for different ages and levels",
-        monthlyRate: "$45/month",
-        sellingPrice: "",
-        image: "https://static.vecteezy.com/system/resources/thumbnails/051/686/630/small_2x/high-quality-stock-photo-of-a-golden-trumpet-isolated-on-a-transparent-background-showing-intricate-details-and-craftsmanship-of-the-musical-instrument-png.png",
+        creditsReceived: "35",
+        sellingPrice: "45",
+        image:
+          "https://static.vecteezy.com/system/resources/thumbnails/051/686/630/small_2x/high-quality-stock-photo-of-a-golden-trumpet-isolated-on-a-transparent-background-showing-intricate-details-and-craftsmanship-of-the-musical-instrument-png.png",
       },
       {
         name: "Trombones",
         description:
           "Available in different sizes for different ages and levels",
-        monthlyRate: "$45/month",
-        sellingPrice: "",
-        image: "https://static.vecteezy.com/system/resources/thumbnails/016/535/700/small_2x/watercolor-trombone-music-instrument-png.png",
+        creditsReceived: "35",
+        sellingPrice: "45",
+        image:
+          "https://static.vecteezy.com/system/resources/thumbnails/016/535/700/small_2x/watercolor-trombone-music-instrument-png.png",
+      },
+      {
+        name: "Guitars",
+        description:
+          "Available in different sizes for different ages and levels",
+        creditsReceived: "17",
+        sellingPrice: "25",
+        image: "https://pngfre.com/wp-content/uploads/guitar-poster.png",
+      },
+      {
+        name: "Double Bass",
+        description:
+          "Available in different sizes for different ages and levels",
+        creditsReceived: "60",
+        sellingPrice: "76",
+        image:
+          "https://static.vecteezy.com/system/resources/thumbnails/046/828/227/small/double-bass-isolated-on-transparent-background-png.png",
       },
     ],
   },
@@ -191,7 +200,7 @@ export const instrumentsData = {
       {
         policy: "Damage Protection",
         details:
-          "Optional damage protection plan available for $5/month covers accidental damage. Without protection, renter is responsible for all repairs beyond normal wear and tear.",
+          "Optional damage protection plan available for $5 covers accidental damage. Without protection, renter is responsible for all repairs beyond normal wear and tear.",
       },
       {
         policy: "Maintenance",
@@ -216,7 +225,8 @@ export const instrumentsData = {
     ],
   },
   cta: {
-    title: "Start your musical journey today—no strings attached (unless it’s a violin, of course)! 🎶",
+    title:
+      "Start your musical journey today—no strings attached (unless it's a violin, of course)! 🎶",
     description:
       "Ready to rent your first instrument? Stop by our location in Johns Creek, GA, or contact us to learn more about our rental options!",
     buttons: [
