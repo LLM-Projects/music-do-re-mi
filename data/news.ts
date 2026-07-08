@@ -44,31 +44,6 @@ export const newsData = {
             type: "post",
           },
         },
-        {
-          title:
-            "Music Do-Re-Mi | What makes a champion? Here's 14-year-old Sashya Kumar playing the winning piece from the US International Open Music Competition! 🏆🎹❤️...",
-          description: "",
-          images: [
-            "https://scontent-atl3-3.cdninstagram.com/v/t51.82787-15/539037217_17857988736496525_3775087704216063383_n.jpg?stp=c216.0.648.648a_dst-jpg_e35_s640x640_tt6&_nc_cat=107&ccb=1-7&_nc_sid=18de74&_nc_ohc=c5ITQEgIrjIQ7kNvwH9-kvt&_nc_oc=AdlOIRaDL0xs86BSk3FFDYTI_TfOd1EA6m072ZWqhgzveRC80h00oXQy0fXvKumaWkqTEDwZpYkkGmgrxETMRQK-&_nc_zt=23&_nc_ht=scontent-atl3-3.cdninstagram.com&_nc_gid=7BLahmE15dpyh1creveTIg&oh=00_AfZ_JlJsxUi6FTb04VQ5kmMLrjYPPRZB0a4gN5O8XqUGqA&oe=68D2EB59",
-          ],
-          duration: 500,
-          url: "https://www.instagram.com/reel/DN-5H--AULw/",
-          meta: {
-            type: "reel",
-          },
-        },
-        {
-          title: "2025 Federation Gold Cup Recipients!",
-          description: "",
-          images: [
-            "https://scontent-atl3-3.cdninstagram.com/v/t51.82787-15/539037217_17857988736496525_3775087704216063383_n.jpg?stp=c216.0.648.648a_dst-jpg_e35_s640x640_tt6&_nc_cat=107&ccb=1-7&_nc_sid=18de74&_nc_ohc=c5ITQEgIrjIQ7kNvwH9-kvt&_nc_oc=AdlOIRaDL0xs86BSk3FFDYTI_TfOd1EA6m072ZWqhgzveRC80h00oXQy0fXvKumaWkqTEDwZpYkkGmgrxETMRQK-&_nc_zt=23&_nc_ht=scontent-atl3-3.cdninstagram.com&_nc_gid=niRCPxhWVt_AxF0kIgQg0Q&oh=00_AfbTMcbPT906t0NEg0cb7NE_6tF3ru597fGagt288PMwQA&oe=68D2EB59",
-          ],
-          duration: 500,
-          url: "https://www.instagram.com/p/DN1cxDbXNUf/",
-          meta: {
-            type: "post",
-          },
-        },
       ],
     },
   },
@@ -209,42 +184,6 @@ export const newsData = {
         image: "/assets/events/summer-camp-2026.png",
         description:
           "🎸🥁🎹 Join us for an UNFORGETTABLE Musical Summer Adventure, Beginner Workshop included. Rehersals, Instrument Exposure, Music Games, and a Grand Finale Concert! 🎙️🎤📻",
-      },
-      {
-        name: "Thanks Giving Concert",
-        date: "November 23, 2025",
-        time: "3:00 PM - 5:00 PM",
-        location: "Johns Creek Presbyterian Church",
-        image: "/assets/events/thanks-giving-concert-2025.jpg",
-        description:
-          "Join us for an afternoon of music and gratitude at our annual Thanksgiving Concert! Enjoy performances by our talented students and celebrate the season with us.",
-      },
-      {
-        name: "Chamber Music Program",
-        date: "August 13, 2025 - December 10th 2025",
-        time: "Total 18 sessions",
-        location:
-          "Music Do Re Mi School - Recital Hall, Suite #525, 10740 Medlock Bridge Road, John Creek, GA",
-        image: "/assets/events/chamber-music.png",
-        description:
-          "Improving Musical Skills, Sightreading, Rhythm, Music Theory, Musical sensitivities, Musical confidence, Communication and Teamwork.",
-      },
-      {
-        name: "☀️ Summer Concert 🎙️",
-        date: "July 19, 2025",
-        time: "7:00 PM onwards",
-        image: "/assets/events/summer-concert.png",
-        location:
-          "Music Do Re Mi School, Suite#525, 10740 Medlock Bridge Road, John Creek, GA",
-        description: "Come Join Us for Our Concert, Free Admission 🆓",
-      },
-      {
-        name: "🥁 Drums Lesson 🥁",
-        date: "TBD",
-        time: "Ages 3+",
-        location: "Music Do Re Mi School",
-        image: "/assets/events/drum-lessons.png",
-        description: "New Semester, New Adventure of Drum Rolls!",
       },
     ],
   },
