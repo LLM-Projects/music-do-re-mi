@@ -13,36 +13,10 @@ export const homeData = {
       { label: "Contact Us", href: "/contact", variant: "outline" },
     ],
   },
-  features: [
-    {
-      icon: "Music",
-      title: "Expert Instruction",
-      description:
-        "Learn from our team of professional musicians and certified educators.",
-      link: "/programs",
-      linkText: "View Programs",
-    },
-    {
-      icon: "Users",
-      title: "All Ages Welcome",
-      description:
-        "Programs for children, teens, adults, and seniors at all skill levels.",
-      link: "/about",
-      linkText: "Learn More",
-    },
-    {
-      icon: "BookOpen",
-      title: "Diverse Curriculum",
-      description:
-        "From classical to modern, explore various musical styles and techniques.",
-      link: "/programs",
-      linkText: "Explore Courses",
-    },
-  ],
   about: {
     title: "Our Passion for Music Education",
     description:
-      "For over 15 years, Music Do Re Mi has been a cornerstone of musical education in the Johns Creek, Suwanee, and Duluth community",
+      "For over 30 years, Music Do Re Mi has been a cornerstone of musical education in the Johns Creek, Suwanee, and Duluth community",
     cta: { label: "About Us", href: "/about" },
     image: "assets/generic/9 - cello lesson.jpg",
     imageAlt: "Music students in a class",
@@ -65,16 +39,16 @@ export const homeData = {
         image: "https://s3-media0.fl.yelpcdn.com/bphoto/RUuM27ljarUqeRP23uJ_nw/o.jpg",
       },
       {
-        title: "Others – Guitar, Flute, Clarinet, Saxophone",
+        title: "Band - Guitar, Flute, Clarinet, Saxophone",
         description:
           "We offer a wide range of other music lessons, including guitar, and more.",
         image: "assets/generic/14 - clarinet lesson.jpg",
       },
     ],
-    cta: { label: "View All Programs", href: "/programs" },
+    cta: { label: "View Our Teachers", href: "/faculty" },
   },
   testimonials: {
-    title: "What Our Students Say",
+    title: "What Our Customers Say",
     items: [
       {
         quote:

@@ -1,14 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Music, Users, BookOpen, Award, ArrowRight } from "lucide-react";
+import { Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Marquee } from "@/components/ui/marquee";
+import { Card, CardContent } from "@/components/ui/card";
 import SpecialOfferPopup from "@/components/special-offer-popup";
 import { homeData } from "@/data";
 
@@ -28,9 +23,12 @@ export default function Home() {
             muted
             playsInline
             className="object-cover w-full h-full opacity-85"
-            style={{ pointerEvents: 'none' }}
+            style={{ pointerEvents: "none" }}
           >
-            <source src={homeData.hero.video.src} type={homeData.hero.video.type} />
+            <source
+              src={homeData.hero.video.src}
+              type={homeData.hero.video.type}
+            />
             {homeData.hero.video.fallback}
           </video>
         </div>
@@ -52,7 +50,11 @@ export default function Home() {
                 transform: `rotate(${Math.random() * 360}deg)`,
               }}
             >
-              {["♪", "♫", "♩", "♬", "🎵", "🎶", "♭", "♮", "♯"][Math.floor(Math.random() * 9)]}
+              {
+                ["♪", "♫", "♩", "♬", "🎵", "🎶", "♭", "♮", "♯"][
+                  Math.floor(Math.random() * 9)
+                ]
+              }
             </div>
           ))}
         </div>
@@ -105,44 +107,6 @@ export default function Home() {
                 transform: `rotate(${Math.random() * 360}deg)`,
               }}
             />
-          ))}
-        </div>
-
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 relative z-10">
-          {homeData.features.map((feature: any, index: any) => (
-            <Card
-              key={index}
-              className="group transition-all duration-300 hover:shadow-lg hover:scale-105 bg-background border-border"
-              data-aos="fade-up"
-              data-aos-delay={index * 100}
-            >
-              <CardHeader className="space-y-1">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-rose-100 dark:bg-rose-900/50 group-hover:bg-rose-200 dark:group-hover:bg-rose-800/50 transition-colors">
-                  <div className="animate-wave text-rose-500">
-                    {feature.icon === "Music" && <Music className="h-6 w-6" />}
-                    {feature.icon === "Users" && <Users className="h-6 w-6" />}
-                    {feature.icon === "BookOpen" && (
-                      <BookOpen className="h-6 w-6" />
-                    )}
-                  </div>
-                </div>
-                <CardTitle className="text-xl text-foreground">
-                  {feature.title}
-                </CardTitle>
-                <CardDescription className="text-muted-foreground">
-                  {feature.description}
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Link
-                  href={feature.link}
-                  className="inline-flex items-center text-sm font-medium text-rose-500 hover:underline"
-                >
-                  {feature.linkText}{" "}
-                  <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Link>
-              </CardContent>
-            </Card>
           ))}
         </div>
       </section>
@@ -199,8 +163,8 @@ export default function Home() {
               <p className="text-muted-foreground">
                 {homeData.about.description}
               </p>
-              <Button 
-                asChild 
+              <Button
+                asChild
                 variant="outline"
                 className="transform transition-all duration-300 hover:scale-105 hover:shadow-md"
               >
@@ -217,9 +181,9 @@ export default function Home() {
                 src={homeData.about.image || "/placeholder.svg"}
                 alt={homeData.about.imageAlt}
                 fill
-                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0" />
             </div>
           </div>
         </div>
@@ -273,7 +237,7 @@ export default function Home() {
           {homeData.programs.items.map((program: any, index: any) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-lg transform transition-all duration-500 hover:scale-[1.03] hover:shadow-xl"
+              className="group relative overflow-hidden rounded-lg"
               data-aos="zoom-in"
               data-aos-delay={index * 100}
             >
@@ -282,11 +246,11 @@ export default function Home() {
                   src={program.image || "/placeholder.svg"}
                   alt={program.title}
                   fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="object-cover"
                 />
-                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors duration-300" />
+                <div className="absolute inset-0 bg-black/30" />
               </div>
-              <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform transition-transform duration-300 group-hover:translate-y-[-5px]">
+              <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
                 <h3 className="text-xl font-semibold">{program.title}</h3>
                 <p className="mt-1 text-sm text-white/90">
                   {program.description}
@@ -296,7 +260,7 @@ export default function Home() {
           ))}
         </div>
         <div className="mt-10 text-center relative z-10" data-aos="fade-up">
-          <Button 
+          <Button
             asChild
             className="transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
           >
@@ -335,37 +299,42 @@ export default function Home() {
 
         <div className="container relative z-10">
           <div className="text-center mb-12" data-aos="fade-up">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-foreground">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
               {homeData.testimonials.title}
             </h2>
           </div>
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {homeData.testimonials.items.map((testimonial: any, index: any) => (
-              <Card
-                key={index}
-                className="bg-background border-border transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
-                data-aos="fade-up"
-                data-aos-delay={index * 100}
-              >
-                <CardContent className="pt-6">
-                  <div className="mb-4 animate-pulse">
-                    <Award className="h-8 w-8 text-rose-400" />
-                  </div>
-                  <blockquote className="text-muted-foreground italic mb-4">
-                    "{testimonial.quote}"
-                  </blockquote>
-                  <div>
-                    <p className="font-semibold text-foreground">
-                      {testimonial.author}
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      {testimonial.role}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+
+          <Marquee pauseOnHover className="[--duration:35s] [--gap:1.5rem]">
+            {homeData.testimonials.items.map(
+              (testimonial: any, index: number) => (
+                <Card
+                  key={index}
+                  className="w-[340px] mx-5 shrink-0 bg-background border-border hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                >
+                  <CardContent className="pt-6">
+                    <div className="mb-4">
+                      <Award className="h-8 w-8 text-rose-400" />
+                    </div>
+
+                    <blockquote className="italic text-muted-foreground mb-4 line-clamp-5">
+                      "{testimonial.quote}"
+                    </blockquote>
+
+                    <div>
+                      <p className="font-semibold">{testimonial.author}</p>
+                      <p className="text-sm text-muted-foreground">
+                        {testimonial.role}
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              ),
+            )}
+          </Marquee>
+
+          {/* Fade effect */}
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-rose-50 dark:from-rose-950/20 to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-rose-50 dark:from-rose-950/20 to-transparent" />
         </div>
       </section>
 
@@ -425,9 +394,9 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 {homeData.cta.buttons.map((button: any, index: any) => (
-                  <Button 
-                    key={index} 
-                    asChild 
+                  <Button
+                    key={index}
+                    asChild
                     variant={button.variant as any}
                     className="transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
                   >
@@ -444,9 +413,9 @@ export default function Home() {
                 src={homeData.cta.image || "/placeholder.svg"}
                 alt={homeData.cta.imageAlt}
                 fill
-                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t" />
             </div>
           </div>
         </div>
