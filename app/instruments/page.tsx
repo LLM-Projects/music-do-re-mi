@@ -34,25 +34,52 @@ export default function InstrumentsPage() {
         <div className="grid gap-8 md:grid-cols-2 items-center">
           <div className="space-y-4">
             <h2 className="text-3xl font-bold tracking-tighter text-foreground">
-              {instrumentsData.whyRent.title}
+              {instrumentsData.rent.title}
             </h2>
             <p className="text-muted-foreground">
-              {instrumentsData.whyRent.description}
+              Our Rent-to-Own program is designed to make quality musical
+              instruments <span className="underline">affordable</span> for
+              students and families. Instead of paying the full purchase price
+              upfront, you make{" "}
+              <span className="underline">
+                convenient monthly rental payments
+              </span>{" "}
+              while your child learns and grows. <br />
+              <br />A portion of each payment is applied toward the instrument's
+              purchase price and varies for each instrument. As long as you
+              continue making payments, you{" "}
+              <span className="underline">build credit</span> in your account
+              until your instrument is{" "}
+              <span className="underline">fully paid off</span> and becomes
+              yours to keep.
+              <br />
+              <br />
+              This program gives students the opportunity to play a quality
+              instrument without a large initial investment, while offering the
+              flexibility to upgrade to a larger size or different instrument as
+              their needs change.
             </p>
             <ul className="space-y-2">
-              {instrumentsData.whyRent.benefits.map((benefit, index) => (
+              {instrumentsData.rent.benefits.map((benefit, index) => (
                 <li key={index} className="flex items-start">
                   <Check className="mr-2 h-5 w-5 text-rose-500 shrink-0 mt-0.5" />
                   <span className="text-foreground">{benefit}</span>
                 </li>
               ))}
             </ul>
-            <p className="text-muted-foreground">Stop by our office to see our selection and test out your next instrument!</p>
+            <p className="text-muted-foreground">
+              At Music Do-Re-Mi we believe{" "}
+              <span className="font-bold">
+                every <span className="line-through">student</span> musician
+                should have access{" "}
+              </span>{" "}
+              to great instrument and the opportunity to enjoy music
+            </p>
           </div>
           <div className="relative h-[350px] rounded-lg overflow-hidden">
             <Image
-              src={instrumentsData.whyRent.image}
-              alt={instrumentsData.whyRent.imageAlt}
+              src={instrumentsData.rent.image}
+              alt={instrumentsData.rent.imageAlt}
               fill
               className="object-cover"
             />
@@ -66,10 +93,17 @@ export default function InstrumentsPage() {
           <h2 className="text-3xl font-bold tracking-tighter text-center mb-8 text-foreground">
             {instrumentsData.instruments.title}
           </h2>
+          <h3 className="text-lg text-center mb-8 text-muted-foreground">
+            Difference between credits and price is the maintenance and tax
+            cost.
+          </h3>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {instrumentsData.instruments.items.map((instrument, index) => (
-              <Card key={index} className="overflow-hidden dark:border-slate-700">
+              <Card
+                key={index}
+                className="overflow-hidden dark:border-slate-700"
+              >
                 <div className="relative h-[200px]">
                   <Image
                     src={instrument.image}
@@ -79,23 +113,22 @@ export default function InstrumentsPage() {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-foreground">{instrument.name}</CardTitle>
-                  <CardDescription>
-                    {instrument.description}
-                  </CardDescription>
+                  <CardTitle className="text-foreground">
+                    {instrument.name}
+                  </CardTitle>
+                  <CardDescription>{instrument.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-foreground">
-                    <span className="font-semibold">Monthly Rate:</span>{" "}
-                    {instrument.monthlyRate}
+                    <span className="font-semibold">Credits Received:</span> $
+                    {instrument.creditsReceived}/month
                   </p>
                   {instrument.sellingPrice && (
                     <p className="text-foreground">
-                      <span className="font-semibold">Price:</span>{" "}
-                      {instrument.sellingPrice}
+                      <span className="font-semibold">Price:</span> $
+                      {instrument.sellingPrice}/month
                     </p>
                   )}
-                  <b>Rent-to-Own Program</b>
                 </CardContent>
               </Card>
             ))}
@@ -216,7 +249,9 @@ export default function InstrumentsPage() {
       {/* CTA Section */}
       <section className="container py-12 md:py-16">
         <div className="bg-slate-50 dark:bg-slate-900 rounded-lg p-8 text-center">
-          <h2 className="text-2xl font-bold mb-4 text-foreground">{instrumentsData.cta.title}</h2>
+          <h2 className="text-2xl font-bold mb-4 text-foreground">
+            {instrumentsData.cta.title}
+          </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
             {instrumentsData.cta.description}
           </p>
