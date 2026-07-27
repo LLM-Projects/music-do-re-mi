@@ -26,7 +26,8 @@ export const instrumentsData = {
         description:
           "Available in different sizes for different ages and levels",
         creditsReceived: "17",
-        sellingPrice: "25",
+        rentalPrice: "25",
+        purchasePrice: "$650 - $8000",
         image:
           "https://upload.wikimedia.org/wikipedia/commons/1/1b/Violin_VL100.png",
       },
@@ -35,7 +36,8 @@ export const instrumentsData = {
         description:
           "Available in different sizes for different ages and levels",
         creditsReceived: "17",
-        sellingPrice: "25",
+        rentalPrice: "25",
+        purchasePrice: "$650 - $8000",
         image:
           "https://png.pngtree.com/png-vector/20230905/ourmid/pngtree-violin-isolated-bass-png-image_9947662.png",
       },
@@ -44,7 +46,8 @@ export const instrumentsData = {
         description:
           "Available in different sizes for different ages and levels",
         creditsReceived: "35",
-        sellingPrice: "45",
+        rentalPrice: "45",
+        purchasePrice: "$650 - $8000",
         image:
           "https://static.vecteezy.com/system/resources/thumbnails/044/812/508/small_2x/a-cello-isolated-on-transparent-background-png.png",
       },
@@ -53,7 +56,8 @@ export const instrumentsData = {
         description:
           "Available in sizes: 1/4, 1/2, 3/4, 4/4. Perfect for classical music, folk, and fingerstyle playing.",
         creditsReceived: "35",
-        sellingPrice: "45",
+        rentalPrice: "45",
+        purchasePrice: "$500 - $6000",
         image:
           "https://www.freeiconspng.com/uploads/flute-instrument-transparent-png-7.png",
       },
@@ -62,7 +66,8 @@ export const instrumentsData = {
         description:
           "Available in different sizes for different ages and levels",
         creditsReceived: "35",
-        sellingPrice: "45",
+        rentalPrice: "45",
+        purchasePrice: "$500 - $6000",
         image:
           "https://upload.wikimedia.org/wikipedia/commons/2/20/Clarinet-rotate.png",
       },
@@ -71,7 +76,8 @@ export const instrumentsData = {
         description:
           "Available in different sizes for different ages and levels",
         creditsReceived: "35",
-        sellingPrice: "45",
+        rentalPrice: "45",
+        purchasePrice: "$700 - $1200",
         image: "https://pics.clipartpng.com/Saxophone_PNG_Clipart-896.png",
       },
       {
@@ -79,7 +85,8 @@ export const instrumentsData = {
         description:
           "Available in different sizes for different ages and levels",
         creditsReceived: "35",
-        sellingPrice: "45",
+        rentalPrice: "45",
+        purchasePrice: "",
         image:
           "https://static.vecteezy.com/system/resources/thumbnails/051/686/630/small_2x/high-quality-stock-photo-of-a-golden-trumpet-isolated-on-a-transparent-background-showing-intricate-details-and-craftsmanship-of-the-musical-instrument-png.png",
       },
@@ -88,7 +95,8 @@ export const instrumentsData = {
         description:
           "Available in different sizes for different ages and levels",
         creditsReceived: "35",
-        sellingPrice: "45",
+        rentalPrice: "45",
+        purchasePrice: "",
         image:
           "https://static.vecteezy.com/system/resources/thumbnails/016/535/700/small_2x/watercolor-trombone-music-instrument-png.png",
       },
@@ -97,7 +105,8 @@ export const instrumentsData = {
         description:
           "Available in different sizes for different ages and levels",
         creditsReceived: "17",
-        sellingPrice: "25",
+        rentalPrice: "25",
+        purchasePrice: "$200",
         image: "https://pngfre.com/wp-content/uploads/guitar-poster.png",
       },
       {
@@ -105,7 +114,8 @@ export const instrumentsData = {
         description:
           "Available in different sizes for different ages and levels",
         creditsReceived: "60",
-        sellingPrice: "76",
+        rentalPrice: "76",
+        purchasePrice: "$1200",
         image:
           "https://static.vecteezy.com/system/resources/thumbnails/046/828/227/small/double-bass-isolated-on-transparent-background-png.png",
       },

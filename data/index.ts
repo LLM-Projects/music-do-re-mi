@@ -49,24 +49,16 @@ import { instrumentsData } from "./instruments";
 import { contactData } from "./contact";
 import { newsData } from "./news";
 
-// Special offer popup data
-export const specialOfferData = {
-  title: "☀️ Music Summer Camp 2026 🎵",
-  details: "Starts May 25, 2026",
-  description:
-    "Join us for an UNFORGETTABLE Musical Summer Adventure, Beginner Workshop included.",
-  buttonText: "Learn More",
-  buttonLink: "/news",
-  footnote:
-    "🎸🥁🎹 Rehersals, Instrument Exposure, Music Games, and a Grand Finale Concert! 🎙️🎤📻",
-};
 
 // Footer data
 export const footerData = {
   description:
     "Inspiring musical excellence. We provide quality music education for students of all ages and abilities.",
   socialLinks: [
-    { name: "Facebook", href: "https://www.facebook.com/people/Music-Do-Re-Mi/61576684795987/" },
+    {
+      name: "Facebook",
+      href: "https://www.facebook.com/people/Music-Do-Re-Mi/61576684795987/",
+    },
     { name: "Instagram", href: "https://www.instagram.com/musicdoremi525/" },
   ],
   quickLinks: [
@@ -85,4 +77,11 @@ export const footerData = {
 };
 
 // Re-export all data
-export { homeData, aboutData, facultyData, instrumentsData, contactData, newsData };
+export {
+  homeData,
+  aboutData,
+  facultyData,
+  instrumentsData,
+  contactData,
+  newsData,
+};

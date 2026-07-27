@@ -9,11 +9,21 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import SpecialOfferPopup from "@/components/special-offer-popup";
 import { instrumentsData } from "@/data/instruments";
 
 export default function InstrumentsPage() {
   return (
     <div className="flex flex-col">
+      <SpecialOfferPopup
+        title="🎒 Back-to-School Instrument Rentals DISCOUNT"
+        details="Starts July 20, 2026"
+        description="First month off when you rent your instrument between July 20 to September 30"
+        buttonText="View Our Instruments"
+        buttonLink="/instruments"
+        footnote="🎸🥁🎹 Purchase instrument for Exposure, Life-long learning !! 🎙️🎤📻"
+      />
+
       {/* Hero Section */}
       <section className="relative">
         <div className="absolute inset-0 bg-gradient-to-r from-rose-100 to-rose-50 opacity-70 dark:from-rose-950 dark:to-slate-900 dark:opacity-90" />
@@ -36,21 +46,21 @@ export default function InstrumentsPage() {
             <h2 className="text-3xl font-bold tracking-tighter text-foreground">
               {instrumentsData.rent.title}
             </h2>
-            <p className="text-muted-foreground">
+            <p className="text-foreground">
               Our Rent-to-Own program is designed to make quality musical
-              instruments <span className="underline">affordable</span> for
+              instruments <span className="font-bold">affordable</span> for
               students and families. Instead of paying the full purchase price
               upfront, you make{" "}
-              <span className="underline">
+              <span className="font-bold">
                 convenient monthly rental payments
               </span>{" "}
               while your child learns and grows. <br />
               <br />A portion of each payment is applied toward the instrument's
               purchase price and varies for each instrument. As long as you
               continue making payments, you{" "}
-              <span className="underline">build credit</span> in your account
+              <span className="font-bold">build credit</span> in your account
               until your instrument is{" "}
-              <span className="underline">fully paid off</span> and becomes
+              <span className="font-bold">fully paid off</span> and becomes
               yours to keep.
               <br />
               <br />
@@ -67,7 +77,7 @@ export default function InstrumentsPage() {
                 </li>
               ))}
             </ul>
-            <p className="text-muted-foreground">
+            <p className="text-foreground">
               At Music Do-Re-Mi we believe{" "}
               <span className="font-bold">
                 every <span className="line-through">student</span> musician
@@ -123,10 +133,16 @@ export default function InstrumentsPage() {
                     <span className="font-semibold">Credits Received:</span> $
                     {instrument.creditsReceived}/month
                   </p>
-                  {instrument.sellingPrice && (
+                  {instrument.rentalPrice && (
                     <p className="text-foreground">
-                      <span className="font-semibold">Price:</span> $
-                      {instrument.sellingPrice}/month
+                      <span className="font-semibold">Rental Price:</span> $
+                      {instrument.rentalPrice}/month
+                    </p>
+                  )}
+                  {instrument.purchasePrice && (
+                    <p className="text-foreground">
+                      <span className="font-semibold">Purchase Price: </span>
+                      {instrument.purchasePrice}
                     </p>
                   )}
                 </CardContent>
