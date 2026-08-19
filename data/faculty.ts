@@ -76,7 +76,8 @@ export const facultyData = {
           },
           {
             title: "Hu Chen",
-            content: "Ms. Hu Chen is an experienced music teacher having taught piano and voice for over 15 years. She earned her Bachelor of Arts in Piano Pedagogy from Wuhan Conservatory of Music and has won numerous awards including the Gold Price in Pearl River Cup Piano Competition, Young Maestro International Competition and Silver Prize in Professional Skills Pentathlon Competition. Several of her students have been recognized as well. Her students span the ages of 4 to 60. She teaches classical, contemporary, and performance piano as well as music theory.",
+            content:
+              "Ms. Hu Chen is an experienced music teacher having taught piano and voice for over 15 years. She earned her Bachelor of Arts in Piano Pedagogy from Wuhan Conservatory of Music and has won numerous awards including the Gold Price in Pearl River Cup Piano Competition, Young Maestro International Competition and Silver Prize in Professional Skills Pentathlon Competition. Several of her students have been recognized as well. Her students span the ages of 4 to 60. She teaches classical, contemporary, and performance piano as well as music theory.",
             image: "assets/faculty/huchen photo.jpeg",
             languages: ["English", "Mandarin Chinese"],
           },
@@ -117,15 +118,16 @@ export const facultyData = {
             title: "Esther Kim",
             content:
               "Esther Kim is a violinist, educator, and music contractor based in Atlanta, Georgia. She holds a Bachelors in Violin Performance and a Certificate in Music and Entertainment Business at Kennesaw State University, where she served as Concertmaster of the Symphony Orchestra. Esther performs with many orchestras in the region, including the Dekalb, Valdosta, Rome, LaGrange, and Alpharetta Symphony Orchestras, and plays as a pit musician for the City Springs Theater Company. Besides classical music, Esther has also collaborated and performed with many artists, including the rapper Jeezy, R&amp;B singer Alfreda, Grammy-winning jazz singer Nicole Zuraitis, and many others. In addition to her performing career, Esther teaches private violin and viola lessons in metro-Atlanta and contracts musicians for weddings and events. She also serves on the worship team at Passion City Church as a violinist. Prior to pursuing her freelance career as a violinist, she worked administratively for the Atlanta Symphony Orchestra.",
-              image: "assets/faculty/esther-kim.jpeg",
-              languages: ["English"],
+            image: "assets/faculty/esther-kim.jpeg",
+            languages: ["English"],
           },
           {
             title: "Ian Smith",
-            content: "Ian Smith is a violist from Fayetteville, Georgia. Since starting viola at the age of 10, his love for the instrument has grown immensely.  Ian received both his Bachelors and Masters degrees in Viola Performance from Georgia State University in 2018 and 2020 respectively, studying with Tania Maxwell Clements. Since graduating in 2020, Ian has performed with the Rome Symphony Orchestra, Carroll Symphony Orchestra, Griffin Choral Arts, and the Gainesville Theater Alliance. He also plays in various string quartets at weddings across Georgia.   He has been teaching private lessons in the north Atlanta area for three years, including running viola sectionals at Northview High School.",
+            content:
+              "Ian Smith is a violist from Fayetteville, Georgia. Since starting viola at the age of 10, his love for the instrument has grown immensely.  Ian received both his Bachelors and Masters degrees in Viola Performance from Georgia State University in 2018 and 2020 respectively, studying with Tania Maxwell Clements. Since graduating in 2020, Ian has performed with the Rome Symphony Orchestra, Carroll Symphony Orchestra, Griffin Choral Arts, and the Gainesville Theater Alliance. He also plays in various string quartets at weddings across Georgia.   He has been teaching private lessons in the north Atlanta area for three years, including running viola sectionals at Northview High School.",
             image: "assets/faculty/ian-smith.jpg",
             languages: ["English"],
-          }
+          },
         ],
       },
       {
@@ -138,6 +140,13 @@ export const facultyData = {
               "Ayu Wang is an American Chinese Cellist and Faculty Member of the Shanghai Conservatory of Music.  Ms. Ayu is active on the world stage as a Solo and Chamber music cellist and improvisation musician.",
             image: "assets/faculty/ayu-wang.png",
             languages: ["English", "Mandarin Chinese"],
+          },
+          {
+            title: "Aria Posner",
+            content:
+              "Aria Posner is an Atlanta-based cellist and teacher. She holds a Master's degree in Cello Performance from the Royal Academy of Music in London, where she studied with Robert Cohen, and a Bachelor’s degree in Cello Performance from the Cleveland Institute of Music, where she studied with Dr. Melissa Kraut. At CIM, she earned a minor in Suzuki Pedagogy and completed long-term teacher training with Abbey Hansen, becoming certified in all 10 Suzuki books. Aria holds positions with the Greenville Symphony Orchestra and Columbus Symphony Orchestra and performs regularly with the Atlanta Ballet, Atlanta Opera, Atlanta Pops Orchestra, and other orchestras throughout the Southeast. In addition to her orchestral performance career, she is the orchestra director at Academe of the Oaks, maintains a private studio, and is a co-founder of the award-winning piano trio, Trio Thalassa.",
+              image: "assets/faculty/aria-posner.JPG",
+              languages: ["English"],
           },
           {
             title: "Daniel Kim",
@@ -197,7 +206,7 @@ export const facultyData = {
             content:
               "Mr. Noah Samuelson, an active musician and educator, has been serving the communities of Middle and North Georgia since 2015. As a percussionist, Mr. Samuelson has performed throughout the United States and Europe with notable performances at PASIC in 2018 and the IPCL in 2022. He works with the Alpharetta Symphony Orchestra as principal percussionist and development coordinator. Since 2021, Mr. Samuelson has been a clinician and instructor to Henry, Fayette, and Coweta County schools, teaching percussion techniques to middle and high school students. He has been a percussion instructor for the East Coweta Indoor Percussion and East Coweta Marching Indians for the past two seasons. Mr. Samuelson also holds a successful private lessons studio, with several students in the GMEA District and All-State Honor Bands annually. Mr. Samuelson holds a bachelor’s in music from Georgia State University and a master’s in music from the University of Illinois Urbana-Champaign.",
             image: "assets/faculty/noah.JPEG",
-            languages: ["English"]
+            languages: ["English"],
           },
         ],
       },
@@ -210,7 +219,7 @@ export const facultyData = {
             content:
               "Shihan Wang has Master’s in Vocal Performance (Bel Canto), Zhejiang Conservatory of Music (2016); featured vocalist in major national concerts and opera productions (Mozart’s Le Nozze di Figaro – Contessa); award-winning bel canto singer with multiple national and international prizes; experienced instructor specializing in bel canto training, children’s vocal education, choir direction, and stage performance coaching.",
             image: "assets/faculty/shihan-wang.png",
-            languages: ["English"]
+            languages: ["English"],
           },
         ],
       },
