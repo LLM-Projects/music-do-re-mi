@@ -32,7 +32,7 @@ export const instrumentsData = {
           "https://upload.wikimedia.org/wikipedia/commons/1/1b/Violin_VL100.png",
       },
       {
-        name: "Viola",
+        name: "Violas",
         description:
           "Available in different sizes for different ages and levels",
         creditsReceived: "17",
@@ -52,7 +52,7 @@ export const instrumentsData = {
           "https://static.vecteezy.com/system/resources/thumbnails/044/812/508/small_2x/a-cello-isolated-on-transparent-background-png.png",
       },
       {
-        name: "Flute",
+        name: "Flutes",
         description:
           "Available in sizes: 1/4, 1/2, 3/4, 4/4. Perfect for classical music, folk, and fingerstyle playing.",
         creditsReceived: "35",
@@ -81,7 +81,7 @@ export const instrumentsData = {
         image: "https://pics.clipartpng.com/Saxophone_PNG_Clipart-896.png",
       },
       {
-        name: "Trumpet",
+        name: "Trumpets",
         description:
           "Available in different sizes for different ages and levels",
         creditsReceived: "35",

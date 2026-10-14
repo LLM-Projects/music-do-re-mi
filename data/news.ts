@@ -9,6 +9,19 @@ export const newsData = {
         "https://static.cdninstagram.com/rsrc.php/v4/yI/r/VsNE-OHk_8a.png",
       posts: [
         {
+          title: "Summer Camp 2026",
+          description:
+            "This summer, our annual Summer Music Camp was in full swing! Students explored violin, viola, cello, guitar, and piano, and showed off everything they learned at our end-of-camp concert.",
+          images: [
+            "/assets/events/summer-camp-2026.png",
+          ],
+          duration: 500,
+          url: "",
+          meta: {
+            type: "post",
+          },
+        },
+        {
           title: "Australia International Music Competition 2026",
           description:
             "This past weekend, our students traveled to Boston to compete in the Australia International Music Competition. Students were also able to tour Harvard University. We would like to congratulate our winners and all participants on their hard work!",
@@ -176,14 +189,14 @@ export const newsData = {
       "Join us for our exciting events and activities throughout the year.",
     items: [
       {
-        name: "Music Summer Camp 2026",
-        date: "May(25-29), June(1-5), July(8-12), July(27-31), 2026",
-        time: "9:00 AM - 4:00 PM",
+        name: "Music Do-Re-Mi Calendar 2026",
+        date: "365 days",
+        time: "24 x 7",
         location:
           "Music Do Re Mi School - Recital Hall, Suite #525, 10740 Medlock Bridge Road, John Creek, GA",
-        image: "/assets/events/summer-camp-2026.png",
+        image: "/assets/events/musicdoremi-calendar-2026.png",
         description:
-          "🎸🥁🎹 Join us for an UNFORGETTABLE Musical Summer Adventure, Beginner Workshop included. Rehersals, Instrument Exposure, Music Games, and a Grand Finale Concert! 🎙️🎤📻",
+          "Stay updated with our events and activities throughout the year. Check out our calendar for upcoming concerts, recitals, and special events.",
       },
     ],
   },

@@ -4,20 +4,11 @@ import { Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Marquee } from "@/components/ui/marquee";
 import { Card, CardContent } from "@/components/ui/card";
-import SpecialOfferPopup from "@/components/special-offer-popup";
 import { homeData } from "@/data";
 
 export default function Home() {
   return (
     <div className="flex flex-col">
-      <SpecialOfferPopup
-        title="🎒 Back-to-School Instrument Purchases DISCOUNT"
-        details="Starts July 20, 2026"
-        description="15% off instrument purchases from July 20 to September 30"
-        buttonText="View Our Instruments"
-        buttonLink="/instruments"
-        footnote="🎸🥁🎹 Purchase instrument for Exposure, Life-long learning !! 🎙️🎤📻"
-      />
 
       {/* Hero Section */}
       <section className="relative overflow-hidden">

@@ -9,21 +9,11 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import SpecialOfferPopup from "@/components/special-offer-popup";
 import { instrumentsData } from "@/data/instruments";
 
 export default function InstrumentsPage() {
   return (
     <div className="flex flex-col">
-      <SpecialOfferPopup
-        title="🎒 Back-to-School Instrument Rentals DISCOUNT"
-        details="Starts July 20, 2026"
-        description="First month off when you rent your instrument between July 20 to September 30"
-        buttonText="View Our Instruments"
-        buttonLink="/instruments"
-        footnote="🎸🥁🎹 Purchase instrument for Exposure, Life-long learning !! 🎙️🎤📻"
-      />
-
       {/* Hero Section */}
       <section className="relative">
         <div className="absolute inset-0 bg-gradient-to-r from-rose-100 to-rose-50 opacity-70 dark:from-rose-950 dark:to-slate-900 dark:opacity-90" />
@@ -49,7 +39,7 @@ export default function InstrumentsPage() {
             <p className="text-foreground">
               Our Rent-to-Own program is designed to make quality musical
               instruments <span className="font-bold">affordable</span> for
-              students and families. Instead of paying the full purchase price
+              everyone. Instead of paying the full purchase price
               upfront, you make{" "}
               <span className="font-bold">
                 convenient monthly rental payments
@@ -64,7 +54,7 @@ export default function InstrumentsPage() {
               yours to keep.
               <br />
               <br />
-              This program gives students the opportunity to play a quality
+              This program gives the opportunity to play a quality
               instrument without a large initial investment, while offering the
               flexibility to upgrade to a larger size or different instrument as
               their needs change.

@@ -79,10 +79,10 @@ export const homeData = {
   cta: {
     title: "Ready to Begin Your Musical Journey?",
     description:
-      "Experience a trial lesson at $45 for a 30 minute session with our expert instructors. Reach us to schedule your trial and discover the joy of music!",
+      "Schedule a trial lesson and discover the joy of music today!",
     buttons: [
       { label: "Contact Us", href: "/contact", variant: "default" },
-      { label: "Instruments for Rent and Purchase", href: "/instruments", variant: "outline" },
+      { label: "Our Teachers", href: "/faculty", variant: "outline" },
     ],
     image: "assets/generic/2-piano_theory.jpg",
     imageAlt: "Music instruments",

@@ -9,9 +9,17 @@ import {
   Users,
   Music,
   ArrowUpRight,
+  ZoomIn,
 } from "lucide-react";
 import { newsData } from "@/data/news";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import {
   Carousel,
   CarouselContent,
@@ -44,37 +52,75 @@ export default function NewsPage() {
         <h2 className="text-3xl font-bold tracking-tighter text-center mb-8 text-foreground">
           {newsData.events.title}
         </h2>
-        <div className="container">
-          <div className="grid gap-8 sm:grid-cols-2">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
+          <div
+            className={`grid gap-8 ${
+              newsData.events.items.length > 1
+                ? "grid-cols-1 lg:grid-cols-2"
+                : "grid-cols-1"
+            }`}
+          >
             {newsData.events.items.map((event, index) => (
               <div
                 key={index}
                 className="bg-white dark:bg-slate-800 rounded-lg overflow-hidden border dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow"
               >
-                <div className="relative h-[300px]">
-                  <Image
-                    src={event.image || "/placeholder.svg"}
-                    alt={event.name}
-                    fill
-                    className="object-contain"
-                  />
+                <div className="relative h-[clamp(18rem,65vh,48rem)] bg-slate-100 dark:bg-slate-900">
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <button
+                        type="button"
+                        aria-label={`View ${event.name} image larger`}
+                        className="group absolute inset-0 w-full cursor-zoom-in focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-rose-500"
+                      >
+                        <Image
+                          src={event.image || "/placeholder.svg"}
+                          alt={event.name}
+                          fill
+                          sizes="100vw"
+                          className="object-contain"
+                        />
+                        <span className="absolute bottom-3 right-3 flex items-center gap-2 rounded-full bg-black/65 px-3 py-2 text-sm text-white opacity-0 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100">
+                          <ZoomIn className="h-4 w-4" />
+                          View larger
+                        </span>
+                      </button>
+                    </DialogTrigger>
+                    <DialogContent className="w-[calc(100vw-2rem)] max-w-7xl overflow-hidden border-0 bg-black p-2 text-white sm:p-4">
+                      <DialogTitle className="sr-only">
+                        {event.name}
+                      </DialogTitle>
+                      <DialogDescription className="sr-only">
+                        Full-size view of {event.name}.
+                      </DialogDescription>
+                      <div className="relative h-[calc(100dvh-4rem)] max-h-[900px] w-full">
+                        <Image
+                          src={event.image || "/placeholder.svg"}
+                          alt={event.name}
+                          fill
+                          sizes="100vw"
+                          className="object-contain"
+                        />
+                      </div>
+                    </DialogContent>
+                  </Dialog>
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold">{event.name}</h3>
-                  <div className="flex items-center gap-2 mb-2">
-                    <MapPin className="h-4 w-4 text-rose-500" />
-                    <p className="text-base text-rose-500 dark:text-rose-400">
+                  <div className="mb-2 flex items-start gap-2">
+                    <MapPin className="mt-1 h-4 w-4 shrink-0 text-rose-500" />
+                    <p className="break-words text-base text-rose-500 dark:text-rose-400">
                       {event.location}
                     </p>
                   </div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <CalendarDays className="h-4 w-4 text-rose-500" />
+                  <div className="mb-2 flex items-center gap-2">
+                    <CalendarDays className="h-4 w-4 shrink-0 text-rose-500" />
                     <p className="text-base text-muted-foreground">
                       {event.date}
                     </p>
                   </div>
-                  <div className="flex items-center gap-2 mb-4">
-                    <Clock className="h-4 w-4 text-rose-500" />
+                  <div className="mb-4 flex items-center gap-2">
+                    <Clock className="h-4 w-4 shrink-0 text-rose-500" />
                     <p className="text-base text-muted-foreground">
                       {event.time}
                     </p>

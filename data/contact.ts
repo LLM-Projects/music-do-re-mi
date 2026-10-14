@@ -29,11 +29,9 @@ export const contactData = {
         icon: "Clock",
         title: "Office Hours",
         content: [
-          "Weekdays: 3 PM - 7 PM",
-          "Saturday: 9 AM - 6 PM",
+          "Weekdays: 3:30 PM - 7:00 PM",
+          "Saturday: 9:00 AM - 6:00 PM",
           "Sunday: Closed",
-          "",
-          "until August 1, 2026 Summer Office Hours would vary",
         ],
       },
     ],
