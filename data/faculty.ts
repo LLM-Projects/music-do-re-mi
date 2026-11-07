@@ -122,13 +122,6 @@ export const facultyData = {
             languages: ["English", "Russian"],
           },
           {
-            title: "Esther Kim",
-            content:
-              "Esther Kim is a violinist, educator, and music contractor based in Atlanta, Georgia. She holds a Bachelors in Violin Performance and a Certificate in Music and Entertainment Business at Kennesaw State University, where she served as Concertmaster of the Symphony Orchestra. Esther performs with many orchestras in the region, including the Dekalb, Valdosta, Rome, LaGrange, and Alpharetta Symphony Orchestras, and plays as a pit musician for the City Springs Theater Company. Besides classical music, Esther has also collaborated and performed with many artists, including the rapper Jeezy, R&amp;B singer Alfreda, Grammy-winning jazz singer Nicole Zuraitis, and many others. In addition to her performing career, Esther teaches private violin and viola lessons in metro-Atlanta and contracts musicians for weddings and events. She also serves on the worship team at Passion City Church as a violinist. Prior to pursuing her freelance career as a violinist, she worked administratively for the Atlanta Symphony Orchestra.",
-            image: "assets/faculty/esther-kim.jpeg",
-            languages: ["English"],
-          },
-          {
             title: "Ian Smith",
             content:
               "Ian Smith is a violist from Fayetteville, Georgia. Since starting viola at the age of 10, his love for the instrument has grown immensely.  Ian received both his Bachelors and Masters degrees in Viola Performance from Georgia State University in 2018 and 2020 respectively, studying with Tania Maxwell Clements. Since graduating in 2020, Ian has performed with the Rome Symphony Orchestra, Carroll Symphony Orchestra, Griffin Choral Arts, and the Gainesville Theater Alliance. He also plays in various string quartets at weddings across Georgia. He has been teaching private lessons in the north Atlanta area for three years, including running viola sectionals at Northview High School.",
