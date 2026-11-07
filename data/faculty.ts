@@ -14,7 +14,7 @@ export const facultyData = {
           {
             title: "Chen Xi",
             content:
-              "Ms. Chen Yixin has been teaching piano for 6 years. Ms. Chen has a Master of music degree in Piano Performance at the Hartt School, University of Hartford, USA. She studied Piano with Maggie Francis, Former department chair at the University of Hartford, and Professor Marija Stroke , University of Hartford.  She also Studied chamber music with Professor Robison Susan.",
+              "Ms. Chen Yixin has been teaching piano for 6 years. Ms. Chen has a Master of music degree in Piano Performance at the Hartt School, University of Hartford, USA. She studied Piano with Maggie Francis, Former department chair at the University of Hartford, and Professor Marija Stroke, University of Hartford.  She also Studied chamber music with Professor Robison Susan.",
             image: "assets/faculty/chen-xi.png",
             languages: ["English", "Mandarin Chinese"],
           },
@@ -49,7 +49,7 @@ export const facultyData = {
           {
             title: "Patty Kuopei Chen",
             content:
-              "Mrs. Patty Chen has over 30 years of experience with teaching classical piano and piano theory to children and adults. She attended the Taipei National University of the Arts and began her teaching career in Taiwan. She currently teaches in the John's Creek community at Music Do-Re-Mi, with this year being her 25th year with the studio. She was one of two teachers that helped this studio grow when it first opened its doors.\n\nMrs. Patty's students participate in the National Federation of Music Club annually. Students consistently receive superior awards and honorable mentions at the concerto. Aside from the federation and winter recitals, many of Mrs. Patty's students practice diligently and study hard to participate in ABRSM (The Associated Board of the Royal Schools of Music). Students have been invited to the 'High Score Concerts' based on their stellar performances.\n\nIt is the true passion of Mrs. Patty to share the world of piano and classical music with curious minds of all ages. Her approach is rooted in fostering a strong foundation of musical technique while also nurturing creativity and self-expression. Known for her patience, enthusiasm, and commitment to her craft, Mrs. Patty believes in the power of music to enrich lives and is devoted to helping every student reach their fullest potential on the piano.",
+              "Mrs. Patty Chen has over 30 years of experience with teaching classical piano and piano theory to children and adults. She attended the Taipei National University of the Arts and began her teaching career in Taiwan. She currently teaches in the John's Creek community at Music Do-Re-Mi, with this year being her 25th year with the studio. She was one of two teachers that helped this studio grow when it first opened its doors.Mrs. Patty's students participate in the National Federation of Music Club annually. Students consistently receive superior awards and honorable mentions at the concerto. Aside from the federation and winter recitals, many of Mrs. Patty's students practice diligently and study hard to participate in ABRSM (The Associated Board of the Royal Schools of Music). Students have been invited to the 'High Score Concerts' based on their stellar performances.It is the true passion of Mrs. Patty to share the world of piano and classical music with curious minds of all ages. Her approach is rooted in fostering a strong foundation of musical technique while also nurturing creativity and self-expression. Known for her patience, enthusiasm, and commitment to her craft, Mrs. Patty believes in the power of music to enrich lives and is devoted to helping every student reach their fullest potential on the piano.",
             education: "Bachelors - Taipei National University",
             experience:
               "Has been teaching piano for 25+ years and has sent many students to NFMC and ABRSM",
@@ -131,8 +131,15 @@ export const facultyData = {
           {
             title: "Ian Smith",
             content:
-              "Ian Smith is a violist from Fayetteville, Georgia. Since starting viola at the age of 10, his love for the instrument has grown immensely.  Ian received both his Bachelors and Masters degrees in Viola Performance from Georgia State University in 2018 and 2020 respectively, studying with Tania Maxwell Clements. Since graduating in 2020, Ian has performed with the Rome Symphony Orchestra, Carroll Symphony Orchestra, Griffin Choral Arts, and the Gainesville Theater Alliance. He also plays in various string quartets at weddings across Georgia.   He has been teaching private lessons in the north Atlanta area for three years, including running viola sectionals at Northview High School.",
+              "Ian Smith is a violist from Fayetteville, Georgia. Since starting viola at the age of 10, his love for the instrument has grown immensely.  Ian received both his Bachelors and Masters degrees in Viola Performance from Georgia State University in 2018 and 2020 respectively, studying with Tania Maxwell Clements. Since graduating in 2020, Ian has performed with the Rome Symphony Orchestra, Carroll Symphony Orchestra, Griffin Choral Arts, and the Gainesville Theater Alliance. He also plays in various string quartets at weddings across Georgia. He has been teaching private lessons in the north Atlanta area for three years, including running viola sectionals at Northview High School.",
             image: "assets/faculty/ian-smith.jpg",
+            languages: ["English"],
+          },
+          {
+            title: "Hiyori Williams",
+            content:
+              "Hiyori Williams is a violinist and educator who combines professional performance experience with a personalized approach to teaching. She earned her Bachelor of Music in Violin Performance, graduating cum laude from Columbus State University’s Schwob School of Music, where she studied with Boris Abramov and Samuel Vargas. Her performance credits include the LaGrange Symphony Orchestra, Albany Symphony Orchestra, and Schwob Opera Orchestra, as well as an appearance with pianist and composer Zade Dirani at Atlanta Symphony Hall. Since 2020, Hiyori has taught violinists of all ages and skill levels, successfully preparing students for selection to All-State Orchestra. She has also coached chamber ensembles at Martha Stilwell School of the Arts. Her teaching emphasizes technical precision, musical understanding, and expressive playing, with instruction tailored to each student’s strengths and goals.",
+            image: "assets/faculty/ian-smith.jpg", // ADD PICTURE
             languages: ["English"],
           },
         ],
