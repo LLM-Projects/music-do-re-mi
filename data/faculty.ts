@@ -139,7 +139,7 @@ export const facultyData = {
             title: "Hiyori Williams",
             content:
               "Hiyori Williams is a violinist and educator who combines professional performance experience with a personalized approach to teaching. She earned her Bachelor of Music in Violin Performance, graduating cum laude from Columbus State University’s Schwob School of Music, where she studied with Boris Abramov and Samuel Vargas. Her performance credits include the LaGrange Symphony Orchestra, Albany Symphony Orchestra, and Schwob Opera Orchestra, as well as an appearance with pianist and composer Zade Dirani at Atlanta Symphony Hall. Since 2020, Hiyori has taught violinists of all ages and skill levels, successfully preparing students for selection to All-State Orchestra. She has also coached chamber ensembles at Martha Stilwell School of the Arts. Her teaching emphasizes technical precision, musical understanding, and expressive playing, with instruction tailored to each student’s strengths and goals.",
-            image: "assets/faculty/Hiyori Williams.jpg",
+            image: "assets/faculty/hiyori-williams.jpg",
             languages: ["English"],
           },
         ],
