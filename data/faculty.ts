@@ -64,7 +64,7 @@ export const facultyData = {
             title: "Sunhee Hwang",
             content:
               "Ms. Sunhee Hwang is a dedicated and passionate piano instructor with over 30 years of teaching experience. She holds a Bachelor of Arts in Music from Rollins College and has completed extensive certification training in Suzuki Piano Pedagogy at the University of Miami, University of Wisconsin-Stevens Point, and Converse College. In addition, she is certified in Musikgarten early childhood music education.",
-            image: "assets/faculty/sunhee.png",
+            image: "assets/faculty/sunhee-hwang.jpg",
             languages: ["English", "Korean"],
           },
           {
