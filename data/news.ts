@@ -1,7 +1,7 @@
 export const newsData = {
   hero: {
     title: "News & Events",
-    description: "Stay updated with the latest happenings at Music Do Re Mi",
+    description: "Stay updated with the latest happenings at Music Do-Re-Mi",
   },
   feed: {
     instagram: {
