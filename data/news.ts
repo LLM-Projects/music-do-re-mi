@@ -8,6 +8,19 @@ export const newsData = {
       favicon:
         "https://static.cdninstagram.com/rsrc.php/v4/yI/r/VsNE-OHk_8a.png",
       posts: [
+          {
+          title: "Music Do-Re-Mi Appreciation Concert",
+          description:
+            "Join us on Sunday, November 22 at 3:00 pm for our Appreciation Concert. This performance is a concert organized to showcase the dedication, creativity, and progress of our students while also celebrating the spirit of Thanksgiving. It will be an afternoon of gratitude, joy, and artistic expression, bringing everyone together through the power of music!",
+          images: [
+            "/assets/events/australia-internation-music-competition/IMG_5046.png",
+          ],
+          duration: 500,
+          url: "",
+          meta: {
+            type: "post",
+          },
+        },
         {
           title: "Summer Camp 2026",
           description:
