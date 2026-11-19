@@ -70,7 +70,7 @@ export default function InstrumentsPage() {
             <p className="text-foreground">
               At Music Do-Re-Mi we believe{" "}
               <span className="font-bold">
-                every <span className="line-through">student</span> musician
+                every student and musician
                 should have access{" "}
               </span>{" "}
               to great instrument and the opportunity to enjoy music
