@@ -246,7 +246,7 @@ export const facultyData = {
             content:
               "Zhiyang (Tomo) Shu is a pianist, producer, and audio engineer with over 20 years of piano experience and over 5 years of music production experience. He graduated from Boston University with a Bachelor’s in Music, where he studied a blend of multidisciplinary studies including music theory, music history, and music education, and he is currently pursuing a Master’s in Music Production at Berklee College of Music under instruction of Grammy-winning professors such as Enrique Gonzalez Müller and John Whynot. Born in Japan, raised in China, and educated in the United States, Tomo comes from a diverse and multicultural background, with a deep understanding of each country’s unique cultures. As a result, he is able to blend the musical influences from the pop music of each country and bring a unique sound to any production and mix he works on. As an audio engineer, Tomo is familiar with a variety of microphones, mic placements, and recording techniques, and he understands the fundamentals of many instruments. Since the start of his journey in 2020, he has produced and mixed over 50 projects for both himself as well as for other independent musicians, achieving tens of thousands of plays combined on streaming platforms. His philosophy is striving to always maximize the emotions behind every recording he captures and in every production he’s a part of.",
             image: "assets/faculty/zhiyang-shu.png",
-            languages: ["English", "Mandarin Chinese", "Japanese"],
+            languages: ["English", "Mandarin Chinese"],
           },
         ],
       },
