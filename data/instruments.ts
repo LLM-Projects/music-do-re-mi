@@ -78,7 +78,7 @@ export const instrumentsData = {
         creditsReceived: "35",
         rentalPrice: "45",
         purchasePrice: "$700 - $1200",
-        image: "https://pics.clipartpng.com/Saxophone_PNG_Clipart-896.png",
+        image: "/assets/altosax.jpg",
       },
       {
         name: "Trumpets",
