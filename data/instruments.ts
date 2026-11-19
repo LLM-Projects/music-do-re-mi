@@ -29,7 +29,7 @@ export const instrumentsData = {
         rentalPrice: "25",
         purchasePrice: "$650 - $8000",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/1/1b/Violin_VL100.png",
+          "/assets/instruments/violin.jpg",
       },
       {
         name: "Violas",
@@ -39,7 +39,7 @@ export const instrumentsData = {
         rentalPrice: "25",
         purchasePrice: "$650 - $8000",
         image:
-          "https://png.pngtree.com/png-vector/20230905/ourmid/pngtree-violin-isolated-bass-png-image_9947662.png",
+          "/assets/instruments/viola.png",
       },
       {
         name: "Cellos",
@@ -49,7 +49,7 @@ export const instrumentsData = {
         rentalPrice: "45",
         purchasePrice: "$650 - $8000",
         image:
-          "https://static.vecteezy.com/system/resources/thumbnails/044/812/508/small_2x/a-cello-isolated-on-transparent-background-png.png",
+          "/assets/instruments/cello.png",
       },
       {
         name: "Flutes",
@@ -59,7 +59,7 @@ export const instrumentsData = {
         rentalPrice: "45",
         purchasePrice: "$500 - $6000",
         image:
-          "https://www.freeiconspng.com/uploads/flute-instrument-transparent-png-7.png",
+          "/assets/instruments/flute.jpg",
       },
       {
         name: "Clarinets",
@@ -69,7 +69,7 @@ export const instrumentsData = {
         rentalPrice: "45",
         purchasePrice: "$500 - $6000",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/2/20/Clarinet-rotate.png",
+          "/assets/instruments/clarinet.jpg",
       },
       {
         name: "Saxophones",
@@ -78,7 +78,7 @@ export const instrumentsData = {
         creditsReceived: "35",
         rentalPrice: "45",
         purchasePrice: "$700 - $1200",
-        image: "/assets/altosax.jpg",
+        image: "/assets/instruments/altosax.jpg",
       },
       {
         name: "Trumpets",
@@ -88,7 +88,7 @@ export const instrumentsData = {
         rentalPrice: "45",
         purchasePrice: "",
         image:
-          "https://static.vecteezy.com/system/resources/thumbnails/051/686/630/small_2x/high-quality-stock-photo-of-a-golden-trumpet-isolated-on-a-transparent-background-showing-intricate-details-and-craftsmanship-of-the-musical-instrument-png.png",
+          "/assets/instruments/trumpet.png",
       },
       {
         name: "Trombones",
@@ -98,7 +98,7 @@ export const instrumentsData = {
         rentalPrice: "45",
         purchasePrice: "",
         image:
-          "https://static.vecteezy.com/system/resources/thumbnails/016/535/700/small_2x/watercolor-trombone-music-instrument-png.png",
+          "/assets/instruments/trombone.png",
       },
       {
         name: "Guitars",
@@ -107,7 +107,7 @@ export const instrumentsData = {
         creditsReceived: "17",
         rentalPrice: "25",
         purchasePrice: "$200",
-        image: "https://pngfre.com/wp-content/uploads/guitar-poster.png",
+        image: "/assets/instruments/guitar.png",
       },
       {
         name: "Double Bass",
@@ -117,7 +117,7 @@ export const instrumentsData = {
         rentalPrice: "76",
         purchasePrice: "$1200",
         image:
-          "https://static.vecteezy.com/system/resources/thumbnails/046/828/227/small/double-bass-isolated-on-transparent-background-png.png",
+          "/assets/instruments/doublebass.png",
       },
     ],
   },
