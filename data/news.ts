@@ -13,7 +13,7 @@ export const newsData = {
           description:
             "Join us on Sunday, November 22 at 3:00 pm for our Appreciation Concert. This performance is a concert organized to showcase the dedication, creativity, and progress of our students while also celebrating the spirit of Thanksgiving. It will be an afternoon of gratitude, joy, and artistic expression, bringing everyone together through the power of music!",
           images: [
-            "/assets/events/australia-internation-music-competition/IMG_5046.png",
+            "/assets/events/Appreciation Concert Insta Post.png",
           ],
           duration: 500,
           url: "",
