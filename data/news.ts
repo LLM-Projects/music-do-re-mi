@@ -206,7 +206,7 @@ export const newsData = {
         date: "365 days",
         time: "24 x 7",
         location:
-          "Music Do Re Mi School - Recital Hall, Suite #525, 10740 Medlock Bridge Road, John Creek, GA",
+          "Music Do-Re-Mi School - Recital Hall, Suite #525, 10740 Medlock Bridge Road, John Creek, GA",
         image: "/assets/events/musicdoremi-calendar-2026.png",
         description:
           "Stay updated with our events and activities throughout the year. Check out our calendar for upcoming concerts, recitals, and special events.",
