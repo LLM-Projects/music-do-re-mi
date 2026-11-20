@@ -12,6 +12,7 @@ import {
   ZoomIn,
 } from "lucide-react";
 import { newsData } from "@/data/news";
+import SpecialOfferPopup from "@/components/special-offer-popup";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Dialog,
@@ -32,6 +33,15 @@ import Autoplay from "embla-carousel-autoplay";
 export default function NewsPage() {
   return (
     <div className="flex flex-col">
+      <SpecialOfferPopup
+        title="Music Do-Re-Mi's Appreciation Concert"
+        details="November 22, 2026"
+        description="This performance is a concert organized to showcase the dedication, creativity, and progress of our students while also celebrating the spirit of Thanksgiving."
+        buttonText="View Our Events"
+        buttonLink="/news"
+        footnote="Spend an afternoon of gratitude, joy, and artistic expression with us!"
+      />
+      
       {/* Hero Section */}
       <section className="relative">
         <div className="absolute inset-0 bg-gradient-to-r from-rose-100 to-rose-50 opacity-70 dark:from-rose-950 dark:to-slate-900 dark:opacity-90" />
