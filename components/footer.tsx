@@ -102,7 +102,7 @@ export default function Footer() {
         </div>
         <div className="mt-8 border-t pt-6 text-center text-sm text-muted-foreground">
           <p>
-            © {new Date().getFullYear()} Music Do Re Mi. All rights reserved.
+            © {new Date().getFullYear()} Music Do-Re-Mi. All rights reserved.
           </p>
         </div>
       </div>
