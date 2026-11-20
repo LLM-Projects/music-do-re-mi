@@ -29,7 +29,7 @@ export const instrumentsData = {
         rentalPrice: "25",
         purchasePrice: "$650 - $8000",
         image:
-          "/assets/instruments/violin.jpg",
+          "/assets/instruments/violins.png",
       },
       {
         name: "Violas",
@@ -88,7 +88,7 @@ export const instrumentsData = {
         rentalPrice: "45",
         purchasePrice: "",
         image:
-          "/assets/instruments/trumpet.png",
+          "/assets/instruments/trumpets.png",
       },
       {
         name: "Trombones",
