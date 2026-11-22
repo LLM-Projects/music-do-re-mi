@@ -15,7 +15,7 @@ export const newsData = {
           images: [
             "/assets/events/Appreciation Concert Insta Post.png",
           ],
-          duration: 1000,
+          duration: 800,
           url: "",
           meta: {
             type: "post",
@@ -28,7 +28,7 @@ export const newsData = {
           images: [
             "/assets/events/ACMI STUDIO FLYER.png",
           ],
-          duration: 1500,
+          duration: 800,
           url: "",
           meta: {
             type: "post",
@@ -41,7 +41,7 @@ export const newsData = {
           images: [
             "/assets/events/summer-camp-2026.png",
           ],
-          duration: 500,
+          duration: 800,
           url: "",
           meta: {
             type: "post",
@@ -54,7 +54,7 @@ export const newsData = {
           images: [
             "/assets/events/australia-internation-music-competition/IMG_5046.png",
           ],
-          duration: 500,
+          duration: 800,
           url: "",
           meta: {
             type: "post",
@@ -68,7 +68,7 @@ export const newsData = {
             "/assets/events/sound-of-spring/IMG_20260514_194922.png",
             "/assets/events/sound-of-spring/IMG_20260514_194945.png",
           ],
-          duration: 500,
+          duration: 800,
           url: "",
           meta: {
             type: "post",
