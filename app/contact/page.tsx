@@ -1,3 +1,6 @@
+// app/contact/page.tsx  ("/contact")
+// Contact cards + FAQ. All text comes from `contactData` in data/contact.ts.
+
 "use client";
 
 import React from "react";
@@ -24,7 +27,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Contact Information */}
+      {/* Four info cards: address, phone, email, hours. Each line of `content` becomes its own line (<br />) */}
       <section className="container py-12">
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {contactData.contactInfo.items.map((item, index) => (
@@ -49,8 +52,11 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="bg-slate-50 py-12 md:py-16">
+      {/* FAQ Section.
+          FIX: this section only had bg-slate-50 (light grey). In dark mode the
+          heading text turns white, so it was white-on-light-grey and unreadable.
+          Added dark:bg-slate-900 like the other pages use. */}
+      <section className="bg-slate-50 dark:bg-slate-900 py-12 md:py-16">
         <div className="container">
           <h2 className="text-2xl font-bold text-center mb-8">
             {contactData.faq.title}
