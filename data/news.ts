@@ -218,7 +218,8 @@ export const newsData = {
       {
         name: "ACMI Recording Studio OPEN NOW",
         date: "by appointment",
-        time: "https://forms.gle/oBocXnMwkKkmooQb7",
+        time: "Contact us through our inquiry form",
+        link: "https://forms.gle/oBocXnMwkKkmooQb7",
         location:
           "Music Do-Re-Mi School ~ Recital Hall, Suite #525, 10740 Medlock Bridge Road, Johns Creek, GA",
         image: "/assets/events/ACMI STUDIO FLYER.png",
