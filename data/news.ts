@@ -81,6 +81,18 @@ export const newsData = {
     title: "Latest News",
     items: [
       {
+        title: "ACMI Recording Studio OPEN NOW",
+        date: "2026",
+        image: "assets/events/ACMI STUDIO FLYER.png",
+        summary:
+          "Music Do-Re-Mi’s very own recording studio, ACMI recording studio, is now officially open! Run by Berklee student and office manager Tomo, we specialize in recording professional audio and video. With access to our beautiful concert hall (and the grand piano inside) and its naturally pleasing acoustics, as well as professional acoustic treatment from GIK Acoustics, this is the perfect recording service for all of your needs, whether it’s for recitals, auditions, social media, or simply a keepsake. If you’re interested or want to learn more, please click on the flyer above and you’ll be taken to our inquiry form.",
+        content:
+          "",
+        achievements: {
+          
+        }
+      }
+      {
         title: "Celebrating Our Students' Outstanding Achievements in 2026",
         date: "2026",
         image: "/assets/generic/10 - recital event.jpg",
