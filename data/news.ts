@@ -201,7 +201,7 @@ export const newsData = {
     ],
   },
   events: {
-    title: "Events",
+    title: "Announcements",
     description:
       "Join us for our exciting events and activities throughout the year.",
     items: [
@@ -214,6 +214,16 @@ export const newsData = {
         image: "/assets/events/musicdoremi-calendar-2026.png",
         description:
           "Stay updated with our events and activities throughout the year. Check out our calendar for upcoming concerts, recitals, and special events.",
+      },
+      {
+        name: "ACMI Recording Studio OPEN NOW",
+        date: "by appointment",
+        time: "https://forms.gle/oBocXnMwkKkmooQb7",
+        location:
+          "Music Do-Re-Mi School ~ Recital Hall, Suite #525, 10740 Medlock Bridge Road, Johns Creek, GA",
+        image: "/assets/events/ACMI STUDIO FLYER.png",
+        description:
+          "Music Do-Re-Mi’s very own recording studio, ACMI recording studio, is now officially open! Run by Berklee student and office manager Tomo, we specialize in recording professional audio and video. With access to our beautiful concert hall (and the grand piano inside) and its naturally pleasing acoustics, as well as professional acoustic treatment from GIK Acoustics, this is the perfect recording service for all of your needs, whether it’s for recitals, auditions, social media, or simply a keepsake. If you’re interested or want to learn more, please click on the flyer above and you’ll be taken to our inquiry form.",
       },
     ],
   },
