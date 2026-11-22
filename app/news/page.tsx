@@ -100,7 +100,6 @@ export default function NewsPage() {
                     </a>
                   ) : (
                   <Dialog>
-
                     <DialogTrigger asChild>
                       <button
                         type="button"
@@ -138,6 +137,7 @@ export default function NewsPage() {
                       </div>
                     </DialogContent>
                   </Dialog>
+                  )}
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold">{event.name}</h3>
@@ -164,7 +164,8 @@ export default function NewsPage() {
                   </p>
                 </div>
               </div>
-            ))}
+            );
+            })}
           </div>
         </div>
       </section>
@@ -189,6 +190,7 @@ export default function NewsPage() {
                 const isInstagram =
                   contentType === "reel" || contentType === "post";
                 const hasUrl = post.url && post.url.trim() !== "";
+                const postLink = "link" in post ? post.link : undefined;
 
                 // If Instagram embed with URL, show it
                 if (isInstagram && hasUrl) {
@@ -248,7 +250,16 @@ export default function NewsPage() {
                   return (
                     <CarouselItem key={`post-${postIndex}-image-${imageIndex}`}>
                       <div className="p-2">
-                        <div className="group">
+                        <div className="group relative">
+                          {postLink && (
+                            <a
+                              href={postLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              aria-label={`${post.title} – open inquiry form`}
+                              className="absolute inset-0 z-20"
+                            />
+                          )}
                           <Card className="relative overflow-hidden border-0 shadow-sm bg-white/80 dark:bg-zinc-900/80 backdrop-blur-xl transition-all duration-300 hover:shadow-md group-hover:shadow-lg">
                             <CardContent className="flex aspect-square items-center justify-center p-0 overflow-hidden">
                               <div className="relative w-full h-full">
