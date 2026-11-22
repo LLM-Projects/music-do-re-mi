@@ -1,3 +1,4 @@
+// app/faculty/page.tsx
 "use client";
 
 import Image from "next/image";
@@ -14,7 +15,77 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { facultyData } from "@/data/faculty";
 import { useState } from "react";
 
-export default function ProgramsPage() {
+// One teacher card with a "Read more / Read less" toggle.
+// FIX: the old page called useState() INSIDE the .map() loop of the page
+// component. That breaks React's "Rules of Hooks" (hooks must not be called in
+// loops), it only worked by luck, and it would break as soon as the number of
+// teachers changed between renders. Each card is now its own small component
+// that owns its own expanded/collapsed state.
+function FacultyCard({
+  person,
+}: {
+  person: {
+    title: string;
+    content: string;
+    image: string;
+    languages?: string[];
+  };
+}) {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const content = person.content;
+  // Show only the first 150 characters until "Read more" is clicked.
+  const truncatedContent =
+    content.length > 150 ? content.substring(0, 150) + "..." : content;
+
+  return (
+    <Card className="overflow-hidden">
+      {/* Photo (object-contain so faces/heads are never cropped) */}
+      <div className="relative aspect-[4/3]">
+        <Image
+          src={person.image || "/placeholder.svg"}
+          alt={person.title}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className="object-contain bg-muted"
+        />
+      </div>
+      <CardHeader>
+        <CardTitle>{person.title}</CardTitle>
+        <CardDescription></CardDescription>
+      </CardHeader>
+      <CardContent>
+        <p>{isExpanded ? content : truncatedContent}</p>
+        {content.length > 150 && (
+          <Button
+            variant="link"
+            className="p-0 h-auto font-normal"
+            onClick={() => setIsExpanded(!isExpanded)}
+          >
+            {isExpanded ? "Read less" : "Read more"}
+          </Button>
+        )}
+        {/* Language badges */}
+        {person.languages && person.languages.length > 0 && (
+          <div className="mt-2 flex flex-wrap gap-1">
+            {person.languages.map((language, i) => (
+              <span
+                key={i}
+                className="bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200 rounded px-2 py-1 text-sm"
+              >
+                {language}
+              </span>
+            ))}
+          </div>
+        )}
+      </CardContent>
+    </Card>
+  );
+}
+
+// The Faculty page ("/faculty"). Data comes from data/faculty.ts.
+// (Renamed from the misleading "ProgramsPage"; the file name decides the URL,
+// so this does not change the route.)
+export default function FacultyPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
@@ -32,7 +103,7 @@ export default function ProgramsPage() {
         </div>
       </section>
 
-      {/* Faculty Section */}
+      {/* Tabs: one tab per instrument category (piano, flute, ...). Add teachers in data/faculty.ts */}
       <section className="container py-12 md:py-16">
         <h2 className="text-3xl font-bold tracking-tighter text-center mb-8 text-foreground">
           {facultyData.faculty.title}
@@ -61,63 +132,16 @@ export default function ProgramsPage() {
               className="space-y-8"
             >
               <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                {category.items.map((person, index) => {
-                  const [isExpanded, setIsExpanded] = useState(false);
-                  const content = person.content;
-                  const truncatedContent =
-                    content.length > 150
-                      ? content.substring(0, 150) + "..."
-                      : content;
-
-                  return (
-                    <Card key={index} className="overflow-hidden">
-                      <div className="relative aspect-[4/3]">
-                        <Image
-                          src={person.image || "/placeholder.svg"}
-                          alt={person.title}
-                          fill
-                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                          className="object-contain bg-muted"
-                        />
-                      </div>
-                      <CardHeader>
-                        <CardTitle>{person.title}</CardTitle>
-                        <CardDescription></CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p>{isExpanded ? content : truncatedContent}</p>
-                        {content.length > 150 && (
-                          <Button
-                            variant="link"
-                            className="p-0 h-auto font-normal"
-                            onClick={() => setIsExpanded(!isExpanded)}
-                          >
-                            {isExpanded ? "Read less" : "Read more"}
-                          </Button>
-                        )}
-                        {person.languages && person.languages.length > 0 && (
-                          <div className="mt-2 flex flex-wrap gap-1">
-                            {person.languages.map((language, i) => (
-                              <span
-                                key={i}
-                                className="bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200 rounded px-2 py-1 text-sm"
-                              >
-                                {language}
-                              </span>
-                            ))}
-                          </div>
-                        )}
-                      </CardContent>
-                    </Card>
-                  );
-                })}
+                {category.items.map((person) => (
+                  <FacultyCard key={person.title} person={person} />
+                ))}
               </div>
             </TabsContent>
           ))}
         </Tabs>
       </section>
 
-      {/* CTA Section */}
+      {/* Call-to-action box at the bottom */}
       <section className="container py-12 md:py-16">
         <div className="bg-rose-50 dark:bg-rose-950/20 rounded-lg p-8 text-center">
           <h2 className="text-2xl font-bold mb-4">{facultyData.cta.title}</h2>
