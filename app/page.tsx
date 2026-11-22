@@ -1,3 +1,12 @@
+// app/page.tsx  (the HOME page, "/")
+// Server component. Text/images come from `homeData` in data/home.ts, so most
+// edits are made there. Sections, top to bottom:
+//   Hero (video + title) -> decorative bubbles -> About preview -> Programs
+//   -> Testimonials (scrolling marquee) -> Call-to-action.
+// NOTE: the floating notes/bubbles use Math.random(). That is fine here because
+// this is a server component: positions are chosen once at build time and are
+// not recalculated in the browser (so no React hydration mismatch).
+
 import Link from "next/link";
 import Image from "next/image";
 import { Award } from "lucide-react";
@@ -12,14 +21,19 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        {/* Background Video */}
+        {/* Background Video (silent, looping, autoplay).
+            FIX: the old code set the file on BOTH <video src> and <source>, so
+            the browser had two competing sources. Only <source> is used now.
+            Added poster + preload so a still image shows while the large video
+            file (~15 MB) loads, instead of an empty box. */}
         <div className="absolute inset-4">
           <video
-            src={homeData.hero.video.src}
             autoPlay
             loop
             muted
             playsInline
+            preload="metadata"
+            poster="/assets/hero.jpg"
             className="object-cover w-full h-full opacity-85"
             style={{ pointerEvents: "none" }}
           >
@@ -31,6 +45,7 @@ export default function Home() {
           </video>
         </div>
 
+        {/* Pink tint over the video so the text stays readable */}
         <div className="absolute inset-0 bg-gradient-to-r from-rose-100 to-rose-50 opacity-70 dark:from-rose-950 dark:to-slate-900 dark:opacity-90 mix-blend-overlay" />
 
         {/* Enhanced animated music notes */}
@@ -57,6 +72,7 @@ export default function Home() {
           ))}
         </div>
 
+        {/* Hero text. The 5th word of the title ("Music") is highlighted in rose. */}
         <div className="container relative flex flex-col items-center justify-center space-y-8 py-24 text-center md:py-32">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl animate-fade-in text-foreground">
             {homeData.hero.title.split(" ").map((word: any, i: any) => (
@@ -71,6 +87,7 @@ export default function Home() {
           <p className="max-w-[700px] text-base font-semibold text-black dark:text-white md:text-lg animate-slide-up drop-shadow-sm bg-white/30 dark:bg-black/30 backdrop-blur-sm px-6 py-3 rounded-lg border border-white/20 dark:border-white/10">
             {homeData.hero.description}
           </p>
+          {/* Hero buttons (labels/links in homeData.hero.cta) */}
           <div className="flex flex-col gap-4 sm:flex-row animate-bounce-in">
             {homeData.hero.cta.map((button: any, index: any) => (
               <Button
@@ -87,7 +104,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Decorative strip with floating bubbles. (It holds no text; delete the
+          whole <section> if you don't want the extra blank space.) */}
       <section className="container py-16 md:py-24 relative overflow-hidden">
         {/* Enhanced animated bubbles */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -137,7 +155,7 @@ export default function Home() {
           </svg>
         </div>
 
-        {/* Added music staff lines animation */}
+        {/* Music staff lines (uses the staffLine keyframes added to globals.css) */}
         <div className="absolute inset-0 pointer-events-none opacity-20">
           {[...Array(5)].map((_, i) => (
             <div
@@ -152,6 +170,7 @@ export default function Home() {
           ))}
         </div>
 
+        {/* Left: text + button. Right: photo. data-aos = scroll-reveal animation */}
         <div className="container relative z-10">
           <div className="grid gap-8 md:grid-cols-2 items-center">
             <div className="space-y-4" data-aos="fade-right">
@@ -231,6 +250,7 @@ export default function Home() {
             {homeData.programs.description}
           </p>
         </div>
+        {/* One photo card per program (piano / strings / band) */}
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 relative z-10">
           {homeData.programs.items.map((program: any, index: any) => (
             <div
@@ -302,6 +322,7 @@ export default function Home() {
             </h2>
           </div>
 
+          {/* Endlessly scrolling row of parent/student reviews (pauses on hover) */}
           <Marquee pauseOnHover className="[--duration:35s] [--gap:1.5rem]">
             {homeData.testimonials.items.map(
               (testimonial: any, index: number) => (
@@ -336,7 +357,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Final call-to-action box: text + buttons on the left, photo on the right */}
       <section className="container py-16 md:py-24">
         <div className="rounded-lg bg-slate-50 dark:bg-slate-900 p-8 md:p-12 relative overflow-hidden">
           {/* Enhanced animated wave background */}
