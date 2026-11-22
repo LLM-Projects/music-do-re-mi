@@ -1,6 +1,9 @@
+# Tells search engines what they may crawl.
 User-Agent: *
 Allow: /
+# /admin does not exist in this project (harmless, safe to delete).
 Disallow: /admin
+# The virtual keyboard is an unlisted toy page, so keep it out of search results.
 Disallow: /virtual-keyboard
 
 Sitemap: https://musicdoremi.com/sitemap.xml
