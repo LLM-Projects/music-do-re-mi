@@ -26,9 +26,9 @@ export const newsData = {
           description:
             "The in-house recording service of Music Do-Re-Mi, perfect for all of your audition/recital recording needs. Professional audio and video at an affordable price!",
           images: [
-            "/assets/events/summer-camp-2026.png",
+            "/assets/events/ACMI Recording Studio Promotional Flyer.pdf",
           ],
-          duration: 500,
+          duration: 1500,
           url: "",
           meta: {
             type: "post",
