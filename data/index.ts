@@ -7,7 +7,7 @@ export const siteConfig = {
     "music school",
     "instrument rentals",
     "instrument purchase",
-    "john creeks music school",
+    "johns creek music school",
     "music school near me",
     "violin lessons",
     "piano classes",
