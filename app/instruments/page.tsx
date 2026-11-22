@@ -1,3 +1,9 @@
+// app/instruments/page.tsx  ("/instruments")
+// Rent-to-own explanation + a card for every instrument (prices in
+// data/instruments.ts). The "Rental Plans", "Process" and "Policies" sections are
+// commented out (hidden) - they need `CardFooter` and the `Table*` components
+// imported if you ever switch them back on.
+
 import Image from "next/image";
 import Link from "next/link";
 import { Check } from "lucide-react";
@@ -29,7 +35,7 @@ export default function InstrumentsPage() {
         </div>
       </section>
 
-      {/* Rental Information */}
+      {/* Rent-to-own explanation (left) and photo (right) */}
       <section className="container py-12 md:py-16">
         <div className="grid gap-8 md:grid-cols-2 items-center">
           <div className="space-y-4">
@@ -87,7 +93,9 @@ export default function InstrumentsPage() {
         </div>
       </section>
 
-      {/* Rental Instruments */}
+      {/* One card per instrument.
+          "Credits received" = the part of the monthly rent that counts toward
+          buying the instrument. Empty prices in the data file are hidden. */}
       <section className="bg-slate-50 dark:bg-slate-900 py-12 md:py-16">
         <div className="container">
           <h2 className="text-3xl font-bold tracking-tighter text-center mb-8 text-foreground">
@@ -252,7 +260,7 @@ export default function InstrumentsPage() {
         </div>
       </section> */}
 
-      {/* CTA Section */}
+      {/* Call-to-action box with Contact / Latest Updates buttons */}
       <section className="container py-12 md:py-16">
         <div className="bg-slate-50 dark:bg-slate-900 rounded-lg p-8 text-center">
           <h2 className="text-2xl font-bold mb-4 text-foreground">
