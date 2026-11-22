@@ -1,6 +1,6 @@
 export const aboutData = {
   hero: {
-    title: "About Music Do Re Mi",
+    title: "About Music Do-Re-Mi",
     description:
       "Discover our story, mission, and the passionate team behind our music school.",
   },
@@ -14,13 +14,13 @@ export const aboutData = {
       "Whether you're looking for lessons, instrument rentals, repairs, or your next instrument, Music Do-Re-Mi is here to help you learn, play, and grow through music.",
     ],
     image: "https://i.postimg.cc/zGGX2DyZ/temp-Imagenlu7-BM.avif",
-    imageAlt: "Music Do Re Mi Building",
+    imageAlt: "Music Do-Re-Mi Building",
   },
   mission: {
     title: "Our Mission",
     content: [
       "Whether you're a beginner looking to start your musical journey or a seasoned player searching for quality gear, we got you covered.",
-      "At Music Do Re Mi, we offer a wide range of instrument for rent and purchase, to make learning and playing more accessible.",
+      "At Music Do-Re-Mi, we offer a wide range of instrument for rent and purchase, to make learning and playing more accessible.",
       "Whether you need an instrument for school, a short-term event, or just want to try something new, our flexible rental options ensure you have what you need without a long-term commitment.",
       "We also provide music lessons for all ages and skill levels.",
       "Our experienced instructors are passionate about helping you grow, whether you're picking up an instrument for the first time or refining advanced techniques.",
@@ -60,7 +60,7 @@ export const aboutData = {
     title: "Our Facilities",
     image:
       "https://s3-media0.fl.yelpcdn.com/bphoto/UMQ_tegNVXiEpk1cxzznDQ/o.jpg",
-    imageAlt: "Music Do Re Mi facilities",
+    imageAlt: "Music Do-Re-Mi facilities",
     items: [
       {
         title: "Teaching Studios",
@@ -91,7 +91,7 @@ export const aboutData = {
         year: "2005",
         title: "Founding",
         description:
-          "Music Do Re Mi opens its doors with 2 teachers and 15 students.",
+          "Music Do-Re-Mi opens its doors with 2 teachers and 15 students.",
       },
       {
         year: "2008",
