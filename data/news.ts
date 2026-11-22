@@ -30,8 +30,8 @@ export const newsData = {
           ],
           duration: 800,
           url: "",
+          link: "https://forms.gle/oBocXnMwkKkmooQb7",
           meta: {
-            type: "post",
           },
         },
         {
