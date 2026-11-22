@@ -22,6 +22,19 @@ export const newsData = {
           },
         },
         {
+          title: "ACMI Recording Studio",
+          description:
+            "The in-house recording service of Music Do-Re-Mi, perfect for all of your audition/recital recording needs. Professional audio and video at an affordable price!",
+          images: [
+            "/assets/events/summer-camp-2026.png",
+          ],
+          duration: 500,
+          url: "",
+          meta: {
+            type: "post",
+          },
+        },
+        {
           title: "Summer Camp 2026",
           description:
             "This summer, our annual Summer Music Camp was in full swing! Students explored violin, viola, cello, guitar, and piano, and showed off everything they learned at our end-of-camp concert.",
