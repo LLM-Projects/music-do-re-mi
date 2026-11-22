@@ -1,7 +1,20 @@
+/* app/globals.css
+   Global styles for the whole site. Sections:
+   1. Tailwind layers
+   2. Theme colours (light + dark) as CSS variables - rose/pink brand colour
+   3. Base styles
+   4. Missing animations (NEW) + scroll-reveal styles (NEW)
+   5. Virtual piano keyboard styles
+   NOTE: styles/globals.css is an unused duplicate (a leftover from the starter
+   template). Only THIS file is imported (by app/layout.tsx), so you can delete
+   styles/globals.css. */
+
+/* 1. Tailwind's base, component and utility layers */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* 2. Theme colours. Format "H S% L%" is used by tailwind.config.ts via hsl(var(--x)) */
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -49,6 +62,7 @@
   }
 }
 
+/* 3. Every element gets the theme border colour; page uses theme background/text */
 @layer base {
   * {
     @apply border-border;
@@ -58,7 +72,37 @@
   }
 }
 
-/* Piano keyboard styles */
+/* 4a. NEW: animations referenced by app/page.tsx that were never defined.
+   Without these, `animation: staffLine ...` and `animation: floatSymbol ...`
+   silently did nothing, so the staff lines and floating symbols were static. */
+@keyframes staffLine {
+  from { transform: translateX(-2%) scaleX(1); opacity: 0.5; }
+  to   { transform: translateX(2%)  scaleX(1.02); opacity: 1; }
+}
+@keyframes floatSymbol {
+  0%   { transform: translateY(0) rotate(0deg);        opacity: 0; }
+  10%  { opacity: 0.4; }
+  90%  { opacity: 0.4; }
+  100% { transform: translateY(-60vh) rotate(360deg);  opacity: 0; }
+}
+
+/* 4b. NEW: scroll-reveal styles for components/aos-init.tsx.
+   Elements are hidden only after JS adds .aos-ready to <html>, so the page is
+   still fully visible if JavaScript is off. */
+.aos-ready [data-aos] {
+  opacity: 0;
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.aos-ready [data-aos="fade-up"]    { transform: translateY(24px); }
+.aos-ready [data-aos="fade-right"] { transform: translateX(-24px); }
+.aos-ready [data-aos="fade-left"]  { transform: translateX(24px); }
+.aos-ready [data-aos="zoom-in"]    { transform: scale(0.92); }
+.aos-ready [data-aos].aos-animate  { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .aos-ready [data-aos] { opacity: 1; transform: none; transition: none; }
+}
+
+/* 5. Piano keyboard styles (used by app/virtual-keyboard/page.tsx) */
 .piano-container {
   --white-key-width: 65px;
   --white-key-height: 200px;
@@ -72,14 +116,18 @@
   overflow: hidden;
 }
 
+/* FIX: the keyboard now shrink-wraps its white keys (width: fit-content) and
+   has no padding. Black keys are positioned with
+   left: calc(N * var(--white-key-width)), which only lines up when the
+   container's left edge is the first white key's left edge. Before, the row was
+   centred inside a wider box, so every black key was shifted. */
 .piano-keyboard {
   position: relative;
   display: flex;
-  justify-content: center;
-  width: 100%;
-  max-width: 1200px;
+  width: fit-content;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 2px;
+  padding: 0;
 }
 
 .piano-key {
@@ -96,6 +144,7 @@
   border: 1px solid #ddd;
   width: var(--white-key-width);
   height: var(--white-key-height);
+  flex: 0 0 var(--white-key-width); /* never let flexbox squeeze a key */
   border-radius: 0 0 6px 6px;
   position: relative;
   z-index: 1;
