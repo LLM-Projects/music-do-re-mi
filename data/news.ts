@@ -16,7 +16,7 @@ export const newsData = {
             "/assets/events/Appreciation Concert Insta Post.png",
           ],
           duration: 500,
-          url: "",
+          url: "https://www.instagram.com/p/Df6RzaeRs1k/?bqrl=MXU4Y25xeTM2cjA2eA==",
           meta: {
             type: "post",
           },
