@@ -1,28 +1,33 @@
-<xml version="1.0" encoding="UTF-8">
-    <urlset xmlns="https://www.musicdoremi.com/">
-        <url>
-            <loc>https://musicdoremi.com/</loc>
-            <priority>1.00</priority>
-        </url>
-        <url>
-            <loc>https://musicdoremi.com/about</loc>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://musicdoremi.com/faculty</loc>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://musicdoremi.com/news</loc>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://musicdoremi.com/instruments</loc>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://musicdoremi.com/contact</loc>
-            <priority>0.80</priority>
-        </url>
-    </urlset>
-</xml>
+<!-- 
+  Sitemap for search engines.
+  FIX 1: the first line was "<xml version=...>" (missing the "?" characters), which
+         makes the file invalid XML so Google would reject the whole sitemap.
+  FIX 2: the xmlns must be the official sitemap namespace, not the website URL.
+ -->
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://musicdoremi.com/</loc>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://musicdoremi.com/about</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://musicdoremi.com/faculty</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://musicdoremi.com/news</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://musicdoremi.com/instruments</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://musicdoremi.com/contact</loc>
+        <priority>0.80</priority>
+    </url>
+</urlset>
