@@ -1,3 +1,9 @@
+// app/about/page.tsx  ("/about")
+// Text comes from `aboutData` in data/about.ts.
+// The "Our Mission" and "Timeline" sections are commented out below (hidden on
+// the live site). Remove the comment markers to bring them back; if you do,
+// also import `Calendar` from "lucide-react" for the timeline.
+
 import Image from "next/image";
 import { Music, Award, Clock, Users } from "lucide-react";
 import { aboutData } from "@/data/about";
@@ -22,7 +28,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Our Story */}
+      {/* Our Story: paragraphs on the left, building photo on the right */}
       <section className="container py-12 md:py-16">
         <div className="grid gap-8 md:grid-cols-2 items-center">
           <div className="space-y-4">
@@ -65,7 +71,7 @@ export default function AboutPage() {
         </div>
       </section> */}
 
-      {/* Our Values */}
+      {/* Our Values: four icon cards. The icon is chosen from the name in the data file */}
       <section className="container py-12 md:py-16">
         <h2 className="text-3xl font-bold tracking-tighter text-center mb-8 text-foreground">
           {aboutData.values.title}
@@ -102,7 +108,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Our Facilities */}
+      {/* Our Facilities: photo on the left, list of facilities on the right */}
       <section className="bg-rose-50 dark:bg-rose-950/20 py-12 md:py-16">
         <div className="container">
           <h2 className="text-3xl font-bold tracking-tighter text-center mb-8 text-foreground">
