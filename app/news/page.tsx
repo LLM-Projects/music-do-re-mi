@@ -1,3 +1,7 @@
+// app/news/page.tsx  ("/news")
+// Announcement pop-up, event cards, an image carousel ("Feed") and the
+// "Latest News" achievements list. Content comes from data/news.ts.
+
 "use client";
 
 import Image from "next/image";
@@ -29,17 +33,29 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import { useRef } from "react";
 
 export default function NewsPage() {
+  // FIX: Autoplay({...}) used to be created inline, i.e. a brand-new plugin
+  // object on every render. Creating it once with useRef avoids resetting the
+  // carousel's timer every time the page re-renders.
+  const autoplay = useRef(Autoplay({ delay: 3000 }));
+
   return (
     <div className="flex flex-col">
+      {/* Announcement pop-up. UPDATE this (or delete it) for each new event.
+          FIX 1: buttonLink was "/news", the page you are already on, so the
+                 button did nothing. "#events" now scrolls to the events list.
+          FIX 2: expiresAt stops the pop-up appearing after the concert is over
+                 (the concert starts 3 PM on Nov 22, 2026; Eastern time). */}
       <SpecialOfferPopup
         title="Music Do-Re-Mi's Appreciation Concert"
         details="November 22, 2026"
         description="This performance is a concert organized to showcase the dedication, creativity, and progress of our students while also celebrating the spirit of Thanksgiving."
         buttonText="View Our Events"
-        buttonLink="/news"
+        buttonLink="#events"
         footnote="Spend an afternoon of gratitude, joy, and artistic expression with us!"
+        expiresAt="2026-11-23T00:00:00-05:00"
       />
       
       {/* Hero Section */}
@@ -57,8 +73,10 @@ export default function NewsPage() {
         </div>
       </section>
 
-      {/* Events Section */}
-      <section className="bg-slate-50 dark:bg-slate-900 py-12 md:py-16">
+      {/* Events Section. id="events" is the target of the pop-up button above.
+          Each event image either opens a link (if the event has `link`) or opens
+          a full-size picture viewer (Dialog). */}
+      <section id="events" className="bg-slate-50 dark:bg-slate-900 py-12 md:py-16 scroll-mt-16">
         <h2 className="text-3xl font-bold tracking-tighter text-center mb-8 text-foreground">
           {newsData.events.title}
         </h2>
@@ -170,7 +188,8 @@ export default function NewsPage() {
         </div>
       </section>
 
-      {/* Social Media Feed */}
+      {/* Social Media Feed: auto-advancing carousel (3 s). Posts with an Instagram
+          URL show the Instagram embed; others show their local images. */}
       <section className="bg-slate-50 dark:bg-slate-900 py-12 md:py-16">
         <h2 className="text-3xl font-bold tracking-tighter text-center mb-8 text-foreground">
           Feed
@@ -181,7 +200,7 @@ export default function NewsPage() {
               align: "center",
               loop: true,
             }}
-            plugins={[Autoplay({ delay: 3000 })]}
+            plugins={[autoplay.current]}
             className="w-full max-w-xl md:max-w-2xl"
           >
             <CarouselContent>
@@ -301,7 +320,7 @@ export default function NewsPage() {
         </div>
       </section>
 
-      {/* Latest News Section */}
+      {/* Latest News: headline + photo, then award cards grouped by category and teacher */}
       <section className="container py-12 md:py-16">
         <h2 className="text-3xl font-bold tracking-tighter mb-8 text-foreground">
           {newsData.news.title}
